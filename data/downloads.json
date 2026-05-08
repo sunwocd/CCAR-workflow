@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-04-30T12:29:51.720050",
+  "last_update": "2026-05-08T08:29:27.149366",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6308,6 +6308,10 @@
     "http://www.caac.gov.cn/XXGK/XXGK/JGZN/201511/t20151123_14739.html": {
       "relative_path": "other/民航发[2010]44号关于印发中国民用航空西北地区管理局及其派出的安全监督管理局内设机构主要职责和人员编制方案的通知.txt",
       "updated_at": "2026-04-30T12:29:51.713428"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260508_230780.html": {
+      "relative_path": "other/飞行程序设计单位备案信息公布表（2026年4月29日）.pdf",
+      "updated_at": "2026-05-08T08:29:27.149348"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-09T08:50:24.711759",
+  "last_update": "2026-05-11T10:45:30.396414",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -1726,8 +1726,8 @@
       "updated_at": "2026-02-19T02:25:25.393223"
     },
     "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202512/t20251231_229635.html": {
-      "relative_path": "specification/MH_T 6100.1-2025飞机加油设备  第1部分：管线加油设备.pdf",
-      "updated_at": "2026-02-19T02:25:42.684391"
+      "relative_path": "specification/MH_T 6100.1-2025飞机加油设备 第1部分：管线加油设备.pdf",
+      "updated_at": "2026-05-11T10:45:30.396397"
     },
     "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202512/t20251231_229634.html": {
       "relative_path": "specification/MH_T 6044-2025小型运输机场民用航空燃料质量控制和操作程序.pdf",
@@ -6312,6 +6312,14 @@
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260508_230780.html": {
       "relative_path": "other/飞行程序设计单位备案信息公布表（2026年4月29日）.pdf",
       "updated_at": "2026-05-09T08:50:24.711737"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260511_230788.html": {
+      "relative_path": "specification/MH_T 4036-20261090MHz 扩展电文广播式自动相关监视地面站（接收）设备技术要求.pdf",
+      "updated_at": "2026-05-11T10:45:07.547517"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260511_230787.html": {
+      "relative_path": "specification/MH_T 4043-2026民用航空X波段场面监视雷达设备技术要求.pdf",
+      "updated_at": "2026-05-11T10:45:15.303120"
     }
   }
 }

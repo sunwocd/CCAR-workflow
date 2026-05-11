@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-05-10T09:04:01.510260",
+  "last_check": "2026-05-11T10:45:36.821829",
   "documents": {
     "9": [
       {
@@ -13068,6 +13068,32 @@
     ],
     "15": [
       {
+        "title": "1090MHz 扩展电文广播式自动相关监视地面站（接收）设备技术要求",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260511_230788.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 4036-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-05-01",
+        "publish_date": "2026-05-01",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260511412683090458.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "民用航空X波段场面监视雷达设备技术要求",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260511_230787.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 4043-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-05-01",
+        "publish_date": "2026-05-01",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260511410293064898.pdf",
+        "has_pdf": true
+      },
+      {
         "title": "高原运输机场建设指南",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202604/t20260416_230560.html",
         "category": "标准规范",
@@ -13315,7 +13341,7 @@
         "has_pdf": false
       },
       {
-        "title": "飞机加油设备  第1部分：管线加油设备",
+        "title": "飞机加油设备 第1部分：管线加油设备",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202512/t20251231_229635.html",
         "category": "标准规范",
         "category_id": "15",
@@ -13324,8 +13350,8 @@
         "sign_date": "2025-12-23",
         "publish_date": "2025-12-23",
         "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202512/P020251231562649425514.pdf",
+        "has_pdf": true
       },
       {
         "title": "小型运输机场民用航空燃料质量控制和操作程序",
@@ -15637,32 +15663,6 @@
         "office_unit": "航空器适航审定司",
         "sign_date": "2023-05-25",
         "publish_date": "2023-05-25",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
-      },
-      {
-        "title": "AG100型飞机伞降系统",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202306/t20230601_220160.html",
-        "category": "标准规范",
-        "category_id": "15",
-        "doc_number": "SC-23-14",
-        "office_unit": "航空器适航审定司",
-        "sign_date": "2023-05-25",
-        "publish_date": "2023-05-25",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
-      },
-      {
-        "title": "智慧民航数据治理规范 数据治理技术",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202305/t20230506_218496.html",
-        "category": "标准规范",
-        "category_id": "15",
-        "doc_number": "MH/T 5067-2023",
-        "office_unit": "发展计划司",
-        "sign_date": "2023-04-25",
-        "publish_date": "2023-04-25",
         "validity": "有效",
         "pdf_url": "",
         "has_pdf": false
@@ -27288,6 +27288,28 @@
   ],
   "standards": [
     {
+      "title": "1090MHz 扩展电文广播式自动相关监视地面站（接收）设备技术要求",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260511_230788.html",
+      "validity": "有效",
+      "doc_number": "MH/T 4036-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-05-01",
+      "publish_date": "2026-05-01",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260511412683090458.pdf"
+    },
+    {
+      "title": "民用航空X波段场面监视雷达设备技术要求",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260511_230787.html",
+      "validity": "有效",
+      "doc_number": "MH/T 4043-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-05-01",
+      "publish_date": "2026-05-01",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260511410293064898.pdf"
+    },
+    {
       "title": "高原运输机场建设指南",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202604/t20260416_230560.html",
       "validity": "有效",
@@ -27497,7 +27519,7 @@
       "pdf_url": ""
     },
     {
-      "title": "飞机加油设备  第1部分：管线加油设备",
+      "title": "飞机加油设备 第1部分：管线加油设备",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202512/t20251231_229635.html",
       "validity": "有效",
       "doc_number": "MH/T 6100.1-2025",
@@ -27505,7 +27527,7 @@
       "doc_type": "standard",
       "sign_date": "2025-12-23",
       "publish_date": "2025-12-23",
-      "pdf_url": ""
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202512/P020251231562649425514.pdf"
     },
     {
       "title": "小型运输机场民用航空燃料质量控制和操作程序",
@@ -29463,28 +29485,6 @@
       "doc_type": "standard",
       "sign_date": "2023-05-25",
       "publish_date": "2023-05-25",
-      "pdf_url": ""
-    },
-    {
-      "title": "AG100型飞机伞降系统",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202306/t20230601_220160.html",
-      "validity": "有效",
-      "doc_number": "SC-23-14",
-      "office_unit": "航空器适航审定司",
-      "doc_type": "standard",
-      "sign_date": "2023-05-25",
-      "publish_date": "2023-05-25",
-      "pdf_url": ""
-    },
-    {
-      "title": "智慧民航数据治理规范 数据治理技术",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202305/t20230506_218496.html",
-      "validity": "有效",
-      "doc_number": "MH/T 5067-2023",
-      "office_unit": "发展计划司",
-      "doc_type": "standard",
-      "sign_date": "2023-04-25",
-      "publish_date": "2023-04-25",
       "pdf_url": ""
     }
   ]

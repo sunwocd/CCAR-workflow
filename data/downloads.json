@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-11T10:45:30.396414",
+  "last_update": "2026-05-12T09:50:23.833104",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6320,6 +6320,18 @@
     "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260511_230787.html": {
       "relative_path": "specification/MH_T 4043-2026民用航空X波段场面监视雷达设备技术要求.pdf",
       "updated_at": "2026-05-11T10:45:15.303120"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260512_230797.html": {
+      "relative_path": "other/关于2026年第六批民航专业工程建设企业资质申报材料的公示.pdf",
+      "updated_at": "2026-05-12T09:50:23.833032"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260512_230796.html": {
+      "relative_path": "other/全国通用航空企业经营许可信息（2026年4月）.pdf",
+      "updated_at": "2026-05-12T09:50:23.833099"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202605/t20260512_230807.html": {
+      "relative_path": "normative/IB-FS-OPS-022运输类飞机GNSS 干扰处置指南.pdf",
+      "updated_at": "2026-05-12T09:50:23.832919"
     }
   }
 }

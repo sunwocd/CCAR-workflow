@@ -1,7 +1,33 @@
 {
-  "last_check": "2026-05-11T10:45:36.821829",
+  "last_check": "2026-05-12T09:50:31.974740",
   "documents": {
     "9": [
+      {
+        "title": "关于2026年第六批民航专业工程建设企业资质申报材料的公示",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260512_230797.html",
+        "category": "通知公告",
+        "category_id": "9",
+        "doc_number": "",
+        "office_unit": "",
+        "sign_date": "2026-05-12",
+        "publish_date": "2026-05-12",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/P020260512318516647105.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "全国通用航空企业经营许可信息（2026年4月）",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260512_230796.html",
+        "category": "通知公告",
+        "category_id": "9",
+        "doc_number": "",
+        "office_unit": "",
+        "sign_date": "2026-05-11",
+        "publish_date": "2026-05-12",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/P020260512314947252054.pdf",
+        "has_pdf": true
+      },
       {
         "title": "飞行程序设计单位备案信息公布表（2026年4月29日）",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260508_230780.html",
@@ -2572,32 +2598,6 @@
         "office_unit": "",
         "sign_date": "2024-08-22",
         "publish_date": "2024-08-22",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
-      },
-      {
-        "title": "关于2024年度民航专业工程资质动态核查追加企业第二批核定结果的公示",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202408/t20240822_225126.html",
-        "category": "通知公告",
-        "category_id": "9",
-        "doc_number": "",
-        "office_unit": "",
-        "sign_date": "2024-08-22",
-        "publish_date": "2024-08-22",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
-      },
-      {
-        "title": "关于2023年度民航专业工程资质动态核查第五批企业整改核定结果的公示",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202408/t20240820_225100.html",
-        "category": "通知公告",
-        "category_id": "9",
-        "doc_number": "",
-        "office_unit": "",
-        "sign_date": "2024-08-20",
-        "publish_date": "2024-08-20",
         "validity": "有效",
         "pdf_url": "",
         "has_pdf": false
@@ -10466,6 +10466,19 @@
     ],
     "14": [
       {
+        "title": "运输类飞机GNSS 干扰处置指南",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202605/t20260512_230807.html",
+        "category": "规范性文件",
+        "category_id": "14",
+        "doc_number": "IB-FS-OPS-022",
+        "office_unit": "飞行标准司",
+        "sign_date": "2026-05-12",
+        "publish_date": "2026-05-12",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202605/P020260512604766733830.pdf",
+        "has_pdf": true
+      },
+      {
         "title": "民用航空人员安全用药指南（第一版）",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202604/t20260407_230423.html",
         "category": "规范性文件",
@@ -13051,19 +13064,6 @@
         "validity": "有效",
         "pdf_url": "",
         "has_pdf": false
-      },
-      {
-        "title": "民用航空器事件技术调查安全建议管理办法",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202401/t20240126_222795.html",
-        "category": "规范性文件",
-        "category_id": "14",
-        "doc_number": "AC-395-AS-02R1",
-        "office_unit": "航空安全办公室",
-        "sign_date": "2023-12-19",
-        "publish_date": "2023-12-19",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
       }
     ],
     "15": [
@@ -13077,8 +13077,8 @@
         "sign_date": "2026-05-01",
         "publish_date": "2026-05-01",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260511412683090458.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "民用航空X波段场面监视雷达设备技术要求",
@@ -13090,8 +13090,8 @@
         "sign_date": "2026-05-01",
         "publish_date": "2026-05-01",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260511410293064898.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "高原运输机场建设指南",
@@ -13350,8 +13350,8 @@
         "sign_date": "2025-12-23",
         "publish_date": "2025-12-23",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202512/P020251231562649425514.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "小型运输机场民用航空燃料质量控制和操作程序",
@@ -20058,6 +20058,32 @@
     "27": [],
     "28": [
       {
+        "title": "关于2026年第六批民航专业工程建设企业资质申报材料的公示",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260512_230797.html",
+        "category": "建议提案答复",
+        "category_id": "28",
+        "doc_number": "",
+        "office_unit": "",
+        "sign_date": "2026-05-12",
+        "publish_date": "2026-05-12",
+        "validity": "有效",
+        "pdf_url": "",
+        "has_pdf": false
+      },
+      {
+        "title": "全国通用航空企业经营许可信息（2026年4月）",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260512_230796.html",
+        "category": "建议提案答复",
+        "category_id": "28",
+        "doc_number": "",
+        "office_unit": "",
+        "sign_date": "2026-05-11",
+        "publish_date": "2026-05-12",
+        "validity": "有效",
+        "pdf_url": "",
+        "has_pdf": false
+      },
+      {
         "title": "飞行程序设计单位备案信息公布表（2026年4月29日）",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260508_230780.html",
         "category": "建议提案答复",
@@ -22630,32 +22656,6 @@
         "validity": "有效",
         "pdf_url": "",
         "has_pdf": false
-      },
-      {
-        "title": "关于2024年度民航专业工程资质动态核查追加企业第二批核定结果的公示",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202408/t20240822_225126.html",
-        "category": "建议提案答复",
-        "category_id": "28",
-        "doc_number": "",
-        "office_unit": "",
-        "sign_date": "2024-08-22",
-        "publish_date": "2024-08-22",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
-      },
-      {
-        "title": "关于2023年度民航专业工程资质动态核查第五批企业整改核定结果的公示",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202408/t20240820_225100.html",
-        "category": "建议提案答复",
-        "category_id": "28",
-        "doc_number": "",
-        "office_unit": "",
-        "sign_date": "2024-08-20",
-        "publish_date": "2024-08-20",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
       }
     ],
     "29": [
@@ -25086,6 +25086,17 @@
   ],
   "normatives": [
     {
+      "title": "运输类飞机GNSS 干扰处置指南",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202605/t20260512_230807.html",
+      "validity": "有效",
+      "doc_number": "IB-FS-OPS-022",
+      "office_unit": "飞行标准司",
+      "doc_type": "normative",
+      "sign_date": "2026-05-12",
+      "publish_date": "2026-05-12",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202605/P020260512604766733830.pdf"
+    },
+    {
       "title": "民用航空人员安全用药指南（第一版）",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202604/t20260407_230423.html",
       "validity": "有效",
@@ -27273,17 +27284,6 @@
       "sign_date": "2023-12-22",
       "publish_date": "2023-12-22",
       "pdf_url": ""
-    },
-    {
-      "title": "民用航空器事件技术调查安全建议管理办法",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202401/t20240126_222795.html",
-      "validity": "有效",
-      "doc_number": "AC-395-AS-02R1",
-      "office_unit": "航空安全办公室",
-      "doc_type": "normative",
-      "sign_date": "2023-12-19",
-      "publish_date": "2023-12-19",
-      "pdf_url": ""
     }
   ],
   "standards": [
@@ -27296,7 +27296,7 @@
       "doc_type": "standard",
       "sign_date": "2026-05-01",
       "publish_date": "2026-05-01",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260511412683090458.pdf"
+      "pdf_url": ""
     },
     {
       "title": "民用航空X波段场面监视雷达设备技术要求",
@@ -27307,7 +27307,7 @@
       "doc_type": "standard",
       "sign_date": "2026-05-01",
       "publish_date": "2026-05-01",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260511410293064898.pdf"
+      "pdf_url": ""
     },
     {
       "title": "高原运输机场建设指南",
@@ -27527,7 +27527,7 @@
       "doc_type": "standard",
       "sign_date": "2025-12-23",
       "publish_date": "2025-12-23",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202512/P020251231562649425514.pdf"
+      "pdf_url": ""
     },
     {
       "title": "小型运输机场民用航空燃料质量控制和操作程序",

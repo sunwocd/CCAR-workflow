@@ -582,6 +582,14 @@ var data = [
     "office_unit": "政策法规司"
   },
   {
+    "title": "交通运输部关于修改《民用机场建设管理规定》的决定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201812/t20181219_193575.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "",
+    "office_unit": "政策法规司"
+  },
+  {
     "title": "交通运输部关于修改《民用航空企业及机场联合重组改制管理规定》的决定",
     "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201812/t20181219_193574.html",
     "doc_type": "CCAR规章",
@@ -589,14 +597,6 @@ var data = [
     "doc_number": "",
     "office_unit": "政策法规司",
     "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%BA%9F%E6%AD%A2%21%E4%BA%A4%E9%80%9A%E8%BF%90%E8%BE%93%E9%83%A8%E5%85%B3%E4%BA%8E%E4%BF%AE%E6%94%B9%E3%80%8A%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E4%BC%81%E4%B8%9A%E5%8F%8A%E6%9C%BA%E5%9C%BA%E8%81%94%E5%90%88%E9%87%8D%E7%BB%84%E6%94%B9%E5%88%B6%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A%E3%80%8B%E7%9A%84%E5%86%B3%E5%AE%9A.pdf"
-  },
-  {
-    "title": "交通运输部关于修改《民用机场建设管理规定》的决定",
-    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201812/t20181219_193575.html",
-    "doc_type": "CCAR规章",
-    "validity": "有效",
-    "doc_number": "",
-    "office_unit": "政策法规司"
   },
   {
     "title": "交通运输部关于修改《民用航空人员体检合格证管理规则》的决定",
@@ -1248,15 +1248,6 @@ var data = [
     "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%BA%9F%E6%AD%A2%21%E6%B0%91%E8%88%AA%E6%80%BB%E5%B1%80%E7%AC%AC189%E5%8F%B7%E4%BB%A4%E3%80%8A%E5%A4%96%E5%95%86%E6%8A%95%E8%B5%84%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E4%B8%9A%E8%A7%84%E5%AE%9A%E3%80%8B%E7%9A%84%E8%A1%A5%E5%85%85%E8%A7%84%E5%AE%9A%EF%BC%88%E4%B8%89%EF%BC%89.pdf"
   },
   {
-    "title": "中国民用航空总局关于废止部分民用航空规章和规章性文件的决定",
-    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8446.html",
-    "doc_type": "CCAR规章",
-    "validity": "有效",
-    "doc_number": "民航总局第186号令",
-    "office_unit": "政策法规司",
-    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E6%B0%91%E8%88%AA%E6%80%BB%E5%B1%80%E7%AC%AC186%E5%8F%B7%E4%BB%A4%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%80%BB%E5%B1%80%E5%85%B3%E4%BA%8E%E5%BA%9F%E6%AD%A2%E9%83%A8%E5%88%86%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%A7%84%E7%AB%A0%E5%92%8C%E8%A7%84%E7%AB%A0%E6%80%A7%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%B3%E5%AE%9A.pdf"
-  },
-  {
     "title": "中国民用航空总局职能部门规范性文件制定程序规定",
     "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8445.html",
     "doc_type": "CCAR规章",
@@ -1264,6 +1255,15 @@ var data = [
     "doc_number": "民航总局第187号令",
     "office_unit": "政策法规司",
     "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21%E6%B0%91%E8%88%AA%E6%80%BB%E5%B1%80%E7%AC%AC187%E5%8F%B7%E4%BB%A4%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%80%BB%E5%B1%80%E8%81%8C%E8%83%BD%E9%83%A8%E9%97%A8%E8%A7%84%E8%8C%83%E6%80%A7%E6%96%87%E4%BB%B6%E5%88%B6%E5%AE%9A%E7%A8%8B%E5%BA%8F%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空总局关于废止部分民用航空规章和规章性文件的决定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8446.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "民航总局第186号令",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E6%B0%91%E8%88%AA%E6%80%BB%E5%B1%80%E7%AC%AC186%E5%8F%B7%E4%BB%A4%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%80%BB%E5%B1%80%E5%85%B3%E4%BA%8E%E5%BA%9F%E6%AD%A2%E9%83%A8%E5%88%86%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%A7%84%E7%AB%A0%E5%92%8C%E8%A7%84%E7%AB%A0%E6%80%A7%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%B3%E5%AE%9A.pdf"
   },
   {
     "title": "一般运行和飞行规则",

@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-05-12T09:50:31.974740",
+  "last_check": "2026-05-13T09:53:29.821880",
   "documents": {
     "9": [
       {
@@ -12,8 +12,8 @@
         "sign_date": "2026-05-12",
         "publish_date": "2026-05-12",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/P020260512318516647105.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "全国通用航空企业经营许可信息（2026年4月）",
@@ -25,8 +25,8 @@
         "sign_date": "2026-05-11",
         "publish_date": "2026-05-12",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/P020260512314947252054.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "飞行程序设计单位备案信息公布表（2026年4月29日）",
@@ -8735,19 +8735,6 @@
         "has_pdf": false
       },
       {
-        "title": "交通运输部关于修改《民用航空企业及机场联合重组改制管理规定》的决定",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201812/t20181219_193574.html",
-        "category": "民航规章",
-        "category_id": "13",
-        "doc_number": "",
-        "office_unit": "政策法规司",
-        "sign_date": "2018-11-16",
-        "publish_date": "2018-11-16",
-        "validity": "废止",
-        "pdf_url": "",
-        "has_pdf": false
-      },
-      {
         "title": "交通运输部关于修改《民用机场建设管理规定》的决定",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201812/t20181219_193575.html",
         "category": "民航规章",
@@ -8757,6 +8744,19 @@
         "sign_date": "2018-11-16",
         "publish_date": "2018-11-16",
         "validity": "有效",
+        "pdf_url": "",
+        "has_pdf": false
+      },
+      {
+        "title": "交通运输部关于修改《民用航空企业及机场联合重组改制管理规定》的决定",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201812/t20181219_193574.html",
+        "category": "民航规章",
+        "category_id": "13",
+        "doc_number": "",
+        "office_unit": "政策法规司",
+        "sign_date": "2018-11-16",
+        "publish_date": "2018-11-16",
+        "validity": "废止",
         "pdf_url": "",
         "has_pdf": false
       },
@@ -9762,19 +9762,6 @@
         "has_pdf": false
       },
       {
-        "title": "中国民用航空总局关于废止部分民用航空规章和规章性文件的决定",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8446.html",
-        "category": "民航规章",
-        "category_id": "13",
-        "doc_number": "民航总局第186号令",
-        "office_unit": "政策法规司",
-        "sign_date": "2007-09-10",
-        "publish_date": "2007-09-10",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
-      },
-      {
         "title": "中国民用航空总局职能部门规范性文件制定程序规定",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8445.html",
         "category": "民航规章",
@@ -9784,6 +9771,19 @@
         "sign_date": "2007-09-10",
         "publish_date": "2007-09-10",
         "validity": "失效",
+        "pdf_url": "",
+        "has_pdf": false
+      },
+      {
+        "title": "中国民用航空总局关于废止部分民用航空规章和规章性文件的决定",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8446.html",
+        "category": "民航规章",
+        "category_id": "13",
+        "doc_number": "民航总局第186号令",
+        "office_unit": "政策法规司",
+        "sign_date": "2007-09-10",
+        "publish_date": "2007-09-10",
+        "validity": "有效",
         "pdf_url": "",
         "has_pdf": false
       },
@@ -10475,8 +10475,8 @@
         "sign_date": "2026-05-12",
         "publish_date": "2026-05-12",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202605/P020260512604766733830.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "民用航空人员安全用药指南（第一版）",
@@ -13159,24 +13159,24 @@
         "has_pdf": false
       },
       {
-        "title": "民用无人驾驶航空器降落伞系统规范",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202601/t20260114_229762.html",
-        "category": "标准规范",
-        "category_id": "15",
-        "doc_number": "MH/T 6140-2026",
-        "office_unit": "航空器适航审定司",
-        "sign_date": "2026-01-11",
-        "publish_date": "2026-01-11",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
-      },
-      {
         "title": "飞机地面电源机组",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202601/t20260114_229761.html",
         "category": "标准规范",
         "category_id": "15",
         "doc_number": "MH/T 6019-2026",
+        "office_unit": "机场司",
+        "sign_date": "2026-01-11",
+        "publish_date": "2026-01-11",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202601/P020260513624793370663.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "民用无人驾驶航空器降落伞系统规范",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202601/t20260114_229762.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 6140-2026",
         "office_unit": "航空器适航审定司",
         "sign_date": "2026-01-11",
         "publish_date": "2026-01-11",
@@ -23621,9 +23621,9 @@
       "pdf_url": ""
     },
     {
-      "title": "交通运输部关于修改《民用航空企业及机场联合重组改制管理规定》的决定",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201812/t20181219_193574.html",
-      "validity": "废止",
+      "title": "交通运输部关于修改《民用机场建设管理规定》的决定",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201812/t20181219_193575.html",
+      "validity": "有效",
       "doc_number": "",
       "office_unit": "政策法规司",
       "doc_type": "regulation",
@@ -23632,9 +23632,9 @@
       "pdf_url": ""
     },
     {
-      "title": "交通运输部关于修改《民用机场建设管理规定》的决定",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201812/t20181219_193575.html",
-      "validity": "有效",
+      "title": "交通运输部关于修改《民用航空企业及机场联合重组改制管理规定》的决定",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201812/t20181219_193574.html",
+      "validity": "废止",
       "doc_number": "",
       "office_unit": "政策法规司",
       "doc_type": "regulation",
@@ -24490,10 +24490,10 @@
       "pdf_url": ""
     },
     {
-      "title": "中国民用航空总局关于废止部分民用航空规章和规章性文件的决定",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8446.html",
-      "validity": "有效",
-      "doc_number": "民航总局第186号令",
+      "title": "中国民用航空总局职能部门规范性文件制定程序规定",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8445.html",
+      "validity": "失效",
+      "doc_number": "民航总局第187号令",
       "office_unit": "政策法规司",
       "doc_type": "regulation",
       "sign_date": "2007-09-10",
@@ -24501,10 +24501,10 @@
       "pdf_url": ""
     },
     {
-      "title": "中国民用航空总局职能部门规范性文件制定程序规定",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8445.html",
-      "validity": "失效",
-      "doc_number": "民航总局第187号令",
+      "title": "中国民用航空总局关于废止部分民用航空规章和规章性文件的决定",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8446.html",
+      "validity": "有效",
+      "doc_number": "民航总局第186号令",
       "office_unit": "政策法规司",
       "doc_type": "regulation",
       "sign_date": "2007-09-10",
@@ -25094,7 +25094,7 @@
       "doc_type": "normative",
       "sign_date": "2026-05-12",
       "publish_date": "2026-05-12",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202605/P020260512604766733830.pdf"
+      "pdf_url": ""
     },
     {
       "title": "民用航空人员安全用药指南（第一版）",
@@ -27365,21 +27365,21 @@
       "pdf_url": ""
     },
     {
-      "title": "民用无人驾驶航空器降落伞系统规范",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202601/t20260114_229762.html",
-      "validity": "有效",
-      "doc_number": "MH/T 6140-2026",
-      "office_unit": "航空器适航审定司",
-      "doc_type": "standard",
-      "sign_date": "2026-01-11",
-      "publish_date": "2026-01-11",
-      "pdf_url": ""
-    },
-    {
       "title": "飞机地面电源机组",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202601/t20260114_229761.html",
       "validity": "有效",
       "doc_number": "MH/T 6019-2026",
+      "office_unit": "机场司",
+      "doc_type": "standard",
+      "sign_date": "2026-01-11",
+      "publish_date": "2026-01-11",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202601/P020260513624793370663.pdf"
+    },
+    {
+      "title": "民用无人驾驶航空器降落伞系统规范",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202601/t20260114_229762.html",
+      "validity": "有效",
+      "doc_number": "MH/T 6140-2026",
       "office_unit": "航空器适航审定司",
       "doc_type": "standard",
       "sign_date": "2026-01-11",

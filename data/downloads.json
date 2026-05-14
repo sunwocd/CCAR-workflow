@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-13T09:53:23.532394",
+  "last_update": "2026-05-14T09:42:23.174014",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6332,6 +6332,14 @@
     "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202605/t20260512_230807.html": {
       "relative_path": "normative/IB-FS-OPS-022运输类飞机GNSS 干扰处置指南.pdf",
       "updated_at": "2026-05-12T09:50:23.832919"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260514_230811.html": {
+      "relative_path": "other/关于中航机场系统设施建设有限公司等1家资质企业追加动态核查核定意见的公示.txt",
+      "updated_at": "2026-05-14T09:42:23.173946"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260514_230810.html": {
+      "relative_path": "other/关于追加中国能源建设集团浙江火电建设有限公司等1家企业进行资质核查的通知.txt",
+      "updated_at": "2026-05-14T09:42:23.174007"
     }
   }
 }

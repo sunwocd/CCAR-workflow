@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-05-14T09:42:27.101170",
+  "last_check": "2026-05-15T09:55:32.197686",
   "documents": {
     "9": [
       {
@@ -13094,6 +13094,32 @@
         "has_pdf": false
       },
       {
+        "title": "民用无人驾驶航空器系统分布式操控员能力要求与评估",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260515_230831.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 2018-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-04-24",
+        "publish_date": "2026-04-24",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260515631432590655.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "大型民用无人驾驶航空器系统操控员训练要求",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260515_230830.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 2019-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-04-24",
+        "publish_date": "2026-04-24",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260515629041898644.pdf",
+        "has_pdf": true
+      },
+      {
         "title": "高原运输机场建设指南",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202604/t20260416_230560.html",
         "category": "标准规范",
@@ -15637,32 +15663,6 @@
         "office_unit": "机场司",
         "sign_date": "2023-06-01",
         "publish_date": "2023-06-01",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
-      },
-      {
-        "title": "AG100型飞机发动机电子控制",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202306/t20230601_220163.html",
-        "category": "标准规范",
-        "category_id": "15",
-        "doc_number": "SC-23-16",
-        "office_unit": "航空器适航审定司",
-        "sign_date": "2023-05-25",
-        "publish_date": "2023-05-25",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
-      },
-      {
-        "title": "AG100型飞机螺旋桨的安装",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202306/t20230601_220161.html",
-        "category": "标准规范",
-        "category_id": "15",
-        "doc_number": "SC-23-15",
-        "office_unit": "航空器适航审定司",
-        "sign_date": "2023-05-25",
-        "publish_date": "2023-05-25",
         "validity": "有效",
         "pdf_url": "",
         "has_pdf": false
@@ -27310,6 +27310,28 @@
       "pdf_url": ""
     },
     {
+      "title": "民用无人驾驶航空器系统分布式操控员能力要求与评估",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260515_230831.html",
+      "validity": "有效",
+      "doc_number": "MH/T 2018-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-04-24",
+      "publish_date": "2026-04-24",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260515631432590655.pdf"
+    },
+    {
+      "title": "大型民用无人驾驶航空器系统操控员训练要求",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260515_230830.html",
+      "validity": "有效",
+      "doc_number": "MH/T 2019-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-04-24",
+      "publish_date": "2026-04-24",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260515629041898644.pdf"
+    },
+    {
       "title": "高原运输机场建设指南",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202604/t20260416_230560.html",
       "validity": "有效",
@@ -29463,28 +29485,6 @@
       "doc_type": "standard",
       "sign_date": "2023-06-01",
       "publish_date": "2023-06-01",
-      "pdf_url": ""
-    },
-    {
-      "title": "AG100型飞机发动机电子控制",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202306/t20230601_220163.html",
-      "validity": "有效",
-      "doc_number": "SC-23-16",
-      "office_unit": "航空器适航审定司",
-      "doc_type": "standard",
-      "sign_date": "2023-05-25",
-      "publish_date": "2023-05-25",
-      "pdf_url": ""
-    },
-    {
-      "title": "AG100型飞机螺旋桨的安装",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202306/t20230601_220161.html",
-      "validity": "有效",
-      "doc_number": "SC-23-15",
-      "office_unit": "航空器适航审定司",
-      "doc_type": "standard",
-      "sign_date": "2023-05-25",
-      "publish_date": "2023-05-25",
       "pdf_url": ""
     }
   ]

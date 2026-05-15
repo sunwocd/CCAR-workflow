@@ -18,6 +18,24 @@ var data = [
     "office_unit": "航空器适航审定司"
   },
   {
+    "title": "民用无人驾驶航空器系统分布式操控员能力要求与评估",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260515_230831.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年04月24日",
+    "doc_number": "MH/T 2018-2026",
+    "office_unit": "航空器适航审定司"
+  },
+  {
+    "title": "大型民用无人驾驶航空器系统操控员训练要求",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260515_230830.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年04月24日",
+    "doc_number": "MH/T 2019-2026",
+    "office_unit": "航空器适航审定司"
+  },
+  {
     "title": "高原运输机场建设指南",
     "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202604/t20260416_230560.html",
     "doc_type": "标准规范",

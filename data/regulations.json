@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-05-15T09:55:32.197686",
+  "last_check": "2026-05-16T14:35:45.085104",
   "documents": {
     "9": [
       {
@@ -13103,8 +13103,8 @@
         "sign_date": "2026-04-24",
         "publish_date": "2026-04-24",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260515631432590655.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "大型民用无人驾驶航空器系统操控员训练要求",
@@ -13116,8 +13116,8 @@
         "sign_date": "2026-04-24",
         "publish_date": "2026-04-24",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260515629041898644.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "高原运输机场建设指南",
@@ -27318,7 +27318,7 @@
       "doc_type": "standard",
       "sign_date": "2026-04-24",
       "publish_date": "2026-04-24",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260515631432590655.pdf"
+      "pdf_url": ""
     },
     {
       "title": "大型民用无人驾驶航空器系统操控员训练要求",
@@ -27329,7 +27329,7 @@
       "doc_type": "standard",
       "sign_date": "2026-04-24",
       "publish_date": "2026-04-24",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/P020260515629041898644.pdf"
+      "pdf_url": ""
     },
     {
       "title": "高原运输机场建设指南",

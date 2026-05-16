@@ -187,7 +187,7 @@ jobs:
 
       - name: Publish data JSON to static server
         env:
-          STATIC_SSH_HOST: ${{ secrets.STATIC_SSH_HOST || '154.9.27.44' }}
+          STATIC_SSH_HOST: ${{ secrets.STATIC_SSH_HOST || '156.233.226.244' }}
           STATIC_SSH_PORT: ${{ secrets.STATIC_SSH_PORT || '7668' }}
           STATIC_SSH_USER: ${{ secrets.STATIC_SSH_USER || 'root' }}
           STATIC_SSH_KEY: ${{ secrets.STATIC_SSH_KEY }}

@@ -195,6 +195,27 @@ jobs:
         run: |
           set -euo pipefail
 
+          # Retry helper: retry <max_attempts> <initial_delay_s> <cmd...>
+          # Uses exponential backoff (delay doubles each attempt).
+          retry() {
+            local max=$1 delay=$2
+            shift 2
+            local attempt=1
+            while true; do
+              if "$@"; then
+                return 0
+              fi
+              if (( attempt >= max )); then
+                echo "❌ Command failed after ${attempt} attempt(s): $*" >&2
+                return 1
+              fi
+              echo "⚠️  Attempt ${attempt}/${max} failed, retrying in ${delay}s: $*" >&2
+              sleep "$delay"
+              attempt=$(( attempt + 1 ))
+              delay=$(( delay * 2 ))
+            done
+          }
+
           if [ -z "${STATIC_SSH_KEY:-}" ]; then
             echo "❌ STATIC_SSH_KEY secret is required for static server upload"
             exit 1
@@ -218,14 +239,35 @@ jobs:
           install -d -m 700 ~/.ssh
           printf '%s\n' "$STATIC_SSH_KEY" > ~/.ssh/ccar_static_deploy
           chmod 600 ~/.ssh/ccar_static_deploy
-          ssh-keyscan -p "$STATIC_SSH_PORT" -H "$STATIC_SSH_HOST" >> ~/.ssh/known_hosts
+
+          # ssh-keyscan can occasionally time out; retry up to 3 times.
+          retry 3 5 bash -c '
+            ssh-keyscan -p "$1" -H "$2" >> ~/.ssh/known_hosts 2>/dev/null
+          ' _ "$STATIC_SSH_PORT" "$STATIC_SSH_HOST"
 
           SSH_TARGET="$STATIC_SSH_USER@$STATIC_SSH_HOST"
           REMOTE_ARCHIVE="/tmp/ccar-data-v1-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.tgz"
 
-          scp -i ~/.ssh/ccar_static_deploy -P "$STATIC_SSH_PORT" ccar-data-v1.tgz "$SSH_TARGET:$REMOTE_ARCHIVE"
-          ssh -i ~/.ssh/ccar_static_deploy -p "$STATIC_SSH_PORT" "$SSH_TARGET" \
-            "STATIC_ROOT='$STATIC_ROOT' REMOTE_ARCHIVE='$REMOTE_ARCHIVE' bash -s" <<'SH'
+          # Common SSH/SCP options: short connect timeout + server keepalive so
+          # a stalled TCP session fails fast instead of hanging the whole step.
+          SSH_OPTS=(
+            -o ConnectTimeout=20
+            -o ServerAliveInterval=15
+            -o ServerAliveCountMax=3
+            -o BatchMode=yes
+          )
+
+          # Upload tarball — retry up to 4 times for transient network blips.
+          retry 4 10 scp \
+            -i ~/.ssh/ccar_static_deploy \
+            -P "$STATIC_SSH_PORT" \
+            "${SSH_OPTS[@]}" \
+            ccar-data-v1.tgz "$SSH_TARGET:$REMOTE_ARCHIVE"
+
+          # Buffer the remote script so retries can replay the same stdin.
+          # (A heredoc is read from stdin once; retrying ssh directly would
+          # send an empty script on the second attempt.)
+          REMOTE_SCRIPT=$(cat <<'SH'
           set -euo pipefail
 
           mkdir -p "$STATIC_ROOT/data/v1"
@@ -242,6 +284,20 @@ jobs:
             test -s "$STATIC_ROOT/data/v1/$file"
           done
           SH
+          )
+
+          run_remote() {
+            printf '%s\n' "$REMOTE_SCRIPT" | ssh \
+              -i ~/.ssh/ccar_static_deploy \
+              -p "$STATIC_SSH_PORT" \
+              "${SSH_OPTS[@]}" \
+              "$SSH_TARGET" \
+              "STATIC_ROOT='$STATIC_ROOT' REMOTE_ARCHIVE='$REMOTE_ARCHIVE' bash -s"
+          }
+
+          # Remote extract is idempotent (mkdir -p + tar -xzf overwrites), so
+          # safe to retry. Archive is only rm'd at the very end on success.
+          retry 4 10 run_remote
 
           echo "✅ Published CCAR JSON to $STATIC_ROOT/data/v1"
 

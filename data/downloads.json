@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-18T11:14:55.737424",
+  "last_update": "2026-05-21T10:47:16.835172",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6352,6 +6352,10 @@
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260518_230841.html": {
       "relative_path": "other/关于第22届全国青年文明号拟推报对象的公示.pdf",
       "updated_at": "2026-05-18T11:14:55.737419"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TJSJ/202605/t20260521_230867.html": {
+      "relative_path": "other/中国民航2026年4月份主要生产指标统计.pdf",
+      "updated_at": "2026-05-21T10:47:16.835156"
     }
   }
 }

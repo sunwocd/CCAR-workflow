@@ -325,6 +325,7 @@ jobs:
           fi
           # downloads/ no longer committed to repo. Published JSON is served by flighttoolbox.hudawang.cn/data/v1/.
           git diff --staged --quiet || git commit -m "chore: update regulation state $(date +'%Y-%m-%d')"
+          git pull --rebase origin main
           git push
 
       - name: Upload downloaded files

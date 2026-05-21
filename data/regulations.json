@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-05-21T10:47:21.803614",
+  "last_check": "2026-05-21T19:00:49.732785",
   "documents": {
     "9": [
       {
@@ -4657,8 +4657,8 @@
         "sign_date": "2026-05-21",
         "publish_date": "2026-05-21",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TJSJ/202605/P020260521311653881684.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "中国民航2026年3月份主要生产指标统计",

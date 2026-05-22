@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-21T10:47:16.835172",
+  "last_update": "2026-05-22T10:31:28.291688",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6356,6 +6356,10 @@
     "http://www.caac.gov.cn/XXGK/XXGK/TJSJ/202605/t20260521_230867.html": {
       "relative_path": "other/中国民航2026年4月份主要生产指标统计.pdf",
       "updated_at": "2026-05-21T10:47:16.835156"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260522_230903.html": {
+      "relative_path": "other/关于内蒙古机场集团残损航空器搬移实训基地认定意见的公示.pdf",
+      "updated_at": "2026-05-22T10:31:28.291680"
     }
   }
 }

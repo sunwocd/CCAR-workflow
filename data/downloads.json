@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-25T11:18:55.064418",
+  "last_update": "2026-05-27T11:03:29.282036",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6360,6 +6360,22 @@
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260522_230903.html": {
       "relative_path": "other/关于内蒙古机场集团残损航空器搬移实训基地认定意见的公示.pdf",
       "updated_at": "2026-05-22T10:31:28.291680"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260525_230912.html": {
+      "relative_path": "other/民航系统2026年度拟录用公务员公示公告.doc",
+      "updated_at": "2026-05-27T11:03:29.281916"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260525_230911.html": {
+      "relative_path": "other/中国民用航空局机关2026年度公开遴选公务员拟任职人员公示公告.txt",
+      "updated_at": "2026-05-27T11:03:29.281984"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202605/t20260525_230910.html": {
+      "relative_path": "other/中国民用航空局机关2026年度拟录用公务员公示公告.txt",
+      "updated_at": "2026-05-27T11:03:29.282032"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202605/t20260526_230913.html": {
+      "relative_path": "normative/AC-71-TM-2024-01进近管制区划设指南.pdf",
+      "updated_at": "2026-05-27T11:03:29.281747"
     }
   }
 }

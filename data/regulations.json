@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-05-27T11:03:34.865916",
+  "last_check": "2026-05-28T11:03:57.143897",
   "documents": {
     "9": [
       {
@@ -12607,8 +12607,8 @@
         "sign_date": "2024-02-21",
         "publish_date": "2024-02-21",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202605/P020260526501071655394.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "民用航空通信导航监视新技术应用管理办法",
@@ -26898,7 +26898,7 @@
       "doc_type": "normative",
       "sign_date": "2024-02-21",
       "publish_date": "2024-02-21",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202605/P020260526501071655394.pdf"
+      "pdf_url": ""
     },
     {
       "title": "民用航空通信导航监视新技术应用管理办法",

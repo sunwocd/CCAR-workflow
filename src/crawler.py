@@ -533,7 +533,7 @@ class CaacCrawler:
                 file_ext = self._guess_file_extension(attachment_link, preferred_ext)
                 save_path = f"{save_base_path}{file_ext}"
 
-                if self._download_binary_file(attachment_link, save_path):
+                if self._download_binary_file(attachment_link, save_path, referer=document.url):
                     if file_ext.lower() == ".pdf":
                         document.pdf_url = attachment_link
                         document.has_pdf = True
@@ -557,13 +557,83 @@ class CaacCrawler:
             logger.error(f"Failed to download document file: {e}")
             return None
 
-    def _download_binary_file(self, file_url: str, save_path: str) -> bool:
-        """Download binary file to local path"""
-        logger.info(f"Downloading file: {file_url}")
-        os.makedirs(os.path.dirname(save_path) or ".", exist_ok=True)
+    def _is_valid_binary(self, body: bytes, ext: str) -> bool:
+        """Validate downloaded binary content (reject WAF/HTML responses)."""
+        if len(body) < 1024:
+            return False
 
+        ext = ext.lower()
+        if ext == ".pdf":
+            return body[:4] == b"%PDF"
+        if ext == ".docx":
+            return body[:2] == b"PK"
+        if ext == ".doc":
+            return body[:4] == b"\xd0\xcf\x11\xe0"
+        return True
+
+    def _save_binary_body(self, body: bytes, save_path: str) -> bool:
+        """Write and validate binary content to disk."""
+        ext = os.path.splitext(save_path)[1]
+        if not self._is_valid_binary(body, ext):
+            logger.warning(f"Downloaded content invalid ({len(body)} bytes): {save_path}")
+            return False
+
+        os.makedirs(os.path.dirname(save_path) or ".", exist_ok=True)
+        with open(save_path, "wb") as f:
+            f.write(body)
+        logger.info(f"File saved: {save_path} ({len(body) / 1024:.1f} KB)")
+        return True
+
+    def _download_via_browser_context(
+        self,
+        context,
+        file_url: str,
+        save_path: str,
+        referer: str = "",
+    ) -> bool:
+        """Download binary file using browser request context (WAF-safe)."""
+        logger.info(f"Downloading via browser: {file_url}")
         try:
-            with self._get_http_client().stream("GET", file_url) as response:
+            headers = {"Referer": referer} if referer else None
+            response = context.request.get(file_url, timeout=60000, headers=headers)
+            if response.status != 200:
+                logger.warning(f"Browser download failed: HTTP {response.status}")
+                return False
+            return self._save_binary_body(response.body(), save_path)
+        except Exception as e:
+            logger.warning(f"Browser download exception: {e}")
+            if os.path.exists(save_path):
+                os.remove(save_path)
+            return False
+
+    def _download_binary_file(
+        self,
+        file_url: str,
+        save_path: str,
+        referer: str = "",
+    ) -> bool:
+        """Download binary file: browser session first, httpx as fallback."""
+        if referer:
+            browser = self._get_browser()
+            context = browser.new_context()
+            try:
+                page = context.new_page()
+                page.goto(referer, wait_until="domcontentloaded", timeout=30000)
+                page.wait_for_timeout(1000)
+                if self._download_via_browser_context(context, file_url, save_path, referer=referer):
+                    return True
+            except Exception as e:
+                logger.warning(f"Browser download setup failed: {e}")
+            finally:
+                context.close()
+
+        logger.info(f"Downloading via HTTP: {file_url}")
+        try:
+            headers = {"Referer": referer} if referer else None
+            timeout = httpx.Timeout(connect=10.0, read=20.0, write=10.0, pool=10.0)
+            with self._get_http_client().stream(
+                "GET", file_url, headers=headers, timeout=timeout
+            ) as response:
                 if response.status_code != 200:
                     logger.warning(f"Download failed: HTTP {response.status_code}")
                     return False
@@ -572,19 +642,15 @@ class CaacCrawler:
                 if content_length:
                     logger.info(f"File size: {int(content_length) / 1024:.1f} KB")
 
-                total_size = 0
-                with open(save_path, "wb") as f:
-                    for chunk in response.iter_bytes(chunk_size=8192):
-                        f.write(chunk)
-                        total_size += len(chunk)
+                chunks = []
+                for chunk in response.iter_bytes(chunk_size=8192):
+                    chunks.append(chunk)
 
-            if total_size < 1024:
-                logger.warning(f"Downloaded file too small ({total_size} bytes)")
+            body = b"".join(chunks)
+            if not self._save_binary_body(body, save_path):
                 if os.path.exists(save_path):
                     os.remove(save_path)
                 return False
-
-            logger.info(f"File saved: {save_path} ({total_size / 1024:.1f} KB)")
             return True
         except Exception as e:
             logger.warning(f"Download exception: {e}")

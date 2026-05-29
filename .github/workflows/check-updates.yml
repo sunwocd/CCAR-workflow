@@ -57,6 +57,11 @@ on:
           - '1'
           - '0'
         default: '1'
+      repair_txt:
+        description: '重新下载之前仅存为 .txt 的 PDF（规章/规范性文件/标准规范）'
+        required: false
+        type: boolean
+        default: false
 
 # Prevent concurrent runs
 concurrency:
@@ -126,6 +131,10 @@ jobs:
 
           # --notify: 手动触发时用 github.event.inputs，定时任务用 secrets
           CMD+=(--notify "${{ github.event.inputs.notify || secrets.NOTIFY || '1' }}")
+
+          if [ "${{ github.event.inputs.repair_txt }}" = "true" ]; then
+            CMD+=(--repair-txt)
+          fi
 
           # 固定每个分类抓取条数，提高 JSON 更新覆盖率
           CMD+=(--perpage 200)

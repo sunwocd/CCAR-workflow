@@ -51,6 +51,33 @@ def _flatten_documents(documents_by_category: dict[str, list[Document]]) -> list
     return result
 
 
+def _load_txt_repair_documents(storage: Storage) -> list[Document]:
+    """Load 13/14/15 documents whose download index entry is a .txt fallback."""
+    download_index = storage.load_download_index()
+    state = storage.load()
+
+    url_to_doc: dict[str, Document] = {}
+    for cat_id in JS_EXPORT_CONFIG:
+        for item in state.documents.get(cat_id, []):
+            if isinstance(item, dict):
+                doc = Document.from_dict(item)
+            else:
+                continue
+            if doc.url:
+                url_to_doc[doc.url] = doc
+
+    repair_docs: list[Document] = []
+    for url, record in download_index.items():
+        rel_path = str(record.get("relative_path", "")).strip()
+        if not rel_path.lower().endswith(".txt"):
+            continue
+        doc = url_to_doc.get(url)
+        if doc:
+            repair_docs.append(doc)
+
+    return repair_docs
+
+
 def setup_logging():
     """Configure logging"""
     logger.remove()
@@ -136,6 +163,11 @@ def parse_args() -> argparse.Namespace:
         default=50,
         metavar="N",
         help="Number of documents to fetch per category (default: 50)",
+    )
+    parser.add_argument(
+        "--repair-txt",
+        action="store_true",
+        help="Re-download documents previously saved as .txt fallback (categories 13/14/15)",
     )
     return parser.parse_args()
 
@@ -241,6 +273,10 @@ def main() -> int:
                         logger.info("Force notify enabled, will send notification with empty results")
                         target_documents = {}
                         download_documents = {}
+                    elif args.repair_txt and not args.no_download:
+                        logger.info("Repair-txt enabled, continuing for txt fallback re-download")
+                        target_documents = {}
+                        download_documents = {}
                     else:
                         logger.info("Run complete")
                         if not args.dry_run:
@@ -270,6 +306,13 @@ def main() -> int:
                 download_dir = args.download_dir
                 os.makedirs(download_dir, exist_ok=True)
                 docs_to_sync = _flatten_documents(download_documents)
+                if args.repair_txt:
+                    repair_docs = _load_txt_repair_documents(storage)
+                    seen_urls = {doc.url for doc in docs_to_sync}
+                    added = [doc for doc in repair_docs if doc.url not in seen_urls]
+                    if added:
+                        logger.info(f"Repair-txt: {len(added)} documents queued for PDF re-download")
+                        docs_to_sync.extend(added)
                 if not docs_to_sync:
                     logger.info("No files need download/rename")
                 else:
@@ -290,31 +333,32 @@ def main() -> int:
 
                         if old_path and os.path.exists(old_path):
                             ext = os.path.splitext(old_path)[1].lower() or ".pdf"
-                            new_filename = generate_filename(doc, extension=ext)
-                            new_path = os.path.join(base_dir, new_filename)
-                            os.makedirs(os.path.dirname(new_path), exist_ok=True)
+                            if ext != ".txt":
+                                new_filename = generate_filename(doc, extension=ext)
+                                new_path = os.path.join(base_dir, new_filename)
+                                os.makedirs(os.path.dirname(new_path), exist_ok=True)
 
-                            old_norm = os.path.normcase(os.path.normpath(old_path))
-                            new_norm = os.path.normcase(os.path.normpath(new_path))
-                            final_path = old_path
+                                old_norm = os.path.normcase(os.path.normpath(old_path))
+                                new_norm = os.path.normcase(os.path.normpath(new_path))
+                                final_path = old_path
 
-                            if old_norm != new_norm:
-                                if os.path.exists(new_path):
-                                    os.remove(old_path)
-                                    final_path = new_path
-                                    logger.info(f"Removed stale duplicate file: {old_path}")
-                                else:
-                                    os.replace(old_path, new_path)
-                                    final_path = new_path
-                                renamed_count += 1
-                                logger.info(f"Renamed file: {final_path}")
+                                if old_norm != new_norm:
+                                    if os.path.exists(new_path):
+                                        os.remove(old_path)
+                                        final_path = new_path
+                                        logger.info(f"Removed stale duplicate file: {old_path}")
+                                    else:
+                                        os.replace(old_path, new_path)
+                                        final_path = new_path
+                                    renamed_count += 1
+                                    logger.info(f"Renamed file: {final_path}")
 
-                            download_index[doc.url] = {
-                                "relative_path": os.path.relpath(final_path, download_dir),
-                                "updated_at": datetime.now().isoformat(),
-                            }
-                            synced_count += 1
-                            continue
+                                download_index[doc.url] = {
+                                    "relative_path": os.path.relpath(final_path, download_dir),
+                                    "updated_at": datetime.now().isoformat(),
+                                }
+                                synced_count += 1
+                                continue
 
                         existing_local = None
                         for ext in (".pdf", ".doc", ".docx", ".txt"):
@@ -323,7 +367,7 @@ def main() -> int:
                                 existing_local = candidate
                                 break
 
-                        if existing_local:
+                        if existing_local and not existing_local.lower().endswith(".txt"):
                             download_index[doc.url] = {
                                 "relative_path": os.path.relpath(existing_local, download_dir),
                                 "updated_at": datetime.now().isoformat(),
@@ -333,6 +377,14 @@ def main() -> int:
 
                         saved_path = crawler.download_document_file(doc, save_base_path)
                         if saved_path:
+                            if (
+                                old_path
+                                and os.path.exists(old_path)
+                                and old_path.lower().endswith(".txt")
+                                and saved_path.lower().endswith(".pdf")
+                            ):
+                                os.remove(old_path)
+                                logger.info(f"Removed txt fallback after PDF download: {old_path}")
                             download_index[doc.url] = {
                                 "relative_path": os.path.relpath(saved_path, download_dir),
                                 "updated_at": datetime.now().isoformat(),

@@ -194,12 +194,7 @@ jobs:
           print(f"Generated JS/manifest.json totalCount={manifest['totalCount']}")
           PY
 
-      - name: Skip static publish (fork / no SSH key)
-        if: ${{ secrets.STATIC_SSH_KEY == '' }}
-        run: echo "ℹ️ Skipping static server upload (STATIC_SSH_KEY not configured)"
-
       - name: Publish data JSON to static server
-        if: ${{ secrets.STATIC_SSH_KEY != '' }}
         env:
           STATIC_SSH_HOST: ${{ secrets.STATIC_SSH_HOST || '103.212.187.17' }}
           STATIC_SSH_PORT: ${{ secrets.STATIC_SSH_PORT || '7668' }}
@@ -231,8 +226,8 @@ jobs:
           }
 
           if [ -z "${STATIC_SSH_KEY:-}" ]; then
-            echo "❌ STATIC_SSH_KEY secret is required for static server upload"
-            exit 1
+            echo "ℹ️ Skipping static server upload (STATIC_SSH_KEY not configured)"
+            exit 0
           fi
 
           for file in regulation.json normative.json specification.json manifest.json; do

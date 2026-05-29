@@ -314,28 +314,14 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/regulations.json
-          if [ -f data/downloads.json ]; then
-            git add data/downloads.json
+          git add data/ JS/
+          if git diff --staged --quiet; then
+            echo "No state changes to commit"
+            exit 0
           fi
-          if [ -f data/r2_uploads.json ]; then
-            git add data/r2_uploads.json
-          fi
-          if [ -d JS ]; then
-            shopt -s nullglob
-            js_files=(JS/*.js)
-            json_files=(JS/*.json)
-            if [ ${#js_files[@]} -gt 0 ]; then
-              git add "${js_files[@]}"
-            fi
-            if [ ${#json_files[@]} -gt 0 ]; then
-              git add "${json_files[@]}"
-            fi
-          fi
-          # downloads/ no longer committed to repo. Published JSON is served by flighttoolbox.hudawang.cn/data/v1/.
-          git diff --staged --quiet || git commit -m "chore: update regulation state $(date +'%Y-%m-%d')"
-          git pull --rebase origin main
-          git push
+          git commit -m "chore: update regulation state $(date +'%Y-%m-%d')"
+          git pull --rebase --autostash origin main
+          git push origin main
 
       - name: Upload downloaded files
         if: always()

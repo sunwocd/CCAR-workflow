@@ -306,8 +306,10 @@ def main() -> int:
                 download_dir = args.download_dir
                 os.makedirs(download_dir, exist_ok=True)
                 docs_to_sync = _flatten_documents(download_documents)
+                repair_urls: set[str] = set()
                 if args.repair_txt:
                     repair_docs = _load_txt_repair_documents(storage)
+                    repair_urls = {doc.url for doc in repair_docs}
                     seen_urls = {doc.url for doc in docs_to_sync}
                     added = [doc for doc in repair_docs if doc.url not in seen_urls]
                     if added:
@@ -320,6 +322,9 @@ def main() -> int:
                     synced_count = 0
                     renamed_count = 0
                     failed_count = 0
+                    repair_pdf_count = 0
+                    repair_txt_count = 0
+                    repair_fail_count = 0
 
                     for doc in docs_to_sync:
                         subdir = get_download_subdir(doc.category_id, use_cn=args.cn_dirs)
@@ -375,6 +380,10 @@ def main() -> int:
                             synced_count += 1
                             continue
 
+                        old_was_txt = (
+                            doc.url in repair_urls
+                            and old_relative_path.lower().endswith(".txt")
+                        )
                         saved_path = crawler.download_document_file(doc, save_base_path)
                         if saved_path:
                             if (
@@ -392,8 +401,15 @@ def main() -> int:
                             synced_count += 1
                             if saved_path.lower().endswith(".pdf"):
                                 downloaded_files.append(saved_path)
+                            if old_was_txt:
+                                if saved_path.lower().endswith(".pdf"):
+                                    repair_pdf_count += 1
+                                elif saved_path.lower().endswith(".txt"):
+                                    repair_txt_count += 1
                         else:
                             failed_count += 1
+                            if old_was_txt:
+                                repair_fail_count += 1
                             logger.debug(f"Download failed: [{doc.category}] {doc.title}")
 
                     storage.save_download_index(download_index)
@@ -401,6 +417,12 @@ def main() -> int:
                         f"Download sync complete: total={len(docs_to_sync)}, synced={synced_count}, "
                         f"renamed={renamed_count}, failed={failed_count}"
                     )
+                    if args.repair_txt and repair_urls:
+                        logger.info(
+                            "Repair-txt summary: "
+                            f"queued={len(repair_urls)}, pdf_ok={repair_pdf_count}, "
+                            f"still_txt={repair_txt_count}, failed={repair_fail_count}"
+                        )
             else:
                 logger.info("Step 3/7: Skipping file download")
 

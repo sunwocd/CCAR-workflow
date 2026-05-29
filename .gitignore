@@ -28,6 +28,11 @@ Thumbs.db
 # Logs
 *.log
 
+# CI artifact extraction / backups
+_artifact*/
+backup_*/
+scripts/reports/
+
 # Personal notes
 说明/
 机场司/

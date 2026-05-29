@@ -35,6 +35,16 @@ uv run python -m src.main --list-categories
 ```
 List available category IDs.
 
+```bash
+uv run python scripts/verify_downloads.py --since 2026-05-29
+```
+Verify `downloads/` files against `data/downloads.json` (use `--downloads _artifact174` for CI artifact).
+
+```bash
+uv run python scripts/sync_artifact.py --source _artifact174
+```
+Merge a downloaded CI artifact into local `downloads/`.
+
 ## Coding Style & Naming Conventions
 
 - Python 3.11+; 4-space indentation; keep the existing import ordering.

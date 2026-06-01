@@ -64,6 +64,11 @@ on:
         required: false
         type: boolean
         default: false
+      backfill_r2:
+        description: '补传 R2 缺失的规章/规范性文件/标准规范 PDF（上传中断后修复；不发通知、不改 state）'
+        required: false
+        type: boolean
+        default: false
 
 # Prevent concurrent runs
 concurrency:
@@ -144,6 +149,10 @@ jobs:
 
           if [ "${{ github.event.inputs.repair_txt }}" = "true" ]; then
             CMD+=(--repair-txt)
+          fi
+
+          if [ "${{ github.event.inputs.backfill_r2 }}" = "true" ]; then
+            CMD+=(--backfill-r2)
           fi
 
           # 固定每个分类抓取条数，提高 JSON 更新覆盖率

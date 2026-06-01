@@ -169,6 +169,12 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Re-download documents previously saved as .txt fallback (categories 13/14/15)",
     )
+    parser.add_argument(
+        "--backfill-r2",
+        action="store_true",
+        help="Re-upload exported-category (13/14/15) PDFs missing from the R2 index "
+             "(e.g. after an upload outage). No notification, state untouched.",
+    )
     return parser.parse_args()
 
 
@@ -199,6 +205,11 @@ def main() -> int:
     # days=0 means incremental detection mode
     if args.days == 0:
         args.days = None
+
+    # Backfill is a pure R2-repair pass: never notify, and (handled at step 7)
+    # never rewrite state. Force --no-notify so a stray --notify can't flood.
+    if args.backfill_r2:
+        args.no_notify = True
     
     # Parse category IDs
     category_ids = None
@@ -247,7 +258,34 @@ def main() -> int:
             
             download_documents: dict[str, list[Document]] = {}
             
-            if args.days:
+            if args.backfill_r2:
+                # Re-upload only exported-category (13/14/15) PDFs missing from
+                # the R2 index — repair after an upload outage. CAAC retroactive
+                # docs carry old publish_date, so a date filter (--days) would
+                # miss them; selecting by "absent from R2 index" catches every gap.
+                url_to_doc: dict[str, Document] = {}
+                for cat_docs in all_documents.values():
+                    for doc in cat_docs:
+                        url_to_doc[doc.url] = doc
+                dl_index = storage.load_download_index()
+                r2_index_path = str(Path(storage.data_path).parent / "r2_uploads.json")
+                r2_keys = set(R2Uploader._load_r2_index(r2_index_path).keys())
+                backfill_documents: dict[str, list[Document]] = {}
+                for url, record in dl_index.items():
+                    rel_path = str(record.get("relative_path", "")).strip()
+                    if not rel_path.lower().endswith(".pdf") or rel_path in r2_keys:
+                        continue
+                    doc = url_to_doc.get(url)
+                    if doc and doc.category_id in JS_EXPORT_CONFIG:
+                        backfill_documents.setdefault(doc.category_id, []).append(doc)
+                total_backfill = sum(len(docs) for docs in backfill_documents.values())
+                if total_backfill == 0:
+                    logger.info("Backfill-R2: no exported-category PDFs missing from R2, nothing to do")
+                    return 0
+                logger.info(f"Backfill-R2: {total_backfill} exported-category PDFs missing from R2, re-fetching")
+                target_documents = {}
+                download_documents = backfill_documents
+            elif args.days:
                 # Filter by days
                 filtered_documents = {}
                 for cat_id, docs in all_documents.items():
@@ -525,7 +563,7 @@ def main() -> int:
                 logger.info("Step 6/7: Skipping notifications")
 
             # 7. Update state
-            if not args.days and not args.dry_run:
+            if not args.days and not args.backfill_r2 and not args.dry_run:
                 logger.info("Step 7/7: Updating state file...")
                 storage.update_state(all_documents)
             

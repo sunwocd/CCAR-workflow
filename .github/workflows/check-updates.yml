@@ -7,7 +7,9 @@ on:
     #   Beijing 8:00  -> UTC 0:00  -> cron: '0 0 * * *'
     #   Beijing 15:00 -> UTC 7:00  -> cron: '0 7 * * *'
     #   Beijing 20:00 -> UTC 12:00 -> cron: '0 12 * * *'
-    - cron: '0 7 * * *'
+    # Fire at :25 rather than :00 — GitHub heavily throttles on-the-hour cron,
+    # which delays this job 2-4h and occasionally drops it entirely.
+    - cron: '25 7 * * *'
   workflow_dispatch:  # Allow manual trigger
     inputs:
       categories:
@@ -119,6 +121,14 @@ jobs:
           # Notification - Telegram
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+          # Cloudflare R2 upload (PDF + mini-program JSON via Worker proxy).
+          # Dropped by mistake in 33a47eb when the static-publish step was added;
+          # without them R2Uploader stays disabled and nothing reaches the bucket
+          # (regression since ~2026-04-20). Secrets already exist in the repo.
+          R2_WORKER_URL: ${{ secrets.R2_WORKER_URL }}
+          R2_WORKER_SECRET: ${{ secrets.R2_WORKER_SECRET }}
+          R2_DOMAIN: ${{ secrets.R2_DOMAIN }}
         run: |
           # 构建命令参数
           CMD=(uv run python -m src.main)

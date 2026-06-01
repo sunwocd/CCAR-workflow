@@ -265,7 +265,12 @@ def main() -> int:
                 download_documents = filtered_documents
             else:
                 # Detect new and updated documents
-                known_total = sum(len(d) for d in storage.load().documents.values())
+                # Scope the "empty prior state" check to the categories crawled
+                # this run, so first-time monitoring of a NEW category against an
+                # already-populated state still hits the baseline-only guard below
+                # instead of flooding with every document in that category.
+                stored_docs = storage.load().documents
+                known_total = sum(len(stored_docs.get(cat_id, [])) for cat_id in all_documents)
                 changes = storage.detect_changes(all_documents)
                 
                 if not changes.has_changes:

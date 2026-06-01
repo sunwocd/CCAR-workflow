@@ -15,6 +15,9 @@ node_modules/
 # uv
 # uv.lock is committed for reproducible CI builds
 
+# Downloads (archived to Cloudflare R2 + CI artifacts; not stored in git)
+downloads/
+
 # IDE
 .idea/
 .vscode/

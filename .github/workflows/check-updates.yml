@@ -196,11 +196,11 @@ jobs:
 
       - name: Publish data JSON to static server
         env:
-          STATIC_SSH_HOST: ${{ secrets.STATIC_SSH_HOST || '103.212.187.17' }}
-          STATIC_SSH_PORT: ${{ secrets.STATIC_SSH_PORT || '7668' }}
-          STATIC_SSH_USER: ${{ secrets.STATIC_SSH_USER || 'root' }}
+          STATIC_SSH_HOST: ${{ secrets.STATIC_SSH_HOST }}
+          STATIC_SSH_PORT: ${{ secrets.STATIC_SSH_PORT }}
+          STATIC_SSH_USER: ${{ secrets.STATIC_SSH_USER }}
           STATIC_SSH_KEY: ${{ secrets.STATIC_SSH_KEY }}
-          STATIC_ROOT: ${{ secrets.STATIC_ROOT || '/www/wwwroot/flighttoolbox-static/current' }}
+          STATIC_ROOT: ${{ secrets.STATIC_ROOT }}
         run: |
           set -euo pipefail
 
@@ -225,10 +225,12 @@ jobs:
             done
           }
 
-          if [ -z "${STATIC_SSH_KEY:-}" ]; then
-            echo "ℹ️ Skipping static server upload (STATIC_SSH_KEY not configured)"
+          if [ -z "${STATIC_SSH_KEY:-}" ] || [ -z "${STATIC_SSH_HOST:-}" ] \
+             || [ -z "${STATIC_SSH_USER:-}" ] || [ -z "${STATIC_ROOT:-}" ]; then
+            echo "ℹ️ Skipping static server upload (SSH secrets not fully configured)"
             exit 0
           fi
+          STATIC_SSH_PORT="${STATIC_SSH_PORT:-22}"
 
           for file in regulation.json normative.json specification.json manifest.json; do
             if [ ! -s "JS/$file" ]; then

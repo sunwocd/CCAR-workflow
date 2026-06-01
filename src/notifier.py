@@ -5,6 +5,7 @@ Notification Module
 Supports multiple push channels: Email, PushPlus, Telegram.
 """
 
+import html
 import os
 import smtplib
 from datetime import datetime, timezone, timedelta
@@ -31,6 +32,9 @@ class Notifier:
         self.email_pass = os.getenv("EMAIL_PASS")
         self.email_to = os.getenv("EMAIL_TO") or self.email_user
         self.email_sender = os.getenv("EMAIL_SENDER", "CAAC 文件监控")
+        # SMTP host/port: explicit override falls back to smtp.<domain>:465 (SSL)
+        self.email_smtp_host = os.getenv("EMAIL_SMTP_HOST")
+        self.email_smtp_port = int(os.getenv("EMAIL_SMTP_PORT", "465"))
         
         # PushPlus config
         self.pushplus_token = os.getenv("PUSHPLUS_TOKEN")
@@ -162,10 +166,17 @@ class Notifier:
         msg["To"] = ", ".join(recipients)
         msg["Subject"] = Header(title, "utf-8")
         
-        domain = self.email_user.split("@")[1]
-        smtp_server = f"smtp.{domain}"
-        
-        with smtplib.SMTP_SSL(smtp_server, 465) as server:
+        if self.email_smtp_host:
+            smtp_server = self.email_smtp_host
+        elif "@" in self.email_user:
+            smtp_server = f"smtp.{self.email_user.split('@', 1)[1]}"
+        else:
+            raise ValueError(
+                f"Cannot infer SMTP host from EMAIL_USER '{self.email_user}' "
+                f"(no '@'); set EMAIL_SMTP_HOST explicitly"
+            )
+
+        with smtplib.SMTP_SSL(smtp_server, self.email_smtp_port) as server:
             server.login(self.email_user, self.email_pass)
             server.sendmail(self.email_user, recipients, msg.as_string())
 
@@ -191,30 +202,59 @@ class Notifier:
         response.raise_for_status()
 
     def _send_telegram(self, title: str, content: str):
-        """Send Telegram notification"""
+        """Send Telegram notification.
+
+        Telegram caps a message at 4096 characters, so the body is truncated
+        before formatting. If MarkdownV2 escaping hits an edge case and the API
+        rejects the message, fall back to plain text without parse_mode.
+        """
         if not self.telegram_bot_token or not self.telegram_chat_id:
             raise ValueError("Telegram configuration incomplete")
-        
+
         url = f"https://api.telegram.org/bot{self.telegram_bot_token}/sendMessage"
-        
+
         def escape_markdown(text: str) -> str:
             """Escape Markdown special characters"""
             special_chars = ['_', '*', '[', ']', '(', ')', '~', '`', '>', '#', '+', '-', '=', '|', '{', '}', '.', '!']
             for char in special_chars:
                 text = text.replace(char, f'\\{char}')
             return text
-        
-        escaped_title = escape_markdown(title)
-        escaped_content = escape_markdown(content)
-        text = f"*{escaped_title}*\n\n{escaped_content}"
-        
-        payload = {
-            "chat_id": self.telegram_chat_id,
-            "text": text,
-            "parse_mode": "MarkdownV2",
-        }
-        
-        response = self.client.post(url, json=payload)
+
+        # Truncate the body below the 4096-char hard limit, leaving headroom
+        # for the title and MarkdownV2 escape backslashes.
+        max_content = 3500
+        body = content
+        if len(body) > max_content:
+            body = body[:max_content].rstrip() + "\n\n…（内容过长已截断，详见邮件/PushPlus）"
+
+        plain = f"{title}\n\n{body}"[:4096]
+
+        # MarkdownV2 escaping can nearly double the length (a backslash before
+        # every special char). If the escaped text would blow past Telegram's
+        # 4096-char hard limit, skip the doomed formatted request and send
+        # plain text directly.
+        text = f"*{escape_markdown(title)}*\n\n{escape_markdown(body)}"
+        if len(text) > 4096:
+            response = self.client.post(
+                url, json={"chat_id": self.telegram_chat_id, "text": plain}
+            )
+            response.raise_for_status()
+            return
+
+        response = self.client.post(
+            url,
+            json={"chat_id": self.telegram_chat_id, "text": text, "parse_mode": "MarkdownV2"},
+        )
+        if response.status_code >= 400:
+            # MarkdownV2 rejected — log the real reason (could be 401/403/429,
+            # not just an escaping edge case) before retrying as plain text.
+            logger.warning(
+                f"[Telegram] MarkdownV2 send failed (HTTP {response.status_code}): "
+                f"{response.text[:200]}; retrying as plain text"
+            )
+            response = self.client.post(
+                url, json={"chat_id": self.telegram_chat_id, "text": plain}
+            )
         response.raise_for_status()
 
     def format_update_message(
@@ -369,12 +409,14 @@ class Notifier:
             
             details = []
             if doc.publish_date:
-                details.append(f"📅 {doc.publish_date}")
+                details.append(f"📅 {html.escape(doc.publish_date)}")
             if doc.office_unit:
-                details.append(f"🏢 {doc.office_unit}")
+                details.append(f"🏢 {html.escape(doc.office_unit)}")
             details_html = " · ".join(details) if details else ""
             
-            doc_title = f"{doc.doc_number} {doc.title}" if doc.doc_number else doc.title
+            raw_title = f"{doc.doc_number} {doc.title}" if doc.doc_number else doc.title
+            doc_title = html.escape(raw_title or "")
+            doc_href = html.escape(doc.url or "", quote=True)
             
             separator = '<div style="height: 1px; background: #E5E5EA; margin: 16px 0;"></div>' if index > 0 else ""
             
@@ -388,7 +430,7 @@ class Notifier:
             return f'''{separator}
                 <div style="padding: 4px 0;">
                     <div style="display: flex; align-items: flex-start; margin-bottom: 6px;">
-                        <a href="{doc.url}" style="font-size: 14px; font-weight: 500; color: #1D1D1F; text-decoration: none; line-height: 1.4; flex: 1;">{doc_title}</a>
+                        <a href="{doc_href}" style="font-size: 14px; font-weight: 500; color: #1D1D1F; text-decoration: none; line-height: 1.4; flex: 1;">{doc_title}</a>
                         {validity_badge}
                     </div>
                     <div style="font-size: 12px; color: #86868B;">{details_html}</div>
@@ -439,7 +481,7 @@ class Notifier:
                 <div style="font-size: 11px; color: #86868B; margin-top: 2px;">{cat_name}</div>
             </div>'''
         
-        html = f'''<!DOCTYPE html>
+        html_doc = f'''<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -474,5 +516,5 @@ class Notifier:
 </div>
 </body>
 </html>'''
-        
-        return html
+
+        return html_doc

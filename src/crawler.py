@@ -105,6 +105,14 @@ class Document:
         )
 
 
+def _truncate_utf8(text: str, max_bytes: int) -> str:
+    """Truncate a string to at most max_bytes UTF-8 bytes without splitting a char."""
+    encoded = text.encode("utf-8")
+    if len(encoded) <= max_bytes:
+        return text
+    return encoded[:max_bytes].decode("utf-8", errors="ignore")
+
+
 def generate_filename(document: Document, extension: str = ".pdf") -> str:
     """Generate local filename
     
@@ -137,13 +145,17 @@ def generate_filename(document: Document, extension: str = ".pdf") -> str:
     if ext_tail:
         filename = f"{filename}.{ext_tail}"
 
-    if len(filename) > 200:
+    # Filesystem limit is 255 *bytes* on ext4 (CI runner); Chinese chars are
+    # 3 bytes in UTF-8, so a 200-character cap could still produce a ~600-byte
+    # name. Truncate the base on a byte budget, preserving the extension.
+    max_bytes = 200
+    if len(filename.encode("utf-8")) > max_bytes:
         base = "".join(parts)
         if ext_tail:
-            max_base_len = max(1, 200 - 4 - len(ext_tail))
-            filename = f"{base[:max_base_len]}....{ext_tail}"
+            budget = max(1, max_bytes - len(ext_tail.encode("utf-8")) - 1)
+            filename = f"{_truncate_utf8(base, budget)}.{ext_tail}"
         else:
-            filename = base[:200]
+            filename = _truncate_utf8(base, max_bytes)
 
     return filename
 

@@ -8,11 +8,12 @@ __pycache__/
 venv/
 ENV/
 
-# uv
-uv.lock
+# Node / Cloudflare
+node_modules/
+.wrangler/
 
-# Downloads
-# tracked in git for incremental archive
+# uv
+# uv.lock is committed for reproducible CI builds
 
 # IDE
 .idea/
@@ -30,6 +31,7 @@ Thumbs.db
 
 # CI artifact extraction / backups
 _artifact*/
+_artifact*.zip
 backup_*/
 scripts/reports/
 

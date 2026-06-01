@@ -108,7 +108,7 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=default_days,
         metavar="N",
-        help="Send documents from last N days; 0 or unset = incremental (detect new, 30-day cap)",
+        help="Send documents from last N days; 0 or unset = incremental (detect new docs by URL)",
     )
     parser.add_argument(
         "--categories",
@@ -230,7 +230,7 @@ def main() -> int:
     try:
         storage = Storage("data/regulations.json")
         
-        with CaacCrawler() as crawler, Notifier() as notifier:
+        with CaacCrawler() as crawler, Notifier() as notifier, R2Uploader() as r2:
             # 1. Crawl document list from all categories
             logger.info("Step 1/7: Crawling document list...")
             all_documents = crawler.fetch_all_categories(category_ids, args.perpage)
@@ -265,6 +265,7 @@ def main() -> int:
                 download_documents = filtered_documents
             else:
                 # Detect new and updated documents
+                known_total = sum(len(d) for d in storage.load().documents.values())
                 changes = storage.detect_changes(all_documents)
                 
                 if not changes.has_changes:
@@ -298,10 +299,21 @@ def main() -> int:
                         logger.info(f"Detected {updated_count} updated documents (status/title/doc_number etc.)")
 
                     download_documents = _merge_documents(target_documents, changes.updated_documents)
-            
+
+                    if known_total == 0:
+                        logger.warning(
+                            "Empty prior state (first run / recovered from corruption): "
+                            "recording baseline only — skipping notification AND bulk download "
+                            "to avoid a flood. Use --days N for an explicit initial backfill."
+                        )
+                        target_documents = {}
+                        download_documents = {}
+
             # 3. Download/rename files (optional)
             downloaded_files: list[str] = []
-            if not args.no_download:
+            if args.dry_run:
+                logger.info("Step 3/7: Dry-run, skipping file download")
+            elif not args.no_download:
                 logger.info("Step 3/7: Syncing download files...")
                 download_dir = args.download_dir
                 os.makedirs(download_dir, exist_ok=True)
@@ -428,8 +440,9 @@ def main() -> int:
 
             # 4. Upload to R2 (optional)
             r2_url_map: dict[str, str] = {}
-            r2 = R2Uploader()
-            if r2.enabled and not args.no_download:
+            if args.dry_run:
+                logger.info("Step 4/7: Dry-run, skipping R2 upload")
+            elif r2.enabled and not args.no_download:
                 logger.info("Step 4/7: Uploading files to R2...")
                 try:
                     download_index = storage.load_download_index()
@@ -445,14 +458,17 @@ def main() -> int:
                     logger.info("Step 4/7: Skipping R2 upload (no-download mode)")
 
             # 5. Sync JS files for categories 13/14/15
-            logger.info("Step 5/7: Syncing JS data files...")
-            js_summary = storage.sync_js_files(all_documents, "JS", r2_url_map=r2_url_map or None)
-            if js_summary:
-                summary_text = ", ".join(f"{name}={count}" for name, count in js_summary.items())
-                logger.info(f"JS sync complete: {summary_text}")
+            if args.dry_run:
+                logger.info("Step 5/7: Dry-run, skipping JS data sync")
+            else:
+                logger.info("Step 5/7: Syncing JS data files...")
+                js_summary = storage.sync_js_files(all_documents, "JS", r2_url_map=r2_url_map or None)
+                if js_summary:
+                    summary_text = ", ".join(f"{name}={count}" for name, count in js_summary.items())
+                    logger.info(f"JS sync complete: {summary_text}")
 
             # 5b. Upload JSON data to R2 for mini program hot-update
-            if r2.enabled:
+            if r2.enabled and not args.dry_run:
                 logger.info("Step 5b: Uploading JSON data to R2...")
                 json_uploaded = 0
                 for cat_id, config in JS_EXPORT_CONFIG.items():
@@ -469,7 +485,9 @@ def main() -> int:
                 logger.info(f"JSON data upload complete: {json_uploaded} files")
 
             # 6. Send notification
-            if not args.no_notify:
+            if args.dry_run:
+                logger.info("Step 6/7: Dry-run, skipping notifications")
+            elif not args.no_notify:
                 notify_total = sum(len(docs) for docs in target_documents.values())
                 if args.notify == 0 and notify_total == 0:
                     logger.info("Step 6/7: Skipping notifications (no new documents)")
@@ -508,9 +526,10 @@ def main() -> int:
             
             total_target = sum(len(docs) for docs in target_documents.values())
             logger.info("=" * 50)
-            logger.info("CAAC Document Update Monitor - Complete")
+            logger.info("CAAC Document Update Monitor - Complete" + (" (DRY RUN)" if args.dry_run else ""))
             logger.info(f"Notification documents: {total_target}")
-            logger.info(f"PDF files synced: {len(downloaded_files)}")
+            if not args.dry_run:
+                logger.info(f"PDF files synced: {len(downloaded_files)}")
             logger.info("=" * 50)
     
     except KeyboardInterrupt:

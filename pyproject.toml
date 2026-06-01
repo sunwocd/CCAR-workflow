@@ -3,7 +3,7 @@ name = "ccar-workflow"
 version = "0.1.0"
 description = "CAAC Regulation Update Monitor - Automatically detect and notify regulation changes"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 dependencies = [
     # Crawler
     "patchright>=1.49.0", # Anti-detection Playwright

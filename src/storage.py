@@ -522,10 +522,28 @@ class Storage:
         logger.info(f"Download index saved: {len(records)} entries")
 
     def update_state(self, current_documents: dict) -> None:
-        """Update state with current document list"""
-        documents_dict = {}
+        """Update state with current document list.
+
+        Merge semantics: a category that came back empty this run (a transient
+        crawl/WAF failure) keeps its previous state instead of being wiped.
+        Overwriting it with an empty list would make every document in that
+        category re-surface as "new" on the next successful run (notification
+        flood + full re-download). Mirrors the protection in ``sync_js_files``.
+        """
+        previous = self.load().documents
+        documents_dict: dict[str, list[dict]] = {}
         for cat_id, docs in current_documents.items():
-            documents_dict[cat_id] = [doc.to_dict() for doc in docs]
+            if docs:
+                documents_dict[cat_id] = [doc.to_dict() for doc in docs]
+            elif previous.get(cat_id):
+                logger.warning(
+                    f"Category {cat_id} crawled empty; preserving "
+                    f"{len(previous[cat_id])} previous entries to avoid false 'new' detection"
+                )
+                documents_dict[cat_id] = previous[cat_id]
+        # Categories not crawled at all this run: keep their previous state.
+        for cat_id, prev_docs in previous.items():
+            documents_dict.setdefault(cat_id, prev_docs)
         
         state = StorageState(
             last_check=datetime.now().isoformat(),

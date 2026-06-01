@@ -6,7 +6,8 @@ var data = [
     "validity": "有效",
     "publish_date": "2026年05月01日",
     "doc_number": "MH/T 4036-2026",
-    "office_unit": "航空器适航审定司"
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%204036-20261090MHz%20%E6%89%A9%E5%B1%95%E7%94%B5%E6%96%87%E5%B9%BF%E6%92%AD%E5%BC%8F%E8%87%AA%E5%8A%A8%E7%9B%B8%E5%85%B3%E7%9B%91%E8%A7%86%E5%9C%B0%E9%9D%A2%E7%AB%99%EF%BC%88%E6%8E%A5%E6%94%B6%EF%BC%89%E8%AE%BE%E5%A4%87%E6%8A%80%E6%9C%AF%E8%A6%81%E6%B1%82.pdf"
   },
   {
     "title": "民用航空X波段场面监视雷达设备技术要求",
@@ -15,7 +16,8 @@ var data = [
     "validity": "有效",
     "publish_date": "2026年05月01日",
     "doc_number": "MH/T 4043-2026",
-    "office_unit": "航空器适航审定司"
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%204043-2026%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BAX%E6%B3%A2%E6%AE%B5%E5%9C%BA%E9%9D%A2%E7%9B%91%E8%A7%86%E9%9B%B7%E8%BE%BE%E8%AE%BE%E5%A4%87%E6%8A%80%E6%9C%AF%E8%A6%81%E6%B1%82.pdf"
   },
   {
     "title": "民用无人驾驶航空器系统分布式操控员能力要求与评估",
@@ -24,7 +26,8 @@ var data = [
     "validity": "有效",
     "publish_date": "2026年04月24日",
     "doc_number": "MH/T 2018-2026",
-    "office_unit": "航空器适航审定司"
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%202018-2026%E6%B0%91%E7%94%A8%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E8%88%AA%E7%A9%BA%E5%99%A8%E7%B3%BB%E7%BB%9F%E5%88%86%E5%B8%83%E5%BC%8F%E6%93%8D%E6%8E%A7%E5%91%98%E8%83%BD%E5%8A%9B%E8%A6%81%E6%B1%82%E4%B8%8E%E8%AF%84%E4%BC%B0.pdf"
   },
   {
     "title": "大型民用无人驾驶航空器系统操控员训练要求",
@@ -33,7 +36,8 @@ var data = [
     "validity": "有效",
     "publish_date": "2026年04月24日",
     "doc_number": "MH/T 2019-2026",
-    "office_unit": "航空器适航审定司"
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%202019-2026%E5%A4%A7%E5%9E%8B%E6%B0%91%E7%94%A8%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E8%88%AA%E7%A9%BA%E5%99%A8%E7%B3%BB%E7%BB%9F%E6%93%8D%E6%8E%A7%E5%91%98%E8%AE%AD%E7%BB%83%E8%A6%81%E6%B1%82.pdf"
   },
   {
     "title": "高原运输机场建设指南",
@@ -233,7 +237,7 @@ var data = [
     "publish_date": "2025年12月23日",
     "doc_number": "MH/T 6100.1-2025",
     "office_unit": "航空器适航审定司",
-    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%206100.1-2025%E9%A3%9E%E6%9C%BA%E5%8A%A0%E6%B2%B9%E8%AE%BE%E5%A4%87%20%20%E7%AC%AC1%E9%83%A8%E5%88%86%EF%BC%9A%E7%AE%A1%E7%BA%BF%E5%8A%A0%E6%B2%B9%E8%AE%BE%E5%A4%87.pdf"
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%206100.1-2025%E9%A3%9E%E6%9C%BA%E5%8A%A0%E6%B2%B9%E8%AE%BE%E5%A4%87%20%E7%AC%AC1%E9%83%A8%E5%88%86%EF%BC%9A%E7%AE%A1%E7%BA%BF%E5%8A%A0%E6%B2%B9%E8%AE%BE%E5%A4%87.pdf"
   },
   {
     "title": "小型运输机场民用航空燃料质量控制和操作程序",

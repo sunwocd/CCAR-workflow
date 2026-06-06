@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-05T11:01:44.431940",
+  "last_update": "2026-06-06T09:37:46.862075",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6412,6 +6412,10 @@
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260605_230985.html": {
       "relative_path": "other/全国通用航空企业经营许可信息（2026年5月）.pdf",
       "updated_at": "2026-06-05T11:01:44.431934"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260606_230988.html": {
+      "relative_path": "other/关于2025年度通用航空企业诚信经营评价初评结果公示的通知.pdf",
+      "updated_at": "2026-06-06T09:37:46.862071"
     }
   }
 }

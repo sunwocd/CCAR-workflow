@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-06T09:37:46.862075",
+  "last_update": "2026-06-08T12:16:10.520000",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6416,6 +6416,10 @@
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260606_230988.html": {
       "relative_path": "other/关于2025年度通用航空企业诚信经营评价初评结果公示的通知.pdf",
       "updated_at": "2026-06-06T09:37:46.862071"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260608_230989.html": {
+      "relative_path": "other/关于加强运输机场跑道建设项目竣工验收前联合检查的通知.txt",
+      "updated_at": "2026-06-08T12:16:10.519991"
     }
   }
 }

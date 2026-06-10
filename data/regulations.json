@@ -1,7 +1,20 @@
 {
-  "last_check": "2026-06-09T10:48:45.374397",
+  "last_check": "2026-06-10T11:12:04.608269",
   "documents": {
     "9": [
+      {
+        "title": "关于全国航空运输标准化技术委员会换届及征集委员的通知",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260610_230998.html",
+        "category": "通知公告",
+        "category_id": "9",
+        "doc_number": "",
+        "office_unit": "",
+        "sign_date": "2026-06-05",
+        "publish_date": "2026-06-10",
+        "validity": "有效",
+        "pdf_url": "",
+        "has_pdf": false
+      },
       {
         "title": "全国通用航空企业经营许可信息（2026年5月）",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260605_230985.html",
@@ -2573,8 +2586,8 @@
         "sign_date": "2024-10-17",
         "publish_date": "2024-10-21",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202410/P020241021612032520642.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "关于2024年度民航专业工程资质核查部分企业整改材料的公示",
@@ -2585,19 +2598,6 @@
         "office_unit": "",
         "sign_date": "2024-10-16",
         "publish_date": "2024-10-16",
-        "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202410/P020241016619938332597.pdf",
-        "has_pdf": true
-      },
-      {
-        "title": "关于2025年民航发展基金相关补贴资金预算方案的公示",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202410/t20241014_225600.html",
-        "category": "通知公告",
-        "category_id": "9",
-        "doc_number": "",
-        "office_unit": "",
-        "sign_date": "2024-10-14",
-        "publish_date": "2024-10-14",
         "validity": "有效",
         "pdf_url": "",
         "has_pdf": false
@@ -13067,6 +13067,19 @@
     ],
     "15": [
       {
+        "title": "民用航空器加（抽）油规程",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202606/t20260610_230997.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T6005-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-05-28",
+        "publish_date": "2026-05-28",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202606/P020260610354326524975.pdf",
+        "has_pdf": true
+      },
+      {
         "title": "1090MHz 扩展电文广播式自动相关监视地面站（接收）设备技术要求",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260511_230788.html",
         "category": "标准规范",
@@ -15649,19 +15662,6 @@
         "office_unit": "航空器适航审定司",
         "sign_date": "2023-06-05",
         "publish_date": "2023-06-05",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
-      },
-      {
-        "title": "绿色机场评价导则",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202306/t20230629_220479.html",
-        "category": "标准规范",
-        "category_id": "15",
-        "doc_number": "MH/T 5069-2023",
-        "office_unit": "机场司",
-        "sign_date": "2023-06-01",
-        "publish_date": "2023-06-01",
         "validity": "有效",
         "pdf_url": "",
         "has_pdf": false
@@ -20053,6 +20053,19 @@
     ],
     "28": [
       {
+        "title": "关于全国航空运输标准化技术委员会换届及征集委员的通知",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260610_230998.html",
+        "category": "建议提案答复",
+        "category_id": "28",
+        "doc_number": "",
+        "office_unit": "",
+        "sign_date": "2026-06-05",
+        "publish_date": "2026-06-10",
+        "validity": "有效",
+        "pdf_url": "",
+        "has_pdf": false
+      },
+      {
         "title": "全国通用航空企业经营许可信息（2026年5月）",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260605_230985.html",
         "category": "建议提案答复",
@@ -22635,19 +22648,6 @@
         "office_unit": "",
         "sign_date": "2024-10-16",
         "publish_date": "2024-10-16",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
-      },
-      {
-        "title": "关于2025年民航发展基金相关补贴资金预算方案的公示",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202410/t20241014_225600.html",
-        "category": "建议提案答复",
-        "category_id": "28",
-        "doc_number": "",
-        "office_unit": "",
-        "sign_date": "2024-10-14",
-        "publish_date": "2024-10-14",
         "validity": "有效",
         "pdf_url": "",
         "has_pdf": false
@@ -27288,6 +27288,17 @@
   ],
   "standards": [
     {
+      "title": "民用航空器加（抽）油规程",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202606/t20260610_230997.html",
+      "validity": "有效",
+      "doc_number": "MH/T6005-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-05-28",
+      "publish_date": "2026-05-28",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202606/P020260610354326524975.pdf"
+    },
+    {
       "title": "1090MHz 扩展电文广播式自动相关监视地面站（接收）设备技术要求",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260511_230788.html",
       "validity": "有效",
@@ -29474,17 +29485,6 @@
       "doc_type": "standard",
       "sign_date": "2023-06-05",
       "publish_date": "2023-06-05",
-      "pdf_url": ""
-    },
-    {
-      "title": "绿色机场评价导则",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202306/t20230629_220479.html",
-      "validity": "有效",
-      "doc_number": "MH/T 5069-2023",
-      "office_unit": "机场司",
-      "doc_type": "standard",
-      "sign_date": "2023-06-01",
-      "publish_date": "2023-06-01",
       "pdf_url": ""
     }
   ]

@@ -1,5 +1,15 @@
 var data = [
   {
+    "title": "民用航空器加（抽）油规程",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202606/t20260610_230997.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年05月28日",
+    "doc_number": "MH/T6005-2026",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T6005-2026%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%99%A8%E5%8A%A0%EF%BC%88%E6%8A%BD%EF%BC%89%E6%B2%B9%E8%A7%84%E7%A8%8B.pdf"
+  },
+  {
     "title": "1090MHz 扩展电文广播式自动相关监视地面站（接收）设备技术要求",
     "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202605/t20260511_230788.html",
     "doc_type": "标准规范",

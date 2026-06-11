@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-06-10T11:12:04.608269",
+  "last_check": "2026-06-11T11:55:40.940640",
   "documents": {
     "9": [
       {
@@ -13076,8 +13076,8 @@
         "sign_date": "2026-05-28",
         "publish_date": "2026-05-28",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202606/P020260610354326524975.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "1090MHz 扩展电文广播式自动相关监视地面站（接收）设备技术要求",
@@ -27296,7 +27296,7 @@
       "doc_type": "standard",
       "sign_date": "2026-05-28",
       "publish_date": "2026-05-28",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202606/P020260610354326524975.pdf"
+      "pdf_url": ""
     },
     {
       "title": "1090MHz 扩展电文广播式自动相关监视地面站（接收）设备技术要求",

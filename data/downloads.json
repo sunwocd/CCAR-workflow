@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-10T11:11:53.528521",
+  "last_update": "2026-06-12T11:16:35.402785",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6428,6 +6428,10 @@
     "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202606/t20260610_230997.html": {
       "relative_path": "specification/MH_T6005-2026民用航空器加（抽）油规程.pdf",
       "updated_at": "2026-06-10T11:11:53.528391"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260612_231057.html": {
+      "relative_path": "other/民航专业工程招标投标领域违法违规典型案例通报（第二批）.txt",
+      "updated_at": "2026-06-12T11:16:35.402772"
     }
   }
 }

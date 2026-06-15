@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-10T11:11:54.724634",
+  "last_update": "2026-06-15T13:34:40.292119",
   "records": {
     "regulation/交通运输部令2025年第9号运输类旋翼航空器适航规定.pdf": {
       "r2_url": "https://flighttoolbox.hudawang.cn/regulation/%E4%BA%A4%E9%80%9A%E8%BF%90%E8%BE%93%E9%83%A8%E4%BB%A42025%E5%B9%B4%E7%AC%AC9%E5%8F%B7%E8%BF%90%E8%BE%93%E7%B1%BB%E6%97%8B%E7%BF%BC%E8%88%AA%E7%A9%BA%E5%99%A8%E9%80%82%E8%88%AA%E8%A7%84%E5%AE%9A.pdf",
@@ -11404,6 +11404,26 @@
     "specification/MH_T6005-2026民用航空器加（抽）油规程.pdf": {
       "r2_url": "https://flighttoolbox.hudawang.cn/specification/MH_T6005-2026%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%99%A8%E5%8A%A0%EF%BC%88%E6%8A%BD%EF%BC%89%E6%B2%B9%E8%A7%84%E7%A8%8B.pdf",
       "file_size": 665955
+    },
+    "other/国际航线审批结果公开（C2026005）.pdf": {
+      "r2_url": "https://flighttoolbox.hudawang.cn/other/%E5%9B%BD%E9%99%85%E8%88%AA%E7%BA%BF%E5%AE%A1%E6%89%B9%E7%BB%93%E6%9E%9C%E5%85%AC%E5%BC%80%EF%BC%88C2026005%EF%BC%89.pdf",
+      "file_size": 110006
+    },
+    "other/国际航线审批结果公开（C2026004）.pdf": {
+      "r2_url": "https://flighttoolbox.hudawang.cn/other/%E5%9B%BD%E9%99%85%E8%88%AA%E7%BA%BF%E5%AE%A1%E6%89%B9%E7%BB%93%E6%9E%9C%E5%85%AC%E5%BC%80%EF%BC%88C2026004%EF%BC%89.pdf",
+      "file_size": 111475
+    },
+    "other/国际航线审批结果公开（C2026003）.pdf": {
+      "r2_url": "https://flighttoolbox.hudawang.cn/other/%E5%9B%BD%E9%99%85%E8%88%AA%E7%BA%BF%E5%AE%A1%E6%89%B9%E7%BB%93%E6%9E%9C%E5%85%AC%E5%BC%80%EF%BC%88C2026003%EF%BC%89.pdf",
+      "file_size": 123012
+    },
+    "other/国际航线审批结果公开（C2026002）.pdf": {
+      "r2_url": "https://flighttoolbox.hudawang.cn/other/%E5%9B%BD%E9%99%85%E8%88%AA%E7%BA%BF%E5%AE%A1%E6%89%B9%E7%BB%93%E6%9E%9C%E5%85%AC%E5%BC%80%EF%BC%88C2026002%EF%BC%89.pdf",
+      "file_size": 109068
+    },
+    "other/国际航线审批结果公开（C2026001）.pdf": {
+      "r2_url": "https://flighttoolbox.hudawang.cn/other/%E5%9B%BD%E9%99%85%E8%88%AA%E7%BA%BF%E5%AE%A1%E6%89%B9%E7%BB%93%E6%9E%9C%E5%85%AC%E5%BC%80%EF%BC%88C2026001%EF%BC%89.pdf",
+      "file_size": 116275
     }
   }
 }

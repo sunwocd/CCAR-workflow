@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-12T11:16:35.402785",
+  "last_update": "2026-06-15T13:34:36.988699",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6432,6 +6432,30 @@
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260612_231057.html": {
       "relative_path": "other/民航专业工程招标投标领域违法违规典型案例通报（第二批）.txt",
       "updated_at": "2026-06-12T11:16:35.402772"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260615_231083.html": {
+      "relative_path": "other/国际航线审批结果公开（C2026005）.pdf",
+      "updated_at": "2026-06-15T13:34:36.988519"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260615_231082.html": {
+      "relative_path": "other/国际航线审批结果公开（C2026004）.pdf",
+      "updated_at": "2026-06-15T13:34:36.988568"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260615_231081.html": {
+      "relative_path": "other/国际航线审批结果公开（C2026003）.pdf",
+      "updated_at": "2026-06-15T13:34:36.988612"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260615_231080.html": {
+      "relative_path": "other/国际航线审批结果公开（C2026002）.pdf",
+      "updated_at": "2026-06-15T13:34:36.988655"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260615_231079.html": {
+      "relative_path": "other/国际航线审批结果公开（C2026001）.pdf",
+      "updated_at": "2026-06-15T13:34:36.988695"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202606/t20260615_231074.html": {
+      "relative_path": "regulation/交通运输部令2026年第10号公共航空运输企业经营许可规定.txt",
+      "updated_at": "2026-06-15T13:34:36.988436"
     }
   }
 }

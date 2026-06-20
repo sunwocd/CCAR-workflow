@@ -138,8 +138,13 @@ jobs:
           # 构建命令参数
           CMD=(uv run python -m src.main)
 
-          # --categories: 手动触发时用 github.event.inputs，定时任务用 secrets（都可选）
-          CATS="${{ github.event.inputs.categories || secrets.CATEGORIES }}"
+          # --categories: 定时任务固定抓取规章/规范性文件/标准规范；
+          # 手动触发时仍可填写任意分类，留空则跑全部分类。
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            CATS="13,14,15"
+          else
+            CATS="${{ github.event.inputs.categories }}"
+          fi
           if [ -n "$CATS" ]; then
             CMD+=(--categories "$CATS")
           fi

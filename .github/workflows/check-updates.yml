@@ -214,6 +214,7 @@ jobs:
           PY
 
       - name: Publish data JSON to static server
+        continue-on-error: true
         env:
           STATIC_SSH_HOST: ${{ secrets.STATIC_SSH_HOST }}
           STATIC_SSH_PORT: ${{ secrets.STATIC_SSH_PORT }}
@@ -272,7 +273,7 @@ jobs:
 
           # ssh-keyscan can occasionally time out; retry up to 3 times.
           retry 3 5 bash -c '
-            ssh-keyscan -p "$1" -H "$2" >> ~/.ssh/known_hosts 2>/dev/null
+            ssh-keyscan -T 20 -p "$1" -H "$2" >> ~/.ssh/known_hosts 2>/dev/null
           ' _ "$STATIC_SSH_PORT" "$STATIC_SSH_HOST"
 
           SSH_TARGET="$STATIC_SSH_USER@$STATIC_SSH_HOST"

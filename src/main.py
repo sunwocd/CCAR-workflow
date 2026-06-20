@@ -43,6 +43,17 @@ def _merge_documents(*documents_by_category: dict[str, list[Document]]) -> dict[
     return merged
 
 
+def _select_download_documents(
+    new_documents: dict[str, list[Document]],
+    updated_documents: dict[str, list[Document]],
+    include_updated: bool = False,
+) -> dict[str, list[Document]]:
+    """Select documents that need file sync for the incremental run."""
+    if include_updated:
+        return _merge_documents(new_documents, updated_documents)
+    return {cat_id: list(docs) for cat_id, docs in new_documents.items()}
+
+
 def _flatten_documents(documents_by_category: dict[str, list[Document]]) -> list[Document]:
     """Flatten grouped documents"""
     result: list[Document] = []
@@ -341,7 +352,7 @@ def main() -> int:
                     if updated_count > 0:
                         logger.info(f"Detected {updated_count} updated documents (status/title/doc_number etc.)")
 
-                    download_documents = _merge_documents(target_documents, changes.updated_documents)
+                    download_documents = _select_download_documents(target_documents, changes.updated_documents)
 
                     if known_total == 0:
                         logger.warning(

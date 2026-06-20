@@ -26,6 +26,17 @@ WAS5_SEARCH_URL = "https://www.caac.gov.cn/was5/web/search"
 
 # Channel ID for search
 SEARCH_CHANNEL = "211383"
+SPECIAL_SEARCH_CHANNELS = {
+    "13": "269689",
+    "14": "238066",
+}
+WAF_BLOCK_MARKERS = (
+    "502 Bad Gateway",
+    "云防护节点",
+    "源站服务器",
+    "Event ID:",
+    "您的IP",
+)
 
 # Category definitions (fl parameter values and names)
 # Based on the website's "法定主动公开内容 > 主题分类"
@@ -196,6 +207,14 @@ def extract_date_from_url(url: str) -> str:
     return ""
 
 
+def _looks_like_waf_block(html_content: str) -> bool:
+    """Detect CAAC cloud-protection error pages."""
+    if not html_content:
+        return False
+    marker_count = sum(1 for marker in WAF_BLOCK_MARKERS if marker in html_content)
+    return marker_count >= 2
+
+
 class CaacCrawler:
     """CAAC Document Crawler"""
 
@@ -286,6 +305,16 @@ class CaacCrawler:
                         page.wait_for_timeout(2000)
                     
                     content = page.content()
+                    if _looks_like_waf_block(content):
+                        last_error = RuntimeError("CAAC WAF/cloud protection page returned")
+                        logger.warning(
+                            f"CAAC WAF/cloud protection page returned "
+                            f"(attempt {attempt + 1}/{retry_count}): {len(content)} characters"
+                        )
+                        if attempt < retry_count - 1:
+                            time.sleep(2 ** attempt)
+                            continue
+                        return ""
                     logger.info(f"Page fetched successfully: {len(content)} characters")
                     return content
                 finally:
@@ -308,14 +337,16 @@ class CaacCrawler:
 
     def _build_search_url(self, category_id: str, perpage: int, orderby: str) -> str:
         """Build WAS5 search URL for a category"""
-        return (
-            f"{WAS5_SEARCH_URL}?"
-            f"channelid={SEARCH_CHANNEL}&"
-            f"was_custom_expr=+PARENTID%3D%27{category_id}%27+or+CLASSINFOID%3D%27{category_id}%27+&"
-            f"perpage={perpage}&"
-            f"orderby={orderby}&"
-            f"fl={category_id}"
-        )
+        channel_id = SPECIAL_SEARCH_CHANNELS.get(category_id, SEARCH_CHANNEL)
+        params = [
+            "page=1",
+            f"channelid={channel_id}",
+            f"perpage={perpage}",
+            f"orderby={orderby}",
+        ]
+        if category_id != "13":
+            params.append(f"fl={category_id}")
+        return f"{WAS5_SEARCH_URL}?{'&'.join(params)}"
 
     def fetch_category(self, category_id: str, perpage: int = 50) -> list[Document]:
         """Fetch documents from a specific category

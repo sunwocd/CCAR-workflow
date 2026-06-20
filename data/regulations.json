@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-06-20T11:41:00.860365",
+  "last_check": "2026-06-20T12:03:14.317063",
   "documents": {
     "13": [
       {
@@ -2586,8 +2586,8 @@
         "sign_date": "",
         "publish_date": "2004-11-09",
         "validity": "失效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/P020151103350051284860.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "民用机场建设管理规定",
@@ -2599,8 +2599,8 @@
         "sign_date": "",
         "publish_date": "2004-10-12",
         "validity": "失效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/P020151103350061559033.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       }
     ],
     "14": [
@@ -25070,7 +25070,7 @@
       "doc_type": "regulation",
       "sign_date": "",
       "publish_date": "2004-11-09",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/P020151103350051284860.pdf"
+      "pdf_url": ""
     },
     {
       "title": "民用机场建设管理规定",
@@ -25081,7 +25081,7 @@
       "doc_type": "regulation",
       "sign_date": "",
       "publish_date": "2004-10-12",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/P020151103350061559033.pdf"
+      "pdf_url": ""
     }
   ],
   "normatives": [

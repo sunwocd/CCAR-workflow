@@ -54,6 +54,11 @@ def _select_download_documents(
     return {cat_id: list(docs) for cat_id, docs in new_documents.items()}
 
 
+def _find_missing_r2_urls(downloaded_pdf_urls: set[str], r2_url_map: dict[str, str]) -> list[str]:
+    """Find downloaded PDF page URLs that did not receive a public R2 URL."""
+    return sorted(url for url in downloaded_pdf_urls if url not in r2_url_map)
+
+
 def _flatten_documents(documents_by_category: dict[str, list[Document]]) -> list[Document]:
     """Flatten grouped documents"""
     result: list[Document] = []
@@ -179,6 +184,11 @@ def parse_args() -> argparse.Namespace:
         "--repair-txt",
         action="store_true",
         help="Re-download documents previously saved as .txt fallback (categories 13/14/15)",
+    )
+    parser.add_argument(
+        "--download-updated",
+        action="store_true",
+        help="Also download documents whose metadata changed; intended for explicit manual repair runs.",
     )
     parser.add_argument(
         "--backfill-r2",
@@ -324,7 +334,7 @@ def main() -> int:
                 
                 if not changes.has_changes:
                     logger.info("No new or updated documents detected")
-                    if args.notify == 1:
+                    if args.notify == 1 and not args.no_notify:
                         logger.info("Force notify enabled, will send notification with empty results")
                         target_documents = {}
                         download_documents = {}
@@ -352,7 +362,11 @@ def main() -> int:
                     if updated_count > 0:
                         logger.info(f"Detected {updated_count} updated documents (status/title/doc_number etc.)")
 
-                    download_documents = _select_download_documents(target_documents, changes.updated_documents)
+                    download_documents = _select_download_documents(
+                        target_documents,
+                        changes.updated_documents,
+                        include_updated=args.download_updated,
+                    )
 
                     if known_total == 0:
                         logger.warning(
@@ -365,6 +379,7 @@ def main() -> int:
 
             # 3. Download/rename files (optional)
             downloaded_files: list[str] = []
+            downloaded_pdf_urls: set[str] = set()
             if args.dry_run:
                 logger.info("Step 3/7: Dry-run, skipping file download")
             elif not args.no_download:
@@ -467,6 +482,7 @@ def main() -> int:
                             synced_count += 1
                             if saved_path.lower().endswith(".pdf"):
                                 downloaded_files.append(saved_path)
+                                downloaded_pdf_urls.add(doc.url)
                             if old_was_txt:
                                 if saved_path.lower().endswith(".pdf"):
                                     repair_pdf_count += 1
@@ -501,10 +517,17 @@ def main() -> int:
                 try:
                     download_index = storage.load_download_index()
                     r2_index_path = str(Path(storage.data_path).parent / "r2_uploads.json")
-                    r2_url_map = r2.upload_downloads(download_index, "downloads", r2_index_path)
+                    r2_url_map = r2.upload_downloads(download_index, args.download_dir, r2_index_path)
+                    missing_r2_urls = _find_missing_r2_urls(downloaded_pdf_urls, r2_url_map)
+                    if missing_r2_urls:
+                        raise RuntimeError(
+                            "R2 upload missing public URLs for newly downloaded PDFs: "
+                            f"{len(missing_r2_urls)}"
+                        )
                     logger.info(f"R2 upload complete: {len(r2_url_map)} URLs mapped")
                 except Exception as e:
-                    logger.warning(f"R2 upload failed (non-fatal): {e}")
+                    logger.error(f"R2 upload failed: {e}")
+                    raise
             else:
                 if not r2.enabled:
                     logger.info("Step 4/7: R2 not configured, skipping upload")

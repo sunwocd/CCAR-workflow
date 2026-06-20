@@ -64,6 +64,11 @@ on:
         required: false
         type: boolean
         default: false
+      download_updated:
+        description: '手动修复用：同时下载 metadata 变化的文档（默认关闭，避免批量重下）'
+        required: false
+        type: boolean
+        default: false
       backfill_r2:
         description: '补传 R2 缺失的规章/规范性文件/标准规范 PDF（上传中断后修复；不发通知、不改 state）'
         required: false
@@ -73,7 +78,9 @@ on:
 # Prevent concurrent runs
 concurrency:
   group: caac-check
-  cancel-in-progress: true
+  # State files are committed at the end of the run; canceling an in-flight
+  # run can leave downloaded/uploaded files without a committed state update.
+  cancel-in-progress: false
 
 jobs:
   check-updates:
@@ -154,6 +161,10 @@ jobs:
 
           if [ "${{ github.event.inputs.repair_txt }}" = "true" ]; then
             CMD+=(--repair-txt)
+          fi
+
+          if [ "${{ github.event.inputs.download_updated }}" = "true" ]; then
+            CMD+=(--download-updated)
           fi
 
           if [ "${{ github.event.inputs.backfill_r2 }}" = "true" ]; then

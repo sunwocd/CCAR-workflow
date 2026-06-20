@@ -528,13 +528,27 @@ class Storage:
         crawl/WAF failure) keeps its previous state instead of being wiped.
         Overwriting it with an empty list would make every document in that
         category re-surface as "new" on the next successful run (notification
-        flood + full re-download). Mirrors the protection in ``sync_js_files``.
+        flood + full re-download). Non-empty partial fetches also merge by URL:
+        current rows refresh metadata, historical rows not seen this run stay
+        recorded so a transient truncation cannot turn them into future "new"
+        documents. Mirrors the protection in ``sync_js_files``.
         """
         previous = self.load().documents
         documents_dict: dict[str, list[dict]] = {}
         for cat_id, docs in current_documents.items():
             if docs:
-                documents_dict[cat_id] = [doc.to_dict() for doc in docs]
+                current_rows = [doc.to_dict() for doc in docs]
+                seen_urls = {
+                    str(row.get("url", "")).strip()
+                    for row in current_rows
+                    if isinstance(row, dict) and row.get("url")
+                }
+                documents_dict[cat_id] = current_rows + [
+                    row for row in previous.get(cat_id, [])
+                    if not isinstance(row, dict)
+                    or not str(row.get("url", "")).strip()
+                    or str(row.get("url", "")).strip() not in seen_urls
+                ]
             elif previous.get(cat_id):
                 logger.warning(
                     f"Category {cat_id} crawled empty; preserving "

@@ -1,7 +1,7 @@
 import unittest
 
 from src.crawler import Document
-from src.main import _select_download_documents
+from src.main import _find_missing_r2_urls, _select_download_documents
 
 
 def make_doc(url: str, category_id: str = "13") -> Document:
@@ -38,6 +38,21 @@ class DownloadSelectionTests(unittest.TestCase):
         )
 
         self.assertEqual({"13": [new_doc, updated_doc]}, selected)
+
+
+class R2UrlValidationTests(unittest.TestCase):
+    def test_reports_downloaded_pdf_urls_missing_from_r2_map(self):
+        missing = _find_missing_r2_urls(
+            {
+                "https://example.test/has-url",
+                "https://example.test/missing-url",
+            },
+            {
+                "https://example.test/has-url": "https://files.example.test/doc.pdf",
+            },
+        )
+
+        self.assertEqual(["https://example.test/missing-url"], missing)
 
 
 if __name__ == "__main__":

@@ -1,5 +1,15 @@
 var data = [
   {
+    "title": "AG600飞机锚泊载荷专用条件",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202606/t20260630_231170.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年06月10日",
+    "doc_number": "SC-25-091",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/SC-25-091AG600%E9%A3%9E%E6%9C%BA%E9%94%9A%E6%B3%8A%E8%BD%BD%E8%8D%B7%E4%B8%93%E7%94%A8%E6%9D%A1%E4%BB%B6.pdf"
+  },
+  {
     "title": "民用航空器加（抽）油规程",
     "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202606/t20260610_230997.html",
     "doc_type": "标准规范",

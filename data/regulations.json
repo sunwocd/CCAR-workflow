@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-06-29T12:13:47.343297",
+  "last_check": "2026-06-30T10:42:53.147141",
   "documents": {
     "13": [
       {
@@ -5206,6 +5206,19 @@
       }
     ],
     "15": [
+      {
+        "title": "AG600飞机锚泊载荷专用条件",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202606/t20260630_231170.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "SC-25-091",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-06-10",
+        "publish_date": "2026-06-10",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202606/P020260630510982934621.pdf",
+        "has_pdf": true
+      },
       {
         "title": "民用航空器加（抽）油规程",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202606/t20260610_230997.html",
@@ -27287,6 +27300,17 @@
     }
   ],
   "standards": [
+    {
+      "title": "AG600飞机锚泊载荷专用条件",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202606/t20260630_231170.html",
+      "validity": "有效",
+      "doc_number": "SC-25-091",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-06-10",
+      "publish_date": "2026-06-10",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202606/P020260630510982934621.pdf"
+    },
     {
       "title": "民用航空器加（抽）油规程",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202606/t20260610_230997.html",

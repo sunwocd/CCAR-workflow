@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-20T11:40:51.956833",
+  "last_update": "2026-06-30T10:42:43.922893",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6456,6 +6456,10 @@
     "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202606/t20260615_231074.html": {
       "relative_path": "regulation/交通运输部令2026年第10号公共航空运输企业经营许可规定.txt",
       "updated_at": "2026-06-15T13:34:36.988436"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202606/t20260630_231170.html": {
+      "relative_path": "specification/SC-25-091AG600飞机锚泊载荷专用条件.pdf",
+      "updated_at": "2026-06-30T10:42:43.922874"
     }
   }
 }

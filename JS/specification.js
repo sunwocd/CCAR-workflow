@@ -1,5 +1,45 @@
 var data = [
   {
+    "title": "航空货物运输品名分类与代码",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260701_231200.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年06月12日",
+    "doc_number": "MH/T 1089-2026",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%201089-2026%E8%88%AA%E7%A9%BA%E8%B4%A7%E7%89%A9%E8%BF%90%E8%BE%93%E5%93%81%E5%90%8D%E5%88%86%E7%B1%BB%E4%B8%8E%E4%BB%A3%E7%A0%81.pdf"
+  },
+  {
+    "title": "航空5G AeroMACS网络配置与建设规范",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260701_231199.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年06月12日",
+    "doc_number": "MH/T 4061-2026",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%204061-2026%E8%88%AA%E7%A9%BA5G%20AeroMACS%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%BB%BA%E8%AE%BE%E8%A7%84%E8%8C%83.pdf"
+  },
+  {
+    "title": "航空5G AeroMACS地面站技术要求",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260701_231198.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年06月12日",
+    "doc_number": "MH/T 4065-2026",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%204065-2026%E8%88%AA%E7%A9%BA5G%20AeroMACS%E5%9C%B0%E9%9D%A2%E7%AB%99%E6%8A%80%E6%9C%AF%E8%A6%81%E6%B1%82.pdf"
+  },
+  {
+    "title": "航空5G AeroMACS网络接入技术要求",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260701_231197.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年06月12日",
+    "doc_number": "MH/T 4062-2026",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%204062-2026%E8%88%AA%E7%A9%BA5G%20AeroMACS%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%85%A5%E6%8A%80%E6%9C%AF%E8%A6%81%E6%B1%82.pdf"
+  },
+  {
     "title": "AG600飞机锚泊载荷专用条件",
     "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202606/t20260630_231170.html",
     "doc_type": "标准规范",

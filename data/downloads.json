@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-30T10:42:43.922893",
+  "last_update": "2026-07-01T10:53:21.578303",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6460,6 +6460,22 @@
     "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202606/t20260630_231170.html": {
       "relative_path": "specification/SC-25-091AG600飞机锚泊载荷专用条件.pdf",
       "updated_at": "2026-06-30T10:42:43.922874"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260701_231200.html": {
+      "relative_path": "specification/MH_T 1089-2026航空货物运输品名分类与代码.pdf",
+      "updated_at": "2026-07-01T10:52:16.815653"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260701_231199.html": {
+      "relative_path": "specification/MH_T 4061-2026航空5G AeroMACS网络配置与建设规范.pdf",
+      "updated_at": "2026-07-01T10:52:39.327111"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260701_231198.html": {
+      "relative_path": "specification/MH_T 4065-2026航空5G AeroMACS地面站技术要求.pdf",
+      "updated_at": "2026-07-01T10:52:57.766789"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260701_231197.html": {
+      "relative_path": "specification/MH_T 4062-2026航空5G AeroMACS网络接入技术要求.pdf",
+      "updated_at": "2026-07-01T10:53:21.578287"
     }
   }
 }

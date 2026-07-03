@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-02T10:19:07.646658",
+  "last_check": "2026-07-03T10:13:34.755757",
   "documents": {
     "13": [
       {
@@ -2605,94 +2605,16 @@
     ],
     "14": [
       {
-        "title": "型号合格审定程序",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231208.html",
+        "title": "飞行训练中心质量管理体系建设要求",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260703_231219.html",
         "category": "规范性文件",
         "category_id": "14",
-        "doc_number": "AP-21-11R2",
-        "office_unit": "航空器适航审定司",
+        "doc_number": "AC-142-FS-001",
+        "office_unit": "飞行标准司",
         "sign_date": "2026-06-25",
         "publish_date": "2026-06-25",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701736960460304.pdf",
-        "has_pdf": true
-      },
-      {
-        "title": "生产机构审定和监督程序",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231207.html",
-        "category": "规范性文件",
-        "category_id": "14",
-        "doc_number": "AP-21-31R3",
-        "office_unit": "航空器适航审定司",
-        "sign_date": "2026-06-25",
-        "publish_date": "2026-06-25",
-        "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701735823892515.pdf",
-        "has_pdf": true
-      },
-      {
-        "title": "批准放行证书的签发和管理程序",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231206.html",
-        "category": "规范性文件",
-        "category_id": "14",
-        "doc_number": "AP-21-52R1",
-        "office_unit": "航空器适航审定司",
-        "sign_date": "2026-06-25",
-        "publish_date": "2026-06-25",
-        "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701734791403452.pdf",
-        "has_pdf": true
-      },
-      {
-        "title": "技术标准规定项目批准书合格审定程序",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231205.html",
-        "category": "规范性文件",
-        "category_id": "14",
-        "doc_number": "AP-21-12R1",
-        "office_unit": "航空器适航审定司",
-        "sign_date": "2026-06-25",
-        "publish_date": "2026-06-25",
-        "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701733715485630.pdf",
-        "has_pdf": true
-      },
-      {
-        "title": "设计机构审定和监督程序",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231203.html",
-        "category": "规范性文件",
-        "category_id": "14",
-        "doc_number": "AP-21-18",
-        "office_unit": "航空器适航审定司",
-        "sign_date": "2026-06-25",
-        "publish_date": "2026-06-25",
-        "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701729785929463.pdf",
-        "has_pdf": true
-      },
-      {
-        "title": "无生产机构许可证生产的监管程序",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231204.html",
-        "category": "规范性文件",
-        "category_id": "14",
-        "doc_number": "AP-21-33R1",
-        "office_unit": "航空器适航审定司",
-        "sign_date": "2026-06-25",
-        "publish_date": "2026-06-25",
-        "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701731413312816.pdf",
-        "has_pdf": true
-      },
-      {
-        "title": "民用航空器国籍登记和民用无人驾驶航空器实名登记管理程序",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231202.html",
-        "category": "规范性文件",
-        "category_id": "14",
-        "doc_number": "AP-45-01R6",
-        "office_unit": "航空器适航审定司",
-        "sign_date": "2026-06-25",
-        "publish_date": "2026-06-25",
-        "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701728288653214.pdf",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260703582548547183.pdf",
         "has_pdf": true
       },
       {
@@ -2705,8 +2627,99 @@
         "sign_date": "2026-06-25",
         "publish_date": "2026-06-25",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701726532550458.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
+      },
+      {
+        "title": "型号合格审定程序",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231208.html",
+        "category": "规范性文件",
+        "category_id": "14",
+        "doc_number": "AP-21-11R2",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-06-25",
+        "publish_date": "2026-06-25",
+        "validity": "有效",
+        "pdf_url": "",
+        "has_pdf": false
+      },
+      {
+        "title": "生产机构审定和监督程序",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231207.html",
+        "category": "规范性文件",
+        "category_id": "14",
+        "doc_number": "AP-21-31R3",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-06-25",
+        "publish_date": "2026-06-25",
+        "validity": "有效",
+        "pdf_url": "",
+        "has_pdf": false
+      },
+      {
+        "title": "批准放行证书的签发和管理程序",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231206.html",
+        "category": "规范性文件",
+        "category_id": "14",
+        "doc_number": "AP-21-52R1",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-06-25",
+        "publish_date": "2026-06-25",
+        "validity": "有效",
+        "pdf_url": "",
+        "has_pdf": false
+      },
+      {
+        "title": "技术标准规定项目批准书合格审定程序",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231205.html",
+        "category": "规范性文件",
+        "category_id": "14",
+        "doc_number": "AP-21-12R1",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-06-25",
+        "publish_date": "2026-06-25",
+        "validity": "有效",
+        "pdf_url": "",
+        "has_pdf": false
+      },
+      {
+        "title": "设计机构审定和监督程序",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231203.html",
+        "category": "规范性文件",
+        "category_id": "14",
+        "doc_number": "AP-21-18",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-06-25",
+        "publish_date": "2026-06-25",
+        "validity": "有效",
+        "pdf_url": "",
+        "has_pdf": false
+      },
+      {
+        "title": "无生产机构许可证生产的监管程序",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231204.html",
+        "category": "规范性文件",
+        "category_id": "14",
+        "doc_number": "AP-21-33R1",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-06-25",
+        "publish_date": "2026-06-25",
+        "validity": "有效",
+        "pdf_url": "",
+        "has_pdf": false
+      },
+      {
+        "title": "民用航空器国籍登记和民用无人驾驶航空器实名登记管理程序",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231202.html",
+        "category": "规范性文件",
+        "category_id": "14",
+        "doc_number": "AP-45-01R6",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-06-25",
+        "publish_date": "2026-06-25",
+        "validity": "有效",
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "运输类飞机GNSS 干扰处置指南",
@@ -25255,81 +25268,15 @@
   ],
   "normatives": [
     {
-      "title": "型号合格审定程序",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231208.html",
+      "title": "飞行训练中心质量管理体系建设要求",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260703_231219.html",
       "validity": "有效",
-      "doc_number": "AP-21-11R2",
-      "office_unit": "航空器适航审定司",
+      "doc_number": "AC-142-FS-001",
+      "office_unit": "飞行标准司",
       "doc_type": "normative",
       "sign_date": "2026-06-25",
       "publish_date": "2026-06-25",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701736960460304.pdf"
-    },
-    {
-      "title": "生产机构审定和监督程序",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231207.html",
-      "validity": "有效",
-      "doc_number": "AP-21-31R3",
-      "office_unit": "航空器适航审定司",
-      "doc_type": "normative",
-      "sign_date": "2026-06-25",
-      "publish_date": "2026-06-25",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701735823892515.pdf"
-    },
-    {
-      "title": "批准放行证书的签发和管理程序",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231206.html",
-      "validity": "有效",
-      "doc_number": "AP-21-52R1",
-      "office_unit": "航空器适航审定司",
-      "doc_type": "normative",
-      "sign_date": "2026-06-25",
-      "publish_date": "2026-06-25",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701734791403452.pdf"
-    },
-    {
-      "title": "技术标准规定项目批准书合格审定程序",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231205.html",
-      "validity": "有效",
-      "doc_number": "AP-21-12R1",
-      "office_unit": "航空器适航审定司",
-      "doc_type": "normative",
-      "sign_date": "2026-06-25",
-      "publish_date": "2026-06-25",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701733715485630.pdf"
-    },
-    {
-      "title": "设计机构审定和监督程序",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231203.html",
-      "validity": "有效",
-      "doc_number": "AP-21-18",
-      "office_unit": "航空器适航审定司",
-      "doc_type": "normative",
-      "sign_date": "2026-06-25",
-      "publish_date": "2026-06-25",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701729785929463.pdf"
-    },
-    {
-      "title": "无生产机构许可证生产的监管程序",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231204.html",
-      "validity": "有效",
-      "doc_number": "AP-21-33R1",
-      "office_unit": "航空器适航审定司",
-      "doc_type": "normative",
-      "sign_date": "2026-06-25",
-      "publish_date": "2026-06-25",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701731413312816.pdf"
-    },
-    {
-      "title": "民用航空器国籍登记和民用无人驾驶航空器实名登记管理程序",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231202.html",
-      "validity": "有效",
-      "doc_number": "AP-45-01R6",
-      "office_unit": "航空器适航审定司",
-      "doc_type": "normative",
-      "sign_date": "2026-06-25",
-      "publish_date": "2026-06-25",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701728288653214.pdf"
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260703582548547183.pdf"
     },
     {
       "title": "补充型号合格证和改装设计批准书合格审定程序",
@@ -25340,7 +25287,84 @@
       "doc_type": "normative",
       "sign_date": "2026-06-25",
       "publish_date": "2026-06-25",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260701726532550458.pdf"
+      "pdf_url": ""
+    },
+    {
+      "title": "型号合格审定程序",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231208.html",
+      "validity": "有效",
+      "doc_number": "AP-21-11R2",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "normative",
+      "sign_date": "2026-06-25",
+      "publish_date": "2026-06-25",
+      "pdf_url": ""
+    },
+    {
+      "title": "生产机构审定和监督程序",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231207.html",
+      "validity": "有效",
+      "doc_number": "AP-21-31R3",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "normative",
+      "sign_date": "2026-06-25",
+      "publish_date": "2026-06-25",
+      "pdf_url": ""
+    },
+    {
+      "title": "批准放行证书的签发和管理程序",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231206.html",
+      "validity": "有效",
+      "doc_number": "AP-21-52R1",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "normative",
+      "sign_date": "2026-06-25",
+      "publish_date": "2026-06-25",
+      "pdf_url": ""
+    },
+    {
+      "title": "技术标准规定项目批准书合格审定程序",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231205.html",
+      "validity": "有效",
+      "doc_number": "AP-21-12R1",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "normative",
+      "sign_date": "2026-06-25",
+      "publish_date": "2026-06-25",
+      "pdf_url": ""
+    },
+    {
+      "title": "设计机构审定和监督程序",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231203.html",
+      "validity": "有效",
+      "doc_number": "AP-21-18",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "normative",
+      "sign_date": "2026-06-25",
+      "publish_date": "2026-06-25",
+      "pdf_url": ""
+    },
+    {
+      "title": "无生产机构许可证生产的监管程序",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231204.html",
+      "validity": "有效",
+      "doc_number": "AP-21-33R1",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "normative",
+      "sign_date": "2026-06-25",
+      "publish_date": "2026-06-25",
+      "pdf_url": ""
+    },
+    {
+      "title": "民用航空器国籍登记和民用无人驾驶航空器实名登记管理程序",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231202.html",
+      "validity": "有效",
+      "doc_number": "AP-45-01R6",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "normative",
+      "sign_date": "2026-06-25",
+      "publish_date": "2026-06-25",
+      "pdf_url": ""
     },
     {
       "title": "运输类飞机GNSS 干扰处置指南",

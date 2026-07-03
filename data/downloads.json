@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-07-02T10:18:53.691736",
+  "last_update": "2026-07-03T10:13:24.875802",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6508,6 +6508,10 @@
     "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231201.html": {
       "relative_path": "normative/AP-21-14R3补充型号合格证和改装设计批准书合格审定程序.pdf",
       "updated_at": "2026-07-02T10:18:53.691720"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260703_231219.html": {
+      "relative_path": "normative/AC-142-FS-001飞行训练中心质量管理体系建设要求.pdf",
+      "updated_at": "2026-07-03T10:13:24.875782"
     }
   }
 }

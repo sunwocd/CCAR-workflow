@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-03T10:13:34.755757",
+  "last_check": "2026-07-04T09:34:23.404597",
   "documents": {
     "13": [
       {
@@ -2614,8 +2614,8 @@
         "sign_date": "2026-06-25",
         "publish_date": "2026-06-25",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260703582548547183.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "补充型号合格证和改装设计批准书合格审定程序",
@@ -25276,7 +25276,7 @@
       "doc_type": "normative",
       "sign_date": "2026-06-25",
       "publish_date": "2026-06-25",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260703582548547183.pdf"
+      "pdf_url": ""
     },
     {
       "title": "补充型号合格证和改装设计批准书合格审定程序",

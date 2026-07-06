@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-05T09:50:46.466457",
+  "last_check": "2026-07-06T11:47:49.825491",
   "documents": {
     "13": [
       {
@@ -5478,6 +5478,45 @@
         "validity": "有效",
         "pdf_url": "",
         "has_pdf": false
+      },
+      {
+        "title": "通用机场规划建设指南（第3部分：水上机场）",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260706_231223.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 5026.3-2026",
+        "office_unit": "机场司",
+        "sign_date": "2026-03-24",
+        "publish_date": "2026-03-24",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/P020260706355133635359.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "通用机场规划建设指南（第2部分：直升机场）",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260706_231222.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 5026.2-2026",
+        "office_unit": "机场司",
+        "sign_date": "2026-03-24",
+        "publish_date": "2026-03-24",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/P020260706352257712036.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "通用机场规划建设指南（第1部分：跑道型机场）",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260706_231221.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 5026.1-2026",
+        "office_unit": "机场司",
+        "sign_date": "2026-03-24",
+        "publish_date": "2026-03-24",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/P020260706349265043390.pdf",
+        "has_pdf": true
       },
       {
         "title": "机载互联网协议语音（VoIP）话机",
@@ -27699,6 +27738,39 @@
       "sign_date": "2026-03-25",
       "publish_date": "2026-03-25",
       "pdf_url": ""
+    },
+    {
+      "title": "通用机场规划建设指南（第3部分：水上机场）",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260706_231223.html",
+      "validity": "有效",
+      "doc_number": "MH/T 5026.3-2026",
+      "office_unit": "机场司",
+      "doc_type": "standard",
+      "sign_date": "2026-03-24",
+      "publish_date": "2026-03-24",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/P020260706355133635359.pdf"
+    },
+    {
+      "title": "通用机场规划建设指南（第2部分：直升机场）",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260706_231222.html",
+      "validity": "有效",
+      "doc_number": "MH/T 5026.2-2026",
+      "office_unit": "机场司",
+      "doc_type": "standard",
+      "sign_date": "2026-03-24",
+      "publish_date": "2026-03-24",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/P020260706352257712036.pdf"
+    },
+    {
+      "title": "通用机场规划建设指南（第1部分：跑道型机场）",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260706_231221.html",
+      "validity": "有效",
+      "doc_number": "MH/T 5026.1-2026",
+      "office_unit": "机场司",
+      "doc_type": "standard",
+      "sign_date": "2026-03-24",
+      "publish_date": "2026-03-24",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/P020260706349265043390.pdf"
     },
     {
       "title": "机载互联网协议语音（VoIP）话机",

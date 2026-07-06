@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-07-03T10:13:24.875802",
+  "last_update": "2026-07-06T11:47:39.022468",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6512,6 +6512,18 @@
     "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260703_231219.html": {
       "relative_path": "normative/AC-142-FS-001飞行训练中心质量管理体系建设要求.pdf",
       "updated_at": "2026-07-03T10:13:24.875782"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260706_231223.html": {
+      "relative_path": "specification/MH_T 5026.3-2026通用机场规划建设指南（第3部分：水上机场）.pdf",
+      "updated_at": "2026-07-06T11:46:57.078247"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260706_231222.html": {
+      "relative_path": "specification/MH_T 5026.2-2026通用机场规划建设指南（第2部分：直升机场）.pdf",
+      "updated_at": "2026-07-06T11:47:15.819325"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260706_231221.html": {
+      "relative_path": "specification/MH_T 5026.1-2026通用机场规划建设指南（第1部分：跑道型机场）.pdf",
+      "updated_at": "2026-07-06T11:47:39.022451"
     }
   }
 }

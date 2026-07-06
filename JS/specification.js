@@ -120,6 +120,36 @@ var data = [
     "pdf_url": "https://flighttoolbox.hudawang.cn/specification/SC-29-06AC332%E5%9E%8B%E7%9B%B4%E5%8D%87%E6%9C%BAAEO%2030%E5%88%86%E9%92%9F%E5%8A%9F%E7%8E%87%E7%8A%B6%E6%80%81%E4%B8%93%E7%94%A8%E6%9D%A1%E4%BB%B6.pdf"
   },
   {
+    "title": "通用机场规划建设指南（第3部分：水上机场）",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260706_231223.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年03月24日",
+    "doc_number": "MH/T 5026.3-2026",
+    "office_unit": "机场司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%205026.3-2026%E9%80%9A%E7%94%A8%E6%9C%BA%E5%9C%BA%E8%A7%84%E5%88%92%E5%BB%BA%E8%AE%BE%E6%8C%87%E5%8D%97%EF%BC%88%E7%AC%AC3%E9%83%A8%E5%88%86%EF%BC%9A%E6%B0%B4%E4%B8%8A%E6%9C%BA%E5%9C%BA%EF%BC%89.pdf"
+  },
+  {
+    "title": "通用机场规划建设指南（第2部分：直升机场）",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260706_231222.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年03月24日",
+    "doc_number": "MH/T 5026.2-2026",
+    "office_unit": "机场司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%205026.2-2026%E9%80%9A%E7%94%A8%E6%9C%BA%E5%9C%BA%E8%A7%84%E5%88%92%E5%BB%BA%E8%AE%BE%E6%8C%87%E5%8D%97%EF%BC%88%E7%AC%AC2%E9%83%A8%E5%88%86%EF%BC%9A%E7%9B%B4%E5%8D%87%E6%9C%BA%E5%9C%BA%EF%BC%89.pdf"
+  },
+  {
+    "title": "通用机场规划建设指南（第1部分：跑道型机场）",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260706_231221.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年03月24日",
+    "doc_number": "MH/T 5026.1-2026",
+    "office_unit": "机场司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%205026.1-2026%E9%80%9A%E7%94%A8%E6%9C%BA%E5%9C%BA%E8%A7%84%E5%88%92%E5%BB%BA%E8%AE%BE%E6%8C%87%E5%8D%97%EF%BC%88%E7%AC%AC1%E9%83%A8%E5%88%86%EF%BC%9A%E8%B7%91%E9%81%93%E5%9E%8B%E6%9C%BA%E5%9C%BA%EF%BC%89.pdf"
+  },
+  {
     "title": "机载互联网协议语音（VoIP）话机",
     "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/JSBZGD/202602/t20260228_230140.html",
     "doc_type": "标准规范",

@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-08T09:42:26.617752",
+  "last_check": "2026-07-09T10:35:20.418730",
   "documents": {
     "13": [
       {
@@ -1615,6 +1615,19 @@
         "has_pdf": false
       },
       {
+        "title": "民用航空空中交通管制员执照管理规则",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201605/t20160530_37652.html",
+        "category": "民航规章",
+        "category_id": "13",
+        "doc_number": "CCAR-66TM-I-R4",
+        "office_unit": "",
+        "sign_date": "",
+        "publish_date": "2016-03-17",
+        "validity": "失效",
+        "pdf_url": "",
+        "has_pdf": false
+      },
+      {
         "title": "运输类飞机的持续适航和安全改进规定",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201701/t20170119_41846.html",
         "category": "民航规章",
@@ -1698,19 +1711,6 @@
         "category": "民航规章",
         "category_id": "13",
         "doc_number": "CCAR-65TM-II-R3",
-        "office_unit": "",
-        "sign_date": "",
-        "publish_date": "2016-03-17",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
-      },
-      {
-        "title": "民用航空空中交通管制员执照管理规则",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201605/t20160530_37652.html",
-        "category": "民航规章",
-        "category_id": "13",
-        "doc_number": "CCAR-66TM-I-R4",
         "office_unit": "",
         "sign_date": "",
         "publish_date": "2016-03-17",
@@ -2720,6 +2720,19 @@
         "validity": "有效",
         "pdf_url": "",
         "has_pdf": false
+      },
+      {
+        "title": "关于加强残疾人航空运输保障能力的若干措施",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260709_231243.html",
+        "category": "规范性文件",
+        "category_id": "14",
+        "doc_number": "",
+        "office_unit": "运输司",
+        "sign_date": "2026-06-15",
+        "publish_date": "2026-06-15",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260709382729569138.pdf",
+        "has_pdf": true
       },
       {
         "title": "运输类飞机GNSS 干扰处置指南",
@@ -24469,6 +24482,17 @@
       "pdf_url": ""
     },
     {
+      "title": "民用航空空中交通管制员执照管理规则",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201605/t20160530_37652.html",
+      "validity": "失效",
+      "doc_number": "CCAR-66TM-I-R4",
+      "office_unit": "",
+      "doc_type": "regulation",
+      "sign_date": "",
+      "publish_date": "2016-03-17",
+      "pdf_url": ""
+    },
+    {
       "title": "运输类飞机的持续适航和安全改进规定",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201701/t20170119_41846.html",
       "validity": "有效",
@@ -24539,17 +24563,6 @@
       "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201605/t20160530_37651.html",
       "validity": "有效",
       "doc_number": "CCAR-65TM-II-R3",
-      "office_unit": "",
-      "doc_type": "regulation",
-      "sign_date": "",
-      "publish_date": "2016-03-17",
-      "pdf_url": ""
-    },
-    {
-      "title": "民用航空空中交通管制员执照管理规则",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201605/t20160530_37652.html",
-      "validity": "有效",
-      "doc_number": "CCAR-66TM-I-R4",
       "office_unit": "",
       "doc_type": "regulation",
       "sign_date": "",
@@ -25404,6 +25417,17 @@
       "sign_date": "2026-06-25",
       "publish_date": "2026-06-25",
       "pdf_url": ""
+    },
+    {
+      "title": "关于加强残疾人航空运输保障能力的若干措施",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260709_231243.html",
+      "validity": "有效",
+      "doc_number": "",
+      "office_unit": "运输司",
+      "doc_type": "normative",
+      "sign_date": "2026-06-15",
+      "publish_date": "2026-06-15",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260709382729569138.pdf"
     },
     {
       "title": "运输类飞机GNSS 干扰处置指南",

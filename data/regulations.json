@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-09T10:35:20.418730",
+  "last_check": "2026-07-10T10:31:44.874025",
   "documents": {
     "13": [
       {
@@ -2731,8 +2731,8 @@
         "sign_date": "2026-06-15",
         "publish_date": "2026-06-15",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260709382729569138.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "运输类飞机GNSS 干扰处置指南",
@@ -25427,7 +25427,7 @@
       "doc_type": "normative",
       "sign_date": "2026-06-15",
       "publish_date": "2026-06-15",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/P020260709382729569138.pdf"
+      "pdf_url": ""
     },
     {
       "title": "运输类飞机GNSS 干扰处置指南",

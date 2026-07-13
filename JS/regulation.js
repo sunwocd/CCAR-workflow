@@ -661,7 +661,7 @@ var data = [
     "title": "民用航空安全管理规定",
     "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201803/t20180313_55750.html",
     "doc_type": "CCAR规章",
-    "validity": "有效",
+    "validity": "失效",
     "doc_number": "CCAR-398",
     "office_unit": "政策法规司"
   },

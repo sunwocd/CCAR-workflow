@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-07-09T10:35:11.722088",
+  "last_update": "2026-07-15T09:25:26.540886",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6528,6 +6528,10 @@
     "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260709_231243.html": {
       "relative_path": "normative/关于加强残疾人航空运输保障能力的若干措施.pdf",
       "updated_at": "2026-07-09T10:35:11.722074"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202607/t20260715_231266.html": {
+      "relative_path": "specification/SC-25-090MA60型飞机（TC证后）搜救机项目-空投任务.pdf",
+      "updated_at": "2026-07-15T09:25:26.540864"
     }
   }
 }

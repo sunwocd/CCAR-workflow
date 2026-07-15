@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-14T09:21:21.363165",
+  "last_check": "2026-07-15T09:25:36.846795",
   "documents": {
     "13": [
       {
@@ -5336,6 +5336,19 @@
       }
     ],
     "15": [
+      {
+        "title": "MA60型飞机（TC证后）搜救机项目-空投任务",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202607/t20260715_231266.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "SC-25-090",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-06-24",
+        "publish_date": "2026-06-24",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202607/P020260715523494303863.pdf",
+        "has_pdf": true
+      },
       {
         "title": "航空货物运输品名分类与代码",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260701_231200.html",
@@ -27631,6 +27644,17 @@
     }
   ],
   "standards": [
+    {
+      "title": "MA60型飞机（TC证后）搜救机项目-空投任务",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202607/t20260715_231266.html",
+      "validity": "有效",
+      "doc_number": "SC-25-090",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-06-24",
+      "publish_date": "2026-06-24",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202607/P020260715523494303863.pdf"
+    },
     {
       "title": "航空货物运输品名分类与代码",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260701_231200.html",

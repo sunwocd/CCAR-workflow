@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-15T09:25:36.846795",
+  "last_check": "2026-07-16T09:33:16.514024",
   "documents": {
     "13": [
       {
@@ -5346,8 +5346,8 @@
         "sign_date": "2026-06-24",
         "publish_date": "2026-06-24",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202607/P020260715523494303863.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "航空货物运输品名分类与代码",
@@ -27653,7 +27653,7 @@
       "doc_type": "standard",
       "sign_date": "2026-06-24",
       "publish_date": "2026-06-24",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202607/P020260715523494303863.pdf"
+      "pdf_url": ""
     },
     {
       "title": "航空货物运输品名分类与代码",

@@ -1,7 +1,33 @@
 {
-  "last_check": "2026-07-16T09:33:16.514024",
+  "last_check": "2026-07-17T09:25:54.620924",
   "documents": {
     "13": [
+      {
+        "title": "通用航空经营管理规定",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/t20260717_231321.html",
+        "category": "民航规章",
+        "category_id": "13",
+        "doc_number": "CCAR-290-R4",
+        "office_unit": "政策法规司",
+        "sign_date": "",
+        "publish_date": "2026-07-01",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/P020260717459628983882.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "通用航空运营许可程序规定",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/t20260717_231320.html",
+        "category": "民航规章",
+        "category_id": "13",
+        "doc_number": "CCAR-120",
+        "office_unit": "政策法规司",
+        "sign_date": "",
+        "publish_date": "2026-07-01",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/P020260717450383484078.pdf",
+        "has_pdf": true
+      },
       {
         "title": "公共航空运输企业经营许可规定",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202606/t20260615_231074.html",
@@ -622,7 +648,7 @@
         "office_unit": "政策法规司",
         "sign_date": "",
         "publish_date": "2020-08-26",
-        "validity": "有效",
+        "validity": "失效",
         "pdf_url": "",
         "has_pdf": false
       },
@@ -23131,6 +23157,28 @@
   },
   "regulations": [
     {
+      "title": "通用航空经营管理规定",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/t20260717_231321.html",
+      "validity": "有效",
+      "doc_number": "CCAR-290-R4",
+      "office_unit": "政策法规司",
+      "doc_type": "regulation",
+      "sign_date": "",
+      "publish_date": "2026-07-01",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/P020260717459628983882.pdf"
+    },
+    {
+      "title": "通用航空运营许可程序规定",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/t20260717_231320.html",
+      "validity": "有效",
+      "doc_number": "CCAR-120",
+      "office_unit": "政策法规司",
+      "doc_type": "regulation",
+      "sign_date": "",
+      "publish_date": "2026-07-01",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/P020260717450383484078.pdf"
+    },
+    {
       "title": "公共航空运输企业经营许可规定",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202606/t20260615_231074.html",
       "validity": "有效",
@@ -23650,7 +23698,7 @@
     {
       "title": "通用航空经营许可管理规定",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202008/t20200827_204256.html",
-      "validity": "有效",
+      "validity": "失效",
       "doc_number": "CCAR-290-R3",
       "office_unit": "政策法规司",
       "doc_type": "regulation",

@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-07-15T09:25:27.666799",
+  "last_update": "2026-07-17T09:25:45.880351",
   "records": {
     "regulation/交通运输部令2025年第9号运输类旋翼航空器适航规定.pdf": {
       "r2_url": "https://flighttoolbox.hudawang.cn/regulation/%E4%BA%A4%E9%80%9A%E8%BF%90%E8%BE%93%E9%83%A8%E4%BB%A42025%E5%B9%B4%E7%AC%AC9%E5%8F%B7%E8%BF%90%E8%BE%93%E7%B1%BB%E6%97%8B%E7%BF%BC%E8%88%AA%E7%A9%BA%E5%99%A8%E9%80%82%E8%88%AA%E8%A7%84%E5%AE%9A.pdf",
@@ -11500,6 +11500,14 @@
     "specification/SC-25-090MA60型飞机（TC证后）搜救机项目-空投任务.pdf": {
       "r2_url": "https://flighttoolbox.hudawang.cn/specification/SC-25-090MA60%E5%9E%8B%E9%A3%9E%E6%9C%BA%EF%BC%88TC%E8%AF%81%E5%90%8E%EF%BC%89%E6%90%9C%E6%95%91%E6%9C%BA%E9%A1%B9%E7%9B%AE-%E7%A9%BA%E6%8A%95%E4%BB%BB%E5%8A%A1.pdf",
       "file_size": 518805
+    },
+    "regulation/CCAR-290-R4通用航空经营管理规定.pdf": {
+      "r2_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-290-R4%E9%80%9A%E7%94%A8%E8%88%AA%E7%A9%BA%E7%BB%8F%E8%90%A5%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf",
+      "file_size": 508568
+    },
+    "regulation/CCAR-120通用航空运营许可程序规定.pdf": {
+      "r2_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-120%E9%80%9A%E7%94%A8%E8%88%AA%E7%A9%BA%E8%BF%90%E8%90%A5%E8%AE%B8%E5%8F%AF%E7%A8%8B%E5%BA%8F%E8%A7%84%E5%AE%9A.pdf",
+      "file_size": 452126
     }
   }
 }

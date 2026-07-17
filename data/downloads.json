@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-07-15T09:25:26.540886",
+  "last_update": "2026-07-17T09:25:44.238906",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6532,6 +6532,14 @@
     "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202607/t20260715_231266.html": {
       "relative_path": "specification/SC-25-090MA60型飞机（TC证后）搜救机项目-空投任务.pdf",
       "updated_at": "2026-07-15T09:25:26.540864"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/t20260717_231321.html": {
+      "relative_path": "regulation/CCAR-290-R4通用航空经营管理规定.pdf",
+      "updated_at": "2026-07-17T09:25:19.094956"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/t20260717_231320.html": {
+      "relative_path": "regulation/CCAR-120通用航空运营许可程序规定.pdf",
+      "updated_at": "2026-07-17T09:25:44.238887"
     }
   }
 }

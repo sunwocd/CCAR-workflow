@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-17T09:25:54.620924",
+  "last_check": "2026-07-18T09:03:36.774256",
   "documents": {
     "13": [
       {
@@ -12,8 +12,8 @@
         "sign_date": "",
         "publish_date": "2026-07-01",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/P020260717459628983882.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "通用航空运营许可程序规定",
@@ -25,8 +25,8 @@
         "sign_date": "",
         "publish_date": "2026-07-01",
         "validity": "有效",
-        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/P020260717450383484078.pdf",
-        "has_pdf": true
+        "pdf_url": "",
+        "has_pdf": false
       },
       {
         "title": "公共航空运输企业经营许可规定",
@@ -23165,7 +23165,7 @@
       "doc_type": "regulation",
       "sign_date": "",
       "publish_date": "2026-07-01",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/P020260717459628983882.pdf"
+      "pdf_url": ""
     },
     {
       "title": "通用航空运营许可程序规定",
@@ -23176,7 +23176,7 @@
       "doc_type": "regulation",
       "sign_date": "",
       "publish_date": "2026-07-01",
-      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/P020260717450383484078.pdf"
+      "pdf_url": ""
     },
     {
       "title": "公共航空运输企业经营许可规定",

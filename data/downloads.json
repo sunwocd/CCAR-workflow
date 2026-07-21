@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-07-17T09:25:44.238906",
+  "last_update": "2026-07-21T09:47:01.880509",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6540,6 +6540,22 @@
     "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/t20260717_231320.html": {
       "relative_path": "regulation/CCAR-120通用航空运营许可程序规定.pdf",
       "updated_at": "2026-07-17T09:25:44.238887"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231345.html": {
+      "relative_path": "specification/MH_T 6141.2-2026航空抗燃磷酸酯液压油性能测试方法  第2部分：耐腐蚀性能  流量控制阀测试法.pdf",
+      "updated_at": "2026-07-21T09:45:34.642679"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231343.html": {
+      "relative_path": "specification/MH_T 6141.1-2026航空抗燃磷酸酯液压油性能测试方法  第1部分：流体性能  泵测试法.pdf",
+      "updated_at": "2026-07-21T09:45:55.526806"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231342.html": {
+      "relative_path": "specification/MH_T 6142-2026航空燃油中碳-14生物基含量的测定 液体闪烁计数直接测量法.pdf",
+      "updated_at": "2026-07-21T09:46:09.534298"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231341.html": {
+      "relative_path": "specification/MH_T 2020-2026航空器追踪监控系统技术要求.pdf",
+      "updated_at": "2026-07-21T09:47:01.880498"
     }
   }
 }

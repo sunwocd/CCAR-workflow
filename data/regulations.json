@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-20T10:22:30.247756",
+  "last_check": "2026-07-21T09:47:12.628350",
   "documents": {
     "13": [
       {
@@ -5362,6 +5362,58 @@
       }
     ],
     "15": [
+      {
+        "title": "航空抗燃磷酸酯液压油性能测试方法  第2部分：耐腐蚀性能  流量控制阀测试法",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231345.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 6141.2-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-07-06",
+        "publish_date": "2026-07-06",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/P020260721411663122183.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "航空抗燃磷酸酯液压油性能测试方法  第1部分：流体性能  泵测试法",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231343.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 6141.1-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-07-06",
+        "publish_date": "2026-07-06",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/P020260721410205494183.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "航空燃油中碳-14生物基含量的测定 液体闪烁计数直接测量法",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231342.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 6142-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-07-06",
+        "publish_date": "2026-07-06",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/P020260721408291152263.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "航空器追踪监控系统技术要求",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231341.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 2020-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-07-06",
+        "publish_date": "2026-07-06",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/P020260721402492004910.pdf",
+        "has_pdf": true
+      },
       {
         "title": "MA60型飞机（TC证后）搜救机项目-空投任务",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202607/t20260715_231266.html",
@@ -27692,6 +27744,50 @@
     }
   ],
   "standards": [
+    {
+      "title": "航空抗燃磷酸酯液压油性能测试方法  第2部分：耐腐蚀性能  流量控制阀测试法",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231345.html",
+      "validity": "有效",
+      "doc_number": "MH/T 6141.2-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-07-06",
+      "publish_date": "2026-07-06",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/P020260721411663122183.pdf"
+    },
+    {
+      "title": "航空抗燃磷酸酯液压油性能测试方法  第1部分：流体性能  泵测试法",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231343.html",
+      "validity": "有效",
+      "doc_number": "MH/T 6141.1-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-07-06",
+      "publish_date": "2026-07-06",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/P020260721410205494183.pdf"
+    },
+    {
+      "title": "航空燃油中碳-14生物基含量的测定 液体闪烁计数直接测量法",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231342.html",
+      "validity": "有效",
+      "doc_number": "MH/T 6142-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-07-06",
+      "publish_date": "2026-07-06",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/P020260721408291152263.pdf"
+    },
+    {
+      "title": "航空器追踪监控系统技术要求",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231341.html",
+      "validity": "有效",
+      "doc_number": "MH/T 2020-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-07-06",
+      "publish_date": "2026-07-06",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/P020260721402492004910.pdf"
+    },
     {
       "title": "MA60型飞机（TC证后）搜救机项目-空投任务",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/ZYTJHHM/202607/t20260715_231266.html",

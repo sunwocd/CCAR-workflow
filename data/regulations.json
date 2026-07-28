@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-27T10:52:49.415912",
+  "last_check": "2026-07-28T10:00:56.415240",
   "documents": {
     "13": [
       {
@@ -2631,6 +2631,19 @@
     ],
     "14": [
       {
+        "title": "批准放行证书的签发和管理程序",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231206.html",
+        "category": "规范性文件",
+        "category_id": "14",
+        "doc_number": "AP-21-52R1",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-06-25",
+        "publish_date": "2026-06-25",
+        "validity": "有效",
+        "pdf_url": "",
+        "has_pdf": false
+      },
+      {
         "title": "飞行训练中心质量管理体系建设要求",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260703_231219.html",
         "category": "规范性文件",
@@ -2675,19 +2688,6 @@
         "category": "规范性文件",
         "category_id": "14",
         "doc_number": "AP-21-31R3",
-        "office_unit": "航空器适航审定司",
-        "sign_date": "2026-06-25",
-        "publish_date": "2026-06-25",
-        "validity": "有效",
-        "pdf_url": "",
-        "has_pdf": false
-      },
-      {
-        "title": "批准放行证书的签发和管理程序",
-        "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231206.html",
-        "category": "规范性文件",
-        "category_id": "14",
-        "doc_number": "AP-21-52R1",
         "office_unit": "航空器适航审定司",
         "sign_date": "2026-06-25",
         "publish_date": "2026-06-25",
@@ -25433,6 +25433,17 @@
   ],
   "normatives": [
     {
+      "title": "批准放行证书的签发和管理程序",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231206.html",
+      "validity": "有效",
+      "doc_number": "AP-21-52R1",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "normative",
+      "sign_date": "2026-06-25",
+      "publish_date": "2026-06-25",
+      "pdf_url": ""
+    },
+    {
       "title": "飞行训练中心质量管理体系建设要求",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260703_231219.html",
       "validity": "有效",
@@ -25470,17 +25481,6 @@
       "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231207.html",
       "validity": "有效",
       "doc_number": "AP-21-31R3",
-      "office_unit": "航空器适航审定司",
-      "doc_type": "normative",
-      "sign_date": "2026-06-25",
-      "publish_date": "2026-06-25",
-      "pdf_url": ""
-    },
-    {
-      "title": "批准放行证书的签发和管理程序",
-      "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202607/t20260701_231206.html",
-      "validity": "有效",
-      "doc_number": "AP-21-52R1",
       "office_unit": "航空器适航审定司",
       "doc_type": "normative",
       "sign_date": "2026-06-25",

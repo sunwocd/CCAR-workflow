@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-07-21T09:47:01.880509",
+  "last_update": "2026-08-06T11:15:39.464675",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -3399,15 +3399,15 @@
     },
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202410/t20241025_225692.html": {
       "relative_path": "other/民航局2024_25年冬春航季换季颁发、注销、换发国内航线经营许可信息通告.pdf",
-      "updated_at": "2026-04-30T12:29:51.718846"
+      "updated_at": "2026-08-06T11:15:33.708176"
     },
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202410/t20241025_225685.html": {
       "relative_path": "other/关于2023年度民航专业工程资质动态核查第七批企业整改核定结果的公示.txt",
-      "updated_at": "2026-04-30T12:29:51.718875"
+      "updated_at": "2026-08-06T11:15:39.464592"
     },
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202410/t20241021_225646.html": {
       "relative_path": "other/关于对首届中国民航飞行员职业技能大赛全国赛参赛选手的公示.pdf",
-      "updated_at": "2026-04-30T12:29:51.718903"
+      "updated_at": "2026-08-06T11:15:39.464670"
     },
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202410/t20241018_225639.html": {
       "relative_path": "other/重点研究课题征集公告.doc",
@@ -6556,6 +6556,50 @@
     "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231341.html": {
       "relative_path": "specification/MH_T 2020-2026航空器追踪监控系统技术要求.pdf",
       "updated_at": "2026-07-21T09:47:01.880498"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202607/t20260723_231367.html": {
+      "relative_path": "other/中国民用航空局2025年度部门决算.pdf",
+      "updated_at": "2026-08-06T11:15:22.081030"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202607/t20260722_231354.html": {
+      "relative_path": "other/关于2026年第七批民航专业工程建设企业资质申报材料的公示.pdf",
+      "updated_at": "2026-08-06T11:15:22.081077"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202607/t20260710_231250.html": {
+      "relative_path": "other/关于追加中交建筑集团第三工程有限公司等1家企业进行资质核查的通知.txt",
+      "updated_at": "2026-08-06T11:15:27.583665"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202607/t20260710_231249.html": {
+      "relative_path": "other/关于南通四建集团有限公司等1家企业民航专业工程资质动态核查整改材料的公示.pdf",
+      "updated_at": "2026-08-06T11:15:27.583738"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202607/t20260710_231248.html": {
+      "relative_path": "other/国际航线审批结果公开（C2026006）.pdf",
+      "updated_at": "2026-08-06T11:15:27.583783"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260626_231163.html": {
+      "relative_path": "other/转发《国务院安委会办公室关于安全生产领域部分弄虚作假典型案例的通报》的通知.pdf",
+      "updated_at": "2026-08-06T11:15:27.583814"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260617_231100.html": {
+      "relative_path": "other/关于追加北京九鼎宏图建设有限公司等1家企业进行资质核查的通知.txt",
+      "updated_at": "2026-08-06T11:15:33.708039"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/t20260617_231099.html": {
+      "relative_path": "other/关于山东鹰格信息工程有限公司等1家企业民航专业工程资质动态核查追加材料的公示.pdf",
+      "updated_at": "2026-08-06T11:15:33.708113"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TJSJ/202607/t20260721_231347.html": {
+      "relative_path": "other/中国民航2026年6月份主要生产指标统计.pdf",
+      "updated_at": "2026-08-06T11:15:08.141946"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TJSJ/202606/t20260622_231126.html": {
+      "relative_path": "other/中国民航2026年5月份主要生产指标统计.pdf",
+      "updated_at": "2026-08-06T11:15:22.080906"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/CZXX/202607/t20260723_231368.html": {
+      "relative_path": "other/中国民用航空局2025年度部门决算.pdf",
+      "updated_at": "2026-08-06T11:15:22.080968"
     }
   }
 }

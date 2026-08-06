@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-08-06T11:15:53.555958",
+  "last_check": "2026-08-06T11:28:10.615766",
   "documents": {
     "9": [
       {
@@ -13,7 +13,7 @@
         "publish_date": "2026-07-23",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202607/P020260723548479571631.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "关于2026年第七批民航专业工程建设企业资质申报材料的公示",
@@ -26,7 +26,7 @@
         "publish_date": "2026-07-22",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202607/P020260722508743957828.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "关于追加中交建筑集团第三工程有限公司等1家企业进行资质核查的通知",
@@ -52,7 +52,7 @@
         "publish_date": "2026-07-10",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202607/P020260710575151008980.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "国际航线审批结果公开（C2026006）",
@@ -65,7 +65,7 @@
         "publish_date": "2026-07-10",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202607/P020260710349930060685.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "转发《国务院安委会办公室关于安全生产领域部分弄虚作假典型案例的通报》的通知",
@@ -78,7 +78,7 @@
         "publish_date": "2026-06-26",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/P020260626606589712510.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "关于追加北京九鼎宏图建设有限公司等1家企业进行资质核查的通知",
@@ -104,7 +104,7 @@
         "publish_date": "2026-06-17",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202606/P020260617417957302067.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "国际航线审批结果公开（C2026005）",
@@ -2574,7 +2574,7 @@
         "publish_date": "2024-10-25",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202410/P020241025573519918536.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "关于2023年度民航专业工程资质动态核查第七批企业整改核定结果的公示",
@@ -2600,7 +2600,7 @@
         "publish_date": "2024-10-21",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202410/P020241021361127718525.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "关于2025年度通用航空企业诚信经营评价初评结果公示的通知",
@@ -4801,7 +4801,7 @@
         "publish_date": "2026-07-21",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TJSJ/202607/P020260721744697179362.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "中国民航2026年5月份主要生产指标统计",
@@ -4814,7 +4814,7 @@
         "publish_date": "2026-06-22",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TJSJ/202606/P020260622322589516410.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "中国民航2026年4月份主要生产指标统计",

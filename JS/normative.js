@@ -132,30 +132,6 @@ var data = [
     "pdf_url": "https://flighttoolbox.hudawang.cn/normative/IB-FS-OPS-022%E8%BF%90%E8%BE%93%E7%B1%BB%E9%A3%9E%E6%9C%BAGNSS%20%E5%B9%B2%E6%89%B0%E5%A4%84%E7%BD%AE%E6%8C%87%E5%8D%97.pdf"
   },
   {
-    "title": "关于印发《正常类多旋翼无人驾驶航空器系统 （不载人）适航标准》咨询通告的通知",
-    "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202604/t20260410_230524.html",
-    "doc_type": "规范性文件",
-    "validity": "有效",
-    "sign_date": "2026年04月10日",
-    "publish_date": "2026年04月10日",
-    "doc_number": "AC-21-AA-2026-46",
-    "office_unit": "航空器适航审定司",
-    "file_number": "文号：AC-21-AA-2026-46",
-    "pdf_url": "https://flighttoolbox.hudawang.cn/normative/AC-21-AA-2026-46%E5%85%B3%E4%BA%8E%E5%8D%B0%E5%8F%91%E3%80%8A%E6%AD%A3%E5%B8%B8%E7%B1%BB%E5%A4%9A%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E8%88%AA%E7%A9%BA%E5%99%A8%E7%B3%BB%E7%BB%9F%20%EF%BC%88%E4%B8%8D%E8%BD%BD%E4%BA%BA%EF%BC%89%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86%E3%80%8B%E5%92%A8%E8%AF%A2%E9%80%9A%E5%91%8A%E7%9A%84%E9%80%9A%E7%9F%A5.pdf"
-  },
-  {
-    "title": "关于印发《正常类动力提升无人驾驶航空器系统（不载人）适航标准》咨询通告的通知",
-    "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202604/t20260410_230523.html",
-    "doc_type": "规范性文件",
-    "validity": "有效",
-    "sign_date": "2026年04月10日",
-    "publish_date": "2026年04月10日",
-    "doc_number": "AC-21-AA-2026-47",
-    "office_unit": "航空器适航审定司",
-    "file_number": "文号：AC-21-AA-2026-47",
-    "pdf_url": "https://flighttoolbox.hudawang.cn/normative/AC-21-AA-2026-47%E5%85%B3%E4%BA%8E%E5%8D%B0%E5%8F%91%E3%80%8A%E6%AD%A3%E5%B8%B8%E7%B1%BB%E5%8A%A8%E5%8A%9B%E6%8F%90%E5%8D%87%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E8%88%AA%E7%A9%BA%E5%99%A8%E7%B3%BB%E7%BB%9F%EF%BC%88%E4%B8%8D%E8%BD%BD%E4%BA%BA%EF%BC%89%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86%E3%80%8B%E5%92%A8%E8%AF%A2%E9%80%9A%E5%91%8A%E7%9A%84%E9%80%9A%E7%9F%A5.pdf"
-  },
-  {
     "title": "民用航空人员安全用药指南（第一版）",
     "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202604/t20260407_230423.html",
     "doc_type": "规范性文件",
@@ -182,30 +158,6 @@ var data = [
   {
     "title": "正常类多旋翼无人驾驶航空器系统（不载人）适航标准",
     "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202604/t20260417_230569.html",
-    "doc_type": "规范性文件",
-    "validity": "有效",
-    "sign_date": "2026年04月03日",
-    "publish_date": "2026年04月03日",
-    "doc_number": "AC-21-AA-2026-46",
-    "office_unit": "航空器适航审定司",
-    "file_number": "文号：AC-21-AA-2026-46",
-    "pdf_url": "https://flighttoolbox.hudawang.cn/normative/AC-21-AA-2026-46%E6%AD%A3%E5%B8%B8%E7%B1%BB%E5%A4%9A%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E8%88%AA%E7%A9%BA%E5%99%A8%E7%B3%BB%E7%BB%9F%EF%BC%88%E4%B8%8D%E8%BD%BD%E4%BA%BA%EF%BC%89%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86.pdf"
-  },
-  {
-    "title": "正常类动力提升无人驾驶航空器系统（不载人）适航标准",
-    "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202604/t20260413_230538.html",
-    "doc_type": "规范性文件",
-    "validity": "有效",
-    "sign_date": "2026年04月03日",
-    "publish_date": "2026年04月03日",
-    "doc_number": "AC-21-AA-2026-47",
-    "office_unit": "航空器适航审定司",
-    "file_number": "文号：AC-21-AA-2026-47",
-    "pdf_url": "https://flighttoolbox.hudawang.cn/normative/AC-21-AA-2026-47%E6%AD%A3%E5%B8%B8%E7%B1%BB%E5%8A%A8%E5%8A%9B%E6%8F%90%E5%8D%87%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E8%88%AA%E7%A9%BA%E5%99%A8%E7%B3%BB%E7%BB%9F%EF%BC%88%E4%B8%8D%E8%BD%BD%E4%BA%BA%EF%BC%89%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86.pdf"
-  },
-  {
-    "title": "正常类多旋翼无人驾驶航空器系统（不载人）适航标准",
-    "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202604/t20260413_230536.html",
     "doc_type": "规范性文件",
     "validity": "有效",
     "sign_date": "2026年04月03日",
@@ -2439,6 +2391,54 @@ var data = [
     "office_unit": "空管行业管理办公室",
     "file_number": "民航规 〔2023〕54 号",
     "pdf_url": "https://flighttoolbox.hudawang.cn/normative/AP-70-TM-2023-01%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E7%A9%BA%E4%B8%AD%E4%BA%A4%E9%80%9A%E7%AE%A1%E5%88%B6%E5%9F%B9%E8%AE%AD%E6%9C%BA%E6%9E%84%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95.pdf"
+  },
+  {
+    "title": "关于印发《正常类多旋翼无人驾驶航空器系统 （不载人）适航标准》咨询通告的通知",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202604/t20260410_230524.html",
+    "doc_type": "规范性文件",
+    "validity": "有效",
+    "sign_date": "2026年04月10日",
+    "publish_date": "2026年04月10日",
+    "doc_number": "AC-21-AA-2026-46",
+    "office_unit": "航空器适航审定司",
+    "file_number": "文号：AC-21-AA-2026-46",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/normative/AC-21-AA-2026-46%E5%85%B3%E4%BA%8E%E5%8D%B0%E5%8F%91%E3%80%8A%E6%AD%A3%E5%B8%B8%E7%B1%BB%E5%A4%9A%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E8%88%AA%E7%A9%BA%E5%99%A8%E7%B3%BB%E7%BB%9F%20%EF%BC%88%E4%B8%8D%E8%BD%BD%E4%BA%BA%EF%BC%89%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86%E3%80%8B%E5%92%A8%E8%AF%A2%E9%80%9A%E5%91%8A%E7%9A%84%E9%80%9A%E7%9F%A5.pdf"
+  },
+  {
+    "title": "关于印发《正常类动力提升无人驾驶航空器系统（不载人）适航标准》咨询通告的通知",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202604/t20260410_230523.html",
+    "doc_type": "规范性文件",
+    "validity": "有效",
+    "sign_date": "2026年04月10日",
+    "publish_date": "2026年04月10日",
+    "doc_number": "AC-21-AA-2026-47",
+    "office_unit": "航空器适航审定司",
+    "file_number": "文号：AC-21-AA-2026-47",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/normative/AC-21-AA-2026-47%E5%85%B3%E4%BA%8E%E5%8D%B0%E5%8F%91%E3%80%8A%E6%AD%A3%E5%B8%B8%E7%B1%BB%E5%8A%A8%E5%8A%9B%E6%8F%90%E5%8D%87%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E8%88%AA%E7%A9%BA%E5%99%A8%E7%B3%BB%E7%BB%9F%EF%BC%88%E4%B8%8D%E8%BD%BD%E4%BA%BA%EF%BC%89%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86%E3%80%8B%E5%92%A8%E8%AF%A2%E9%80%9A%E5%91%8A%E7%9A%84%E9%80%9A%E7%9F%A5.pdf"
+  },
+  {
+    "title": "正常类动力提升无人驾驶航空器系统（不载人）适航标准",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202604/t20260413_230538.html",
+    "doc_type": "规范性文件",
+    "validity": "有效",
+    "sign_date": "2026年04月03日",
+    "publish_date": "2026年04月03日",
+    "doc_number": "AC-21-AA-2026-47",
+    "office_unit": "航空器适航审定司",
+    "file_number": "文号：AC-21-AA-2026-47",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/normative/AC-21-AA-2026-47%E6%AD%A3%E5%B8%B8%E7%B1%BB%E5%8A%A8%E5%8A%9B%E6%8F%90%E5%8D%87%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E8%88%AA%E7%A9%BA%E5%99%A8%E7%B3%BB%E7%BB%9F%EF%BC%88%E4%B8%8D%E8%BD%BD%E4%BA%BA%EF%BC%89%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86.pdf"
+  },
+  {
+    "title": "正常类多旋翼无人驾驶航空器系统（不载人）适航标准",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202604/t20260413_230536.html",
+    "doc_type": "规范性文件",
+    "validity": "有效",
+    "sign_date": "2026年04月03日",
+    "publish_date": "2026年04月03日",
+    "doc_number": "AC-21-AA-2026-46",
+    "office_unit": "航空器适航审定司",
+    "file_number": "文号：AC-21-AA-2026-46",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/normative/AC-21-AA-2026-46%E6%AD%A3%E5%B8%B8%E7%B1%BB%E5%A4%9A%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E8%88%AA%E7%A9%BA%E5%99%A8%E7%B3%BB%E7%BB%9F%EF%BC%88%E4%B8%8D%E8%BD%BD%E4%BA%BA%EF%BC%89%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86.pdf"
   },
   {
     "title": "民用航空空中交通流量管理规定",

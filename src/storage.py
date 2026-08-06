@@ -320,12 +320,12 @@ def _read_js_data(file_path: Path) -> list[dict]:
         logger.warning(f"Failed to read JS file {file_path}: {e}")
         return []
 
-    marker_pos = content.find("var data")
-    if marker_pos < 0:
-        logger.warning(f"Invalid JS format, missing 'var data': {file_path}")
+    marker_match = re.search(r"var\s+[A-Za-z_$][\w$]*\s*=\s*\[", content)
+    if not marker_match:
+        logger.warning(f"Invalid JS format, missing 'var <name> = [': {file_path}")
         return []
 
-    list_start = content.find("[", marker_pos)
+    list_start = marker_match.end() - 1
     list_end = content.rfind("];")
     if list_start < 0 or list_end < list_start:
         logger.warning(f"Invalid JS format, missing array section: {file_path}")

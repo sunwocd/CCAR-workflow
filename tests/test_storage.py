@@ -107,6 +107,21 @@ class StoragePdfUrlPreservationTests(unittest.TestCase):
                 by_filename["AC-66-R1民用航空器维修人员执照"],
             )
 
+    def test_read_js_data_accepts_named_export_variable(self):
+        from src.storage import _read_js_data
+
+        with tempfile.TemporaryDirectory() as tmp:
+            js_path = Path(tmp) / "regulation.js"
+            js_path.write_text(
+                "var regulationData = [\n"
+                '  {"title": "A", "url": "http://example.test/a", "pdf_url": "https://flighttoolbox.hudawang.cn/a.pdf"}\n'
+                "];\n",
+                encoding="utf-8",
+            )
+            parsed = _read_js_data(js_path)
+            self.assertEqual(1, len(parsed))
+            self.assertEqual("https://flighttoolbox.hudawang.cn/a.pdf", parsed[0]["pdf_url"])
+
 
 if __name__ == "__main__":
     unittest.main()

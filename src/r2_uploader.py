@@ -149,14 +149,20 @@ class R2Uploader:
                 skipped += 1
                 continue
 
+            cached_record = r2_index.get(rel_path)
             local_path = os.path.join(download_dir, rel_path)
             if not os.path.exists(local_path):
-                skipped += 1
+                # CI runners are fresh each run and downloads/ is not persisted;
+                # reuse the committed R2 index to restore historical URLs.
+                if cached_record and cached_record.get("r2_url"):
+                    r2_url_map[caac_url] = normalize_public_url(cached_record["r2_url"])
+                    cached += 1
+                else:
+                    skipped += 1
                 continue
 
             # Check cache: skip upload if file size matches
             file_size = os.path.getsize(local_path)
-            cached_record = r2_index.get(rel_path)
             if cached_record and cached_record.get("file_size") == file_size:
                 r2_url_map[caac_url] = normalize_public_url(cached_record["r2_url"])
                 cached += 1

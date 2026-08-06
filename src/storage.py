@@ -64,6 +64,72 @@ def _normalize_pdf_url(pdf_url: str) -> str:
     return value
 
 
+
+def _compact(value: str) -> str:
+    """Remove all whitespace for filename matching."""
+    return re.sub(r"\s+", "", value or "")
+
+
+def build_pdf_url_fallback(data_path: str) -> tuple[dict[str, str], dict[str, str]]:
+    """Reconstruct historical PDF URLs from the committed data indexes.
+
+    CI runners are ephemeral (downloads/ is always empty), so attachment URLs
+    can only be recovered from data/downloads.json -> data/r2_uploads.json.
+    R2 filenames follow the deterministic ``{validity!}{doc_number}{title}.pdf``
+    convention, so rows whose download record predates the R2 index can still
+    be matched by normalized doc_number+title / title.
+
+    Returns:
+        (by_url, by_filename): {caac page url: r2 url} and
+        {normalized "{doc_number}{title}" or "{title}": r2 url}
+    """
+    data_dir = Path(data_path).parent
+
+    r2_index: dict[str, dict] = {}
+    r2_index_path = data_dir / "r2_uploads.json"
+    if r2_index_path.exists():
+        try:
+            with open(r2_index_path, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+            if isinstance(payload, dict):
+                r2_index = payload.get("records", {})
+        except Exception:
+            r2_index = {}
+
+    by_url: dict[str, str] = {}
+    download_index_path = data_dir / "downloads.json"
+    if download_index_path.exists():
+        try:
+            with open(download_index_path, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+            download_records = payload.get("records", {}) if isinstance(payload, dict) else {}
+        except Exception:
+            download_records = {}
+        for url, record in download_records.items():
+            rel_path = str(record.get("relative_path", "")).strip()
+            if rel_path.lower().endswith(".pdf"):
+                cached = r2_index.get(rel_path)
+                if cached and cached.get("r2_url"):
+                    by_url[url] = _normalize_pdf_url(str(cached["r2_url"]))
+
+    by_filename: dict[str, str] = {}
+    for rel_path, record in r2_index.items():
+        r2_url = record.get("r2_url") if isinstance(record, dict) else None
+        if not r2_url:
+            continue
+        stem = rel_path.rsplit("/", 1)[-1]
+        if not stem.lower().endswith(".pdf"):
+            continue
+        stem = stem[:-4]
+        stem = re.sub(r"^(失效|废止|历史版本|作废)!", "", stem)
+        stem = re.sub(r"^\[(失效|废止|历史版本|作废)\]", "", stem)
+        normalized = _compact(stem)
+        if normalized:
+            by_filename.setdefault(normalized, _normalize_pdf_url(str(r2_url)))
+
+    return by_url, by_filename
+
+
 def filter_by_days(documents: list[Document], days: int) -> list[Document]:
     """Filter documents by publish date, keep only last N days
     
@@ -538,6 +604,22 @@ class Storage:
         for cat_id, docs in current_documents.items():
             if docs:
                 current_rows = [doc.to_dict() for doc in docs]
+                # List pages don't expose attachment URLs; carry over the
+                # previously known pdf_url for the same page so a metadata
+                # refresh cannot silently wipe it.
+                previous_pdf_url_by_url = {}
+                for prev_row in previous.get(cat_id, []):
+                    if not isinstance(prev_row, dict):
+                        continue
+                    prev_url = str(prev_row.get("url", "")).strip()
+                    prev_pdf_url = _normalize_pdf_url(str(prev_row.get("pdf_url", "")).strip())
+                    if prev_url and prev_pdf_url:
+                        previous_pdf_url_by_url[prev_url] = prev_pdf_url
+                for row in current_rows:
+                    if not _normalize_pdf_url(str(row.get("pdf_url", "")).strip()):
+                        row_url = str(row.get("url", "")).strip()
+                        if row_url in previous_pdf_url_by_url:
+                            row["pdf_url"] = previous_pdf_url_by_url[row_url]
                 seen_urls = {
                     str(row.get("url", "")).strip()
                     for row in current_rows
@@ -576,6 +658,19 @@ class Storage:
         js_root = Path(js_dir)
         summary = {}
         url_map = r2_url_map or {}
+        fallback_urls, fallback_filenames = build_pdf_url_fallback(self.data_path)
+
+        def resolve_pdf_url(doc: Document) -> str:
+            """Resolve pdf_url: this run's R2 map > committed indexes > existing JS."""
+            url = url_map.get(doc.url) or fallback_urls.get(doc.url)
+            if url:
+                return url
+            doc_number = _compact(doc.doc_number)
+            title = _compact(doc.title)
+            candidate = (doc_number + title) if doc_number else title
+            if candidate and candidate in fallback_filenames:
+                return fallback_filenames[candidate]
+            return existing_pdf_url_by_url.get(doc.url, "")
 
         normative_cfg = JS_EXPORT_CONFIG["14"]
         normative_path = js_root / normative_cfg["filename"]
@@ -619,9 +714,7 @@ class Storage:
                 records = [
                     _build_regulation_record(
                         doc, doc_type,
-                        pdf_url=_normalize_pdf_url(
-                            url_map.get(doc.url, existing_pdf_url_by_url.get(doc.url, ""))
-                        )
+                        pdf_url=_normalize_pdf_url(resolve_pdf_url(doc))
                     )
                     for doc in docs
                 ]
@@ -630,9 +723,7 @@ class Storage:
                     _build_normative_record(
                         doc, doc_type,
                         existing_file_number_by_url.get(doc.url, ""),
-                        pdf_url=_normalize_pdf_url(
-                            url_map.get(doc.url, existing_pdf_url_by_url.get(doc.url, ""))
-                        )
+                        pdf_url=_normalize_pdf_url(resolve_pdf_url(doc))
                     )
                     for doc in docs
                 ]
@@ -640,9 +731,7 @@ class Storage:
                 records = [
                     _build_standard_record(
                         doc, doc_type,
-                        pdf_url=_normalize_pdf_url(
-                            url_map.get(doc.url, existing_pdf_url_by_url.get(doc.url, ""))
-                        )
+                        pdf_url=_normalize_pdf_url(resolve_pdf_url(doc))
                     )
                     for doc in docs
                 ]

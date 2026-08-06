@@ -145,13 +145,9 @@ jobs:
           # 构建命令参数
           CMD=(uv run python -m src.main)
 
-          # --categories: 定时任务固定抓取规章/规范性文件/标准规范；
-          # 手动触发时仍可填写任意分类，留空则跑全部分类。
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            CATS="13,14,15"
-          else
-            CATS="${{ github.event.inputs.categories }}"
-          fi
+          # --categories: 定时任务跑全部分类（保证通知公告等分类也能推送新文件）；
+          # 手动触发时可填写任意分类，留空则跑全部分类。
+          CATS="${{ github.event.inputs.categories }}"
           if [ -n "$CATS" ]; then
             CMD+=(--categories "$CATS")
           fi

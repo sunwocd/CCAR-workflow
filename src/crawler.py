@@ -392,6 +392,12 @@ class CaacCrawler:
                 suppl_docs = self._parse_list_page(html_content, category_id, category_name)
                 logger.info(f"Category {category_name} (DOCRELTIME): {len(suppl_docs)} documents")
 
+                if not suppl_docs:
+                    logger.warning(
+                        f"Category {category_name}: DOCRELTIME query returned no rows "
+                        f"(CAAC sort may be disabled); relying on the primary query"
+                    )
+
                 # Merge: deduplicate by URL, primary results take precedence
                 seen_urls = {doc.url for doc in documents}
                 new_from_suppl = [doc for doc in suppl_docs if doc.url not in seen_urls]

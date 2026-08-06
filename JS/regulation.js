@@ -1735,6 +1735,987 @@ var data = [
     "doc_number": "CCAR-201",
     "office_unit": "运输司",
     "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E6%B0%91%E8%88%AA%E6%80%BB%E5%B1%80%E7%AC%AC138%E5%8F%B7%E4%BB%A4%E5%85%AC%E5%85%B1%E8%88%AA%E7%A9%BA%E8%BF%90%E8%BE%93%E4%BC%81%E4%B8%9A%E7%BB%8F%E8%90%A5%E8%AE%B8%E5%8F%AF%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空统计管理办法",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8498.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-241-R1",
+    "office_unit": "发展计划司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-241-R1%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E7%BB%9F%E8%AE%A1%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95.pdf"
+  },
+  {
+    "title": "民用机场建设管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8503.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-158",
+    "office_unit": "机场司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-158%E6%B0%91%E7%94%A8%E6%9C%BA%E5%9C%BA%E5%BB%BA%E8%AE%BE%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "解读丨《正常类旋翼航空器适航规定》",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "",
+    "office_unit": "政策法规司"
+  },
+  {
+    "title": "解读 |《关于修改〈大型飞机公共航空运输承运人运行合格审定规则〉的决定》",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202104/t20210415_207174.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "",
+    "office_unit": "政策法规司"
+  },
+  {
+    "title": "飞行训练中心合格审定规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8504.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "民航总局第128号令",
+    "office_unit": "飞行标准司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E6%B0%91%E8%88%AA%E6%80%BB%E5%B1%80%E7%AC%AC128%E5%8F%B7%E4%BB%A4%E9%A3%9E%E8%A1%8C%E8%AE%AD%E7%BB%83%E4%B8%AD%E5%BF%83%E5%90%88%E6%A0%BC%E5%AE%A1%E5%AE%9A%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "正常类、实用类、特技类和通勤类飞机适航规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8500.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-23-R3",
+    "office_unit": "飞行标准司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%21CCAR-23-R3%E6%AD%A3%E5%B8%B8%E7%B1%BB%E3%80%81%E5%AE%9E%E7%94%A8%E7%B1%BB%E3%80%81%E7%89%B9%E6%8A%80%E7%B1%BB%E5%92%8C%E9%80%9A%E5%8B%A4%E7%B1%BB%E9%A3%9E%E6%9C%BA%E9%80%82%E8%88%AA%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "非经营性通用航空登记管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8502.html",
+    "doc_type": "CCAR规章",
+    "validity": "废止",
+    "doc_number": "CCAR-285",
+    "office_unit": "政策法规司"
+  },
+  {
+    "title": "通用航空经营许可管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8499.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-135TR-R2",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-135TR-R2%E9%80%9A%E7%94%A8%E8%88%AA%E7%A9%BA%E7%BB%8F%E8%90%A5%E8%AE%B8%E5%8F%AF%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空用化学产品适航规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8501.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-53",
+    "office_unit": "飞行标准司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-53%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E7%94%A8%E5%8C%96%E5%AD%A6%E4%BA%A7%E5%93%81%E9%80%82%E8%88%AA%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空器驾驶员学校合格审定规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8497.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-141",
+    "office_unit": "飞行标准司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-141%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%99%A8%E9%A9%BE%E9%A9%B6%E5%91%98%E5%AD%A6%E6%A0%A1%E5%90%88%E6%A0%BC%E5%AE%A1%E5%AE%9A%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "外国公共航空运输承运人运行合格审定规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8505.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-129",
+    "office_unit": "飞行标准司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-129%E5%A4%96%E5%9B%BD%E5%85%AC%E5%85%B1%E8%88%AA%E7%A9%BA%E8%BF%90%E8%BE%93%E6%89%BF%E8%BF%90%E4%BA%BA%E8%BF%90%E8%A1%8C%E5%90%88%E6%A0%BC%E5%AE%A1%E5%AE%9A%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "民用航空运输凭证印制管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8506.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-312-R1",
+    "office_unit": "运输司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-312-R1%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%BF%90%E8%BE%93%E5%87%AD%E8%AF%81%E5%8D%B0%E5%88%B6%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空总局关于修订〈中国民用航空旅客、行李国内运输规则〉的决定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8508.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-271TR-R2",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-271TR-R2%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%80%BB%E5%B1%80%E5%85%B3%E4%BA%8E%E4%BF%AE%E8%AE%A2%E3%80%88%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%97%85%E5%AE%A2%E3%80%81%E8%A1%8C%E6%9D%8E%E5%9B%BD%E5%86%85%E8%BF%90%E8%BE%93%E8%A7%84%E5%88%99%E3%80%89%E7%9A%84%E5%86%B3%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空危险品运输管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8511.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-276",
+    "office_unit": "飞行标准司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-276%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%8D%B1%E9%99%A9%E5%93%81%E8%BF%90%E8%BE%93%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空总局关于修订〈中国民用航空人员医学标准和体检合格证管理规则〉的决定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8507.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-67FS-R1",
+    "office_unit": "飞行标准司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-67FS-R1%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%80%BB%E5%B1%80%E5%85%B3%E4%BA%8E%E4%BF%AE%E8%AE%A2%E3%80%88%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E4%BA%BA%E5%91%98%E5%8C%BB%E5%AD%A6%E6%A0%87%E5%87%86%E5%92%8C%E4%BD%93%E6%A3%80%E5%90%88%E6%A0%BC%E8%AF%81%E7%AE%A1%E7%90%86%E8%A7%84%E5%88%99%E3%80%89%E7%9A%84%E5%86%B3%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空使用空域办法",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201711/t20171116_47595.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-71",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-71%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E4%BD%BF%E7%94%A8%E7%A9%BA%E5%9F%9F%E5%8A%9E%E6%B3%95.pdf"
+  },
+  {
+    "title": "平行跑道同时仪表运行管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8509.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-98TM",
+    "office_unit": "空管行业管理办公室",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-98TM%E5%B9%B3%E8%A1%8C%E8%B7%91%E9%81%93%E5%90%8C%E6%97%B6%E4%BB%AA%E8%A1%A8%E8%BF%90%E8%A1%8C%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空使用空域办法",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8510.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-71",
+    "office_unit": "空管行业管理办公室",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-71%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E4%BD%BF%E7%94%A8%E7%A9%BA%E5%9F%9F%E5%8A%9E%E6%B3%95.pdf"
+  },
+  {
+    "title": "一般运行和飞行规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8512.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-91FS",
+    "office_unit": "飞行标准司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-91FS%E4%B8%80%E8%88%AC%E8%BF%90%E8%A1%8C%E5%92%8C%E9%A3%9E%E8%A1%8C%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "中国民用航空总局关于修订《航空器机场运行最低标准的制定与实施规定》的决定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8513.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-97FS-R2",
+    "office_unit": "机场司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-97FS-R2%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%80%BB%E5%B1%80%E5%85%B3%E4%BA%8E%E4%BF%AE%E8%AE%A2%E3%80%8A%E8%88%AA%E7%A9%BA%E5%99%A8%E6%9C%BA%E5%9C%BA%E8%BF%90%E8%A1%8C%E6%9C%80%E4%BD%8E%E6%A0%87%E5%87%86%E7%9A%84%E5%88%B6%E5%AE%9A%E4%B8%8E%E5%AE%9E%E6%96%BD%E8%A7%84%E5%AE%9A%E3%80%8B%E7%9A%84%E5%86%B3%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空行政处罚实施办法",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8516.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-14-R1",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-14-R1%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%A1%8C%E6%94%BF%E5%A4%84%E7%BD%9A%E5%AE%9E%E6%96%BD%E5%8A%9E%E6%B3%95.pdf"
+  },
+  {
+    "title": "中国民用航空总局关于废止部分民用航空规章和规章性文件的决定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8515.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-19LR",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-19LR%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%80%BB%E5%B1%80%E5%85%B3%E4%BA%8E%E5%BA%9F%E6%AD%A2%E9%83%A8%E5%88%86%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%A7%84%E7%AB%A0%E5%92%8C%E8%A7%84%E7%AB%A0%E6%80%A7%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%B3%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空航行情报员执照管理规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8514.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-65TM-III-R2",
+    "office_unit": "空管局",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-65TM-III-R2%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%88%AA%E8%A1%8C%E6%83%85%E6%8A%A5%E5%91%98%E6%89%A7%E7%85%A7%E7%AE%A1%E7%90%86%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "民用航空器驾驶员、飞行教员和地面教员合格审定规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8517.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-61-R1",
+    "office_unit": "飞行标准司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-61-R1%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%99%A8%E9%A9%BE%E9%A9%B6%E5%91%98%E3%80%81%E9%A3%9E%E8%A1%8C%E6%95%99%E5%91%98%E5%92%8C%E5%9C%B0%E9%9D%A2%E6%95%99%E5%91%98%E5%90%88%E6%A0%BC%E5%AE%A1%E5%AE%9A%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "中国民用航空监察员规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8518.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-18-R1",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-18-R1%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E7%9B%91%E5%AF%9F%E5%91%98%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空空中交通通信导航监视设备使用许可管理办法",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8521.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-87",
+    "office_unit": "空管行业管理办公室",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-87%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E7%A9%BA%E4%B8%AD%E4%BA%A4%E9%80%9A%E9%80%9A%E4%BF%A1%E5%AF%BC%E8%88%AA%E7%9B%91%E8%A7%86%E8%AE%BE%E5%A4%87%E4%BD%BF%E7%94%A8%E8%AE%B8%E5%8F%AF%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95.pdf"
+  },
+  {
+    "title": "运输类旋翼航空器适航规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8519.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-29-R1",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%21CCAR-29-R1%E8%BF%90%E8%BE%93%E7%B1%BB%E6%97%8B%E7%BF%BC%E8%88%AA%E7%A9%BA%E5%99%A8%E9%80%82%E8%88%AA%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "正常类旋翼航空器适航规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8520.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-27-R1",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%21CCAR-27-R1%E6%AD%A3%E5%B8%B8%E7%B1%BB%E6%97%8B%E7%BF%BC%E8%88%AA%E7%A9%BA%E5%99%A8%E9%80%82%E8%88%AA%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "外商投资民用航空业规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8522.html",
+    "doc_type": "CCAR规章",
+    "validity": "废止",
+    "doc_number": "CCAR-201LR",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%BA%9F%E6%AD%A2%21CCAR-201LR%E5%A4%96%E5%95%86%E6%8A%95%E8%B5%84%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E4%B8%9A%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "航空器型号和适航合格审定噪声规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8525.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-36",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%21CCAR-36%E8%88%AA%E7%A9%BA%E5%99%A8%E5%9E%8B%E5%8F%B7%E5%92%8C%E9%80%82%E8%88%AA%E5%90%88%E6%A0%BC%E5%AE%A1%E5%AE%9A%E5%99%AA%E5%A3%B0%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空航行情报人员岗位培训管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8526.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-65TM-TV",
+    "office_unit": "空管行业管理办公室",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-65TM-TV%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%88%AA%E8%A1%8C%E6%83%85%E6%8A%A5%E4%BA%BA%E5%91%98%E5%B2%97%E4%BD%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "涡轮发动机飞机燃油排泄和排气排出物规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8524.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-34",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-34%E6%B6%A1%E8%BD%AE%E5%8F%91%E5%8A%A8%E6%9C%BA%E9%A3%9E%E6%9C%BA%E7%87%83%E6%B2%B9%E6%8E%92%E6%B3%84%E5%92%8C%E6%8E%92%E6%B0%94%E6%8E%92%E5%87%BA%E7%89%A9%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空总局关于修订《航空发动机适航标准》的决定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8523.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-33-R1",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%21CCAR-33-R1%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%80%BB%E5%B1%80%E5%85%B3%E4%BA%8E%E4%BF%AE%E8%AE%A2%E3%80%8A%E8%88%AA%E7%A9%BA%E5%8F%91%E5%8A%A8%E6%9C%BA%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86%E3%80%8B%E7%9A%84%E5%86%B3%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空器维修单位合格审定规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8527.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-145-R2",
+    "office_unit": "飞行标准司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-145-R2%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%99%A8%E7%BB%B4%E4%BF%AE%E5%8D%95%E4%BD%8D%E5%90%88%E6%A0%BC%E5%AE%A1%E5%AE%9A%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空物资设备招标投标管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8528.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-206-R1",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-206-R1%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E7%89%A9%E8%B5%84%E8%AE%BE%E5%A4%87%E6%8B%9B%E6%A0%87%E6%8A%95%E6%A0%87%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空人员医学标准和体检合格证管理规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8529.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-67FS",
+    "office_unit": "飞行标准司"
+  },
+  {
+    "title": "中国民用航空总局关于第三次修订《运输类飞机适航标准》的决定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8530.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-25-R3",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%21CCAR-25-R3%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%80%BB%E5%B1%80%E5%85%B3%E4%BA%8E%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BF%AE%E8%AE%A2%E3%80%8A%E8%BF%90%E8%BE%93%E7%B1%BB%E9%A3%9E%E6%9C%BA%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86%E3%80%8B%E7%9A%84%E5%86%B3%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空总局关于修订《中国民用航空空中交通管理规则》的决定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8531.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-93TM-R3",
+    "office_unit": "空管局",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-93TM-R3%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%80%BB%E5%B1%80%E5%85%B3%E4%BA%8E%E4%BF%AE%E8%AE%A2%E3%80%8A%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E7%A9%BA%E4%B8%AD%E4%BA%A4%E9%80%9A%E7%AE%A1%E7%90%86%E8%A7%84%E5%88%99%E3%80%8B%E7%9A%84%E5%86%B3%E5%AE%9A.pdf"
+  },
+  {
+    "title": "航空器机场运行最低标准的制定与实施规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8532.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-97FS-R1",
+    "office_unit": "机场司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-97FS-R1%E8%88%AA%E7%A9%BA%E5%99%A8%E6%9C%BA%E5%9C%BA%E8%BF%90%E8%A1%8C%E6%9C%80%E4%BD%8E%E6%A0%87%E5%87%86%E7%9A%84%E5%88%B6%E5%AE%9A%E4%B8%8E%E5%AE%9E%E6%96%BD%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用机场不停航施工管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8533.html",
+    "doc_type": "CCAR规章",
+    "validity": "废止",
+    "doc_number": "CCAR-163",
+    "office_unit": "机场司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%BA%9F%E6%AD%A2%21CCAR-163%E6%B0%91%E7%94%A8%E6%9C%BA%E5%9C%BA%E4%B8%8D%E5%81%9C%E8%88%AA%E6%96%BD%E5%B7%A5%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空飞行标准委任代表和委任单位代表管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8534.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-183FS",
+    "office_unit": "飞行标准司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-183FS%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E9%A3%9E%E8%A1%8C%E6%A0%87%E5%87%86%E5%A7%94%E4%BB%BB%E4%BB%A3%E8%A1%A8%E5%92%8C%E5%A7%94%E4%BB%BB%E5%8D%95%E4%BD%8D%E4%BB%A3%E8%A1%A8%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空器飞行事故调查规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8535.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-395",
+    "office_unit": "航空安全办公室",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-395%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%99%A8%E9%A3%9E%E8%A1%8C%E4%BA%8B%E6%95%85%E8%B0%83%E6%9F%A5%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空货物国际运输规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8536.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-274",
+    "office_unit": "运输司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-274%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%B4%A7%E7%89%A9%E5%9B%BD%E9%99%85%E8%BF%90%E8%BE%93%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "民用运输机场应急救援规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8537.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-139-II",
+    "office_unit": "机场司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-139-II%E6%B0%91%E7%94%A8%E8%BF%90%E8%BE%93%E6%9C%BA%E5%9C%BA%E5%BA%94%E6%80%A5%E6%95%91%E6%8F%B4%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "中华人民共和国民用航空器权利登记条例实施办法",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8538.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-49",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-49%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%99%A8%E6%9D%83%E5%88%A9%E7%99%BB%E8%AE%B0%E6%9D%A1%E4%BE%8B%E5%AE%9E%E6%96%BD%E5%8A%9E%E6%B3%95.pdf"
+  },
+  {
+    "title": "中国民用航空空中交通管理规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8539.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-93TM-R2",
+    "office_unit": "空管局",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-93TM-R2%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E7%A9%BA%E4%B8%AD%E4%BA%A4%E9%80%9A%E7%AE%A1%E7%90%86%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "中国民用航空安全检查规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8540.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-139SB",
+    "office_unit": "航空安全办公室",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-139SB%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%AE%89%E5%85%A8%E6%A3%80%E6%9F%A5%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "中国民用航空空中交通管制员执照管理规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8541.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-66TM-I-R2",
+    "office_unit": "空管局",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-66TM-I-R2%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E7%A9%BA%E4%B8%AD%E4%BA%A4%E9%80%9A%E7%AE%A1%E5%88%B6%E5%91%98%E6%89%A7%E7%85%A7%E7%AE%A1%E7%90%86%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "民用机场使用许可规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8542.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-139CA",
+    "office_unit": "机场司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-139CA%E6%B0%91%E7%94%A8%E6%9C%BA%E5%9C%BA%E4%BD%BF%E7%94%A8%E8%AE%B8%E5%8F%AF%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空产品和零部件合格审定规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8543.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-21-R2",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-21-R2%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E4%BA%A7%E5%93%81%E5%92%8C%E9%9B%B6%E9%83%A8%E4%BB%B6%E5%90%88%E6%A0%BC%E5%AE%A1%E5%AE%9A%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空空中交通管制岗位培训管理规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8544.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-70TM",
+    "office_unit": "空管行业管理办公室",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-70TM%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E7%A9%BA%E4%B8%AD%E4%BA%A4%E9%80%9A%E7%AE%A1%E5%88%B6%E5%B2%97%E4%BD%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "中国民用航空标准化管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8545.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-375SE",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-375SE%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%A0%87%E5%87%86%E5%8C%96%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空器国籍登记规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8546.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-45-R1",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-45-R1%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%99%A8%E5%9B%BD%E7%B1%8D%E7%99%BB%E8%AE%B0%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用机场航空器活动区道路交通管理规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8547.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-331SB",
+    "office_unit": "机场司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-331SB%E6%B0%91%E7%94%A8%E6%9C%BA%E5%9C%BA%E8%88%AA%E7%A9%BA%E5%99%A8%E6%B4%BB%E5%8A%A8%E5%8C%BA%E9%81%93%E8%B7%AF%E4%BA%A4%E9%80%9A%E7%AE%A1%E7%90%86%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "中国民用航空快递业管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8548.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-291LR",
+    "office_unit": "运输司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-291LR%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%BF%AB%E9%80%92%E4%B8%9A%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "航空安全员管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8549.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-68SB",
+    "office_unit": "公安局",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-68SB%E8%88%AA%E7%A9%BA%E5%AE%89%E5%85%A8%E5%91%98%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用机场和民用航空器内禁止吸烟的规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8550.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-252FS",
+    "office_unit": "运输司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-252FS%E6%B0%91%E7%94%A8%E6%9C%BA%E5%9C%BA%E5%92%8C%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%99%A8%E5%86%85%E7%A6%81%E6%AD%A2%E5%90%B8%E7%83%9F%E7%9A%84%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空旅客、行李国际运输规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8551.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-272TR-R1",
+    "office_unit": "运输司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-272TR-R1%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%97%85%E5%AE%A2%E3%80%81%E8%A1%8C%E6%9D%8E%E5%9B%BD%E9%99%85%E8%BF%90%E8%BE%93%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "民用直升机海上平台运行规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8552.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-94FS-Ⅲ",
+    "office_unit": "飞行标准司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-94FS-%E2%85%A2%E6%B0%91%E7%94%A8%E7%9B%B4%E5%8D%87%E6%9C%BA%E6%B5%B7%E4%B8%8A%E5%B9%B3%E5%8F%B0%E8%BF%90%E8%A1%8C%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空科学技术成果鉴定办法",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8554.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-359SE",
+    "office_unit": "人事科教司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-359SE%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E6%88%90%E6%9E%9C%E9%89%B4%E5%AE%9A%E5%8A%9E%E6%B3%95.pdf"
+  },
+  {
+    "title": "中国民用航空总局科学技术进步奖励办法",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8553.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-359SE-I-R1",
+    "office_unit": "人事科教司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-359SE-I-R1%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%80%BB%E5%B1%80%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E8%BF%9B%E6%AD%A5%E5%A5%96%E5%8A%B1%E5%8A%9E%E6%B3%95.pdf"
+  },
+  {
+    "title": "中国民用航空计量技术委任代表和委任单位代表规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8555.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-183SE",
+    "office_unit": "机场司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-183SE%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%AE%A1%E9%87%8F%E6%8A%80%E6%9C%AF%E5%A7%94%E4%BB%BB%E4%BB%A3%E8%A1%A8%E5%92%8C%E5%A7%94%E4%BB%BB%E5%8D%95%E4%BD%8D%E4%BB%A3%E8%A1%A8%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空维修技术人员学校合格审定规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8556.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-147SE",
+    "office_unit": "飞行标准司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-147SE%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E7%BB%B4%E4%BF%AE%E6%8A%80%E6%9C%AF%E4%BA%BA%E5%91%98%E5%AD%A6%E6%A0%A1%E5%90%88%E6%A0%BC%E5%AE%A1%E5%AE%9A%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空企业规范化基础管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8557.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-313LR",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-313LR%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E4%BC%81%E4%B8%9A%E8%A7%84%E8%8C%83%E5%8C%96%E5%9F%BA%E7%A1%80%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "关于修订和废止部分民用航空规章的决定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8558.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-20LR",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-20LR%E5%85%B3%E4%BA%8E%E4%BF%AE%E8%AE%A2%E5%92%8C%E5%BA%9F%E6%AD%A2%E9%83%A8%E5%88%86%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%A7%84%E7%AB%A0%E7%9A%84%E5%86%B3%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空国内航线和航班经营管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8559.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-289TR",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-289TR%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%9B%BD%E5%86%85%E8%88%AA%E7%BA%BF%E5%92%8C%E8%88%AA%E7%8F%AD%E7%BB%8F%E8%90%A5%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "经营空中游览项目审批办法",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8560.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-283LR",
+    "office_unit": "运输司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-283LR%E7%BB%8F%E8%90%A5%E7%A9%BA%E4%B8%AD%E6%B8%B8%E8%A7%88%E9%A1%B9%E7%9B%AE%E5%AE%A1%E6%89%B9%E5%8A%9E%E6%B3%95.pdf"
+  },
+  {
+    "title": "中国民用航空仪表着陆系统Ⅱ类运行规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8561.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-91FS-Ⅱ",
+    "office_unit": "政策法规司"
+  },
+  {
+    "title": "中国民用航空计量管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8563.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-379SE",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-379SE%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%AE%A1%E9%87%8F%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空部门计量检定规程管理办法",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8562.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-381SE",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-381SE%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E9%83%A8%E9%97%A8%E8%AE%A1%E9%87%8F%E6%A3%80%E5%AE%9A%E8%A7%84%E7%A8%8B%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95.pdf"
+  },
+  {
+    "title": "中国民用航空内部审计工作规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8564.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-227AU-R1",
+    "office_unit": "财务司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-227AU-R1%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%86%85%E9%83%A8%E5%AE%A1%E8%AE%A1%E5%B7%A5%E4%BD%9C%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空器领航员、飞行机械员、飞行通信员合格审定规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8565.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-63FS",
+    "office_unit": "飞行标准司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-63FS%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%99%A8%E9%A2%86%E8%88%AA%E5%91%98%E3%80%81%E9%A3%9E%E8%A1%8C%E6%9C%BA%E6%A2%B0%E5%91%98%E3%80%81%E9%A3%9E%E8%A1%8C%E9%80%9A%E4%BF%A1%E5%91%98%E5%90%88%E6%A0%BC%E5%AE%A1%E5%AE%9A%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "中国民用航空货物国内运输规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8566.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-275TR-R1",
+    "office_unit": "运输司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-275TR-R1%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%B4%A7%E7%89%A9%E5%9B%BD%E5%86%85%E8%BF%90%E8%BE%93%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "中国民用航空旅客、行李国内运输规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8567.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-271TR-R1",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-271TR-R1%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%97%85%E5%AE%A2%E3%80%81%E8%A1%8C%E6%9D%8E%E5%9B%BD%E5%86%85%E8%BF%90%E8%BE%93%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "制止民用航空运输市场不正当竞争行为规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8568.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-303LR",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-303LR%E5%88%B6%E6%AD%A2%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%BF%90%E8%BE%93%E5%B8%82%E5%9C%BA%E4%B8%8D%E6%AD%A3%E5%BD%93%E7%AB%9E%E4%BA%89%E8%A1%8C%E4%B8%BA%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "运输类飞机适航标准",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8440.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-25-R2",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%21CCAR-25-R2%E8%BF%90%E8%BE%93%E7%B1%BB%E9%A3%9E%E6%9C%BA%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86.pdf"
+  },
+  {
+    "title": "中国民用航空总局规章制定程序规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8569.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-11LR-R1",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-11LR-R1%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%80%BB%E5%B1%80%E8%A7%84%E7%AB%A0%E5%88%B6%E5%AE%9A%E7%A8%8B%E5%BA%8F%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用机场工程建设监理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8570.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-168CA-R1",
+    "office_unit": "机场司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-168CA-R1%E6%B0%91%E7%94%A8%E6%9C%BA%E5%9C%BA%E5%B7%A5%E7%A8%8B%E5%BB%BA%E8%AE%BE%E7%9B%91%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用机场工程施工许可证管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8571.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-167CA-R1",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-167CA-R1%E6%B0%91%E7%94%A8%E6%9C%BA%E5%9C%BA%E5%B7%A5%E7%A8%8B%E6%96%BD%E5%B7%A5%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用机场工程设计管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8572.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-166CA-I-R1",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-166CA-I-R1%E6%B0%91%E7%94%A8%E6%9C%BA%E5%9C%BA%E5%B7%A5%E7%A8%8B%E8%AE%BE%E8%AE%A1%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空总局职能部门规范性文件制定程序规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8573.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-12LR",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-12LR%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%80%BB%E5%B1%80%E8%81%8C%E8%83%BD%E9%83%A8%E9%97%A8%E8%A7%84%E8%8C%83%E6%80%A7%E6%96%87%E4%BB%B6%E5%88%B6%E5%AE%9A%E7%A8%8B%E5%BA%8F%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "正常类、实用类、特技类和通勤类飞机适航标准",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202001/t20200119_200450.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-23-R2",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%21CCAR-23-R2%E6%AD%A3%E5%B8%B8%E7%B1%BB%E3%80%81%E5%AE%9E%E7%94%A8%E7%B1%BB%E3%80%81%E7%89%B9%E6%8A%80%E7%B1%BB%E5%92%8C%E9%80%9A%E5%8B%A4%E7%B1%BB%E9%A3%9E%E6%9C%BA%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86.pdf"
+  },
+  {
+    "title": "民用航空运输销售代理业管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8574.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%BF%90%E8%BE%93%E9%94%80%E5%94%AE%E4%BB%A3%E7%90%86%E4%B8%9A%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "定期国际航空运输管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8575.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-277TR",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-277TR%E5%AE%9A%E6%9C%9F%E5%9B%BD%E9%99%85%E8%88%AA%E7%A9%BA%E8%BF%90%E8%BE%93%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用机场运营管理暂行办法",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8576.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-152CA",
+    "office_unit": "机场司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-152CA%E6%B0%91%E7%94%A8%E6%9C%BA%E5%9C%BA%E8%BF%90%E8%90%A5%E7%AE%A1%E7%90%86%E6%9A%82%E8%A1%8C%E5%8A%9E%E6%B3%95.pdf"
+  },
+  {
+    "title": "雇用外籍飞行人员从事公共航空运输飞行的暂行规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8577.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-60FS-R1",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-60FS-R1%E9%9B%87%E7%94%A8%E5%A4%96%E7%B1%8D%E9%A3%9E%E8%A1%8C%E4%BA%BA%E5%91%98%E4%BB%8E%E4%BA%8B%E5%85%AC%E5%85%B1%E8%88%AA%E7%A9%BA%E8%BF%90%E8%BE%93%E9%A3%9E%E8%A1%8C%E7%9A%84%E6%9A%82%E8%A1%8C%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "全民所有制民航企业转换经营机制实施办法",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8578.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-279LR",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-279LR%E5%85%A8%E6%B0%91%E6%89%80%E6%9C%89%E5%88%B6%E6%B0%91%E8%88%AA%E4%BC%81%E4%B8%9A%E8%BD%AC%E6%8D%A2%E7%BB%8F%E8%90%A5%E6%9C%BA%E5%88%B6%E5%AE%9E%E6%96%BD%E5%8A%9E%E6%B3%95.pdf"
+  },
+  {
+    "title": "湿租外国民用航空器从事商业运输的暂行规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8579.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-293TR-R1",
+    "office_unit": "运输司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-293TR-R1%E6%B9%BF%E7%A7%9F%E5%A4%96%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%99%A8%E4%BB%8E%E4%BA%8B%E5%95%86%E4%B8%9A%E8%BF%90%E8%BE%93%E7%9A%84%E6%9A%82%E8%A1%8C%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空器适航委任代表和委任单位代表的规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8581.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-183AA",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-183AA%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%99%A8%E9%80%82%E8%88%AA%E5%A7%94%E4%BB%BB%E4%BB%A3%E8%A1%A8%E5%92%8C%E5%A7%94%E4%BB%BB%E5%8D%95%E4%BD%8D%E4%BB%A3%E8%A1%A8%E7%9A%84%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空材料、零部件和机载设备技术标准规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8582.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-37AA",
+    "office_unit": "机场司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-37AA%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%9D%90%E6%96%99%E3%80%81%E9%9B%B6%E9%83%A8%E4%BB%B6%E5%92%8C%E6%9C%BA%E8%BD%BD%E8%AE%BE%E5%A4%87%E6%8A%80%E6%9C%AF%E6%A0%87%E5%87%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空机场生产统计实施办法",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8584.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-163PL",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-163PL%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%9C%BA%E5%9C%BA%E7%94%9F%E4%BA%A7%E7%BB%9F%E8%AE%A1%E5%AE%9E%E6%96%BD%E5%8A%9E%E6%B3%95.pdf"
+  },
+  {
+    "title": "关于航空运输服务方面罚款的暂行规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8586.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-187TR-R1",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-187TR-R1%E5%85%B3%E4%BA%8E%E8%88%AA%E7%A9%BA%E8%BF%90%E8%BE%93%E6%9C%8D%E5%8A%A1%E6%96%B9%E9%9D%A2%E7%BD%9A%E6%AC%BE%E7%9A%84%E6%9A%82%E8%A1%8C%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民航特种车辆、地面专用设备生产许可证管理暂行规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8583.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-137CA-R1",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-137CA-R1%E6%B0%91%E8%88%AA%E7%89%B9%E7%A7%8D%E8%BD%A6%E8%BE%86%E3%80%81%E5%9C%B0%E9%9D%A2%E4%B8%93%E7%94%A8%E8%AE%BE%E5%A4%87%E7%94%9F%E4%BA%A7%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%AE%A1%E7%90%86%E6%9A%82%E8%A1%8C%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空器国籍和登记的规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202001/t20200119_200455.html",
+    "doc_type": "CCAR规章",
+    "validity": "废止",
+    "doc_number": "CCAR-45AA",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%BA%9F%E6%AD%A2%21CCAR-45AA%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%99%A8%E5%9B%BD%E7%B1%8D%E5%92%8C%E7%99%BB%E8%AE%B0%E7%9A%84%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "外国民用航空运输不定期飞行管理细则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8585.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-119TR",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-119TR%E5%A4%96%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%BF%90%E8%BE%93%E4%B8%8D%E5%AE%9A%E6%9C%9F%E9%A3%9E%E8%A1%8C%E7%AE%A1%E7%90%86%E7%BB%86%E5%88%99.pdf"
+  },
+  {
+    "title": "民用航空产品和零件合格审定的规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202001/t20200119_200474.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-21-R1",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-21-R1%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E4%BA%A7%E5%93%81%E5%92%8C%E9%9B%B6%E4%BB%B6%E5%90%88%E6%A0%BC%E5%AE%A1%E5%AE%9A%E7%9A%84%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空产品和零件合格审定的规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202001/t20200119_200447.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-21",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-21%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E4%BA%A7%E5%93%81%E5%92%8C%E9%9B%B6%E4%BB%B6%E5%90%88%E6%A0%BC%E5%AE%A1%E5%AE%9A%E7%9A%84%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用机场停车场建设和管理暂行规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8587.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-162SB-R1",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-162SB-R1%E6%B0%91%E7%94%A8%E6%9C%BA%E5%9C%BA%E5%81%9C%E8%BD%A6%E5%9C%BA%E5%BB%BA%E8%AE%BE%E5%92%8C%E7%AE%A1%E7%90%86%E6%9A%82%E8%A1%8C%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "正常类、实用类、特技类和通勤类飞机适航标准",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202001/t20200119_200449.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-23-R1",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%21CCAR-23-R1%E6%AD%A3%E5%B8%B8%E7%B1%BB%E3%80%81%E5%AE%9E%E7%94%A8%E7%B1%BB%E3%80%81%E7%89%B9%E6%8A%80%E7%B1%BB%E5%92%8C%E9%80%9A%E5%8B%A4%E7%B1%BB%E9%A3%9E%E6%9C%BA%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86.pdf"
+  },
+  {
+    "title": "单方经营中国大陆与台湾间民用航空运输补偿费的规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8588.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-311FI",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-311FI%E5%8D%95%E6%96%B9%E7%BB%8F%E8%90%A5%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E4%B8%8E%E5%8F%B0%E6%B9%BE%E9%97%B4%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E8%BF%90%E8%BE%93%E8%A1%A5%E5%81%BF%E8%B4%B9%E7%9A%84%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "民用航空器适航指令规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8590.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-39AA",
+    "office_unit": "政策法规司"
+  },
+  {
+    "title": "中国民用航空无线电管理规定",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8591.html",
+    "doc_type": "CCAR规章",
+    "validity": "有效",
+    "doc_number": "CCAR-118TM",
+    "office_unit": "空管行业管理办公室",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/CCAR-118TM%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%97%A0%E7%BA%BF%E7%94%B5%E7%AE%A1%E7%90%86%E8%A7%84%E5%AE%9A.pdf"
+  },
+  {
+    "title": "中国民用航空通信导航雷达工作规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8592.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-115TM",
+    "office_unit": "空管行业管理办公室",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-115TM%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E9%80%9A%E4%BF%A1%E5%AF%BC%E8%88%AA%E9%9B%B7%E8%BE%BE%E5%B7%A5%E4%BD%9C%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "中国民用航空气象工作规则",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8589.html",
+    "doc_type": "CCAR规章",
+    "validity": "失效",
+    "doc_number": "CCAR-117TM",
+    "office_unit": "空管局",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%A4%B1%E6%95%88%21CCAR-117TM%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E6%B0%94%E8%B1%A1%E5%B7%A5%E4%BD%9C%E8%A7%84%E5%88%99.pdf"
+  },
+  {
+    "title": "运输类旋翼航空器适航标准",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202001/t20200119_200453.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-29",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%21CCAR-29%E8%BF%90%E8%BE%93%E7%B1%BB%E6%97%8B%E7%BF%BC%E8%88%AA%E7%A9%BA%E5%99%A8%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86.pdf"
+  },
+  {
+    "title": "一般类旋翼航空器适航标准",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202001/t20200119_200452.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-27",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%21CCAR-27%E4%B8%80%E8%88%AC%E7%B1%BB%E6%97%8B%E7%BF%BC%E8%88%AA%E7%A9%BA%E5%99%A8%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86.pdf"
+  },
+  {
+    "title": "航空发动机适航标准",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202001/t20200119_200454.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-33",
+    "office_unit": "政策法规司"
+  },
+  {
+    "title": "螺旋桨适航标准",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/201511/t20151102_8610.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-35",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%21CCAR-35%E8%9E%BA%E6%97%8B%E6%A1%A8%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86.pdf"
+  },
+  {
+    "title": "正常类、实用类、特技类和通勤类飞机适航标准",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202001/t20200119_200448.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-23",
+    "office_unit": "政策法规司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/regulation/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%21CCAR-23%E6%AD%A3%E5%B8%B8%E7%B1%BB%E3%80%81%E5%AE%9E%E7%94%A8%E7%B1%BB%E3%80%81%E7%89%B9%E6%8A%80%E7%B1%BB%E5%92%8C%E9%80%9A%E5%8B%A4%E7%B1%BB%E9%A3%9E%E6%9C%BA%E9%80%82%E8%88%AA%E6%A0%87%E5%87%86.pdf"
+  },
+  {
+    "title": "运输类飞机适航标准",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202001/t20200119_200451.html",
+    "doc_type": "CCAR规章",
+    "validity": "历史版本",
+    "doc_number": "CCAR-25-R1",
+    "office_unit": "政策法规司"
   }
 ];
 

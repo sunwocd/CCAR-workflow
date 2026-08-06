@@ -1,30 +1,30 @@
 {
   "version": 1,
   "source": "CAAC",
-  "lastUpdated": "2026-08-06T11:15:53Z",
+  "lastUpdated": "2026-08-06T11:21:52Z",
   "basePath": "data/v1",
   "files": {
     "regulation": {
       "label": "民航规章",
       "filename": "regulation.json",
       "path": "data/v1/regulation.json",
-      "count": 200,
-      "sha256": "f2e22a09b25d3400981171ade4c9477ffbb5b6fe6bd68b156138c4c6b9822576"
+      "count": 310,
+      "sha256": "d8b6ae2e628950f01f5f59a5fe75081a96c5800c306c9d8001938ff6b3565261"
     },
     "normative": {
       "label": "规范性文件",
       "filename": "normative.json",
       "path": "data/v1/normative.json",
-      "count": 200,
-      "sha256": "5464e7f2dcda4969b4199897e187d2e34c5c5dc9b92e1bc2f971fb121d6f0c70"
+      "count": 1361,
+      "sha256": "1592daf3ffbc675636e7c86010366a457bc61054a68987d22d85874f6f3815ba"
     },
     "specification": {
       "label": "标准规范",
       "filename": "specification.json",
       "path": "data/v1/specification.json",
-      "count": 200,
-      "sha256": "802a303e3a0199f43c54481f22d70d823597805773b2b6cdad525654490b00bb"
+      "count": 1149,
+      "sha256": "7446cb4731ad796bf9e8343a13f6d15df6e23d9b848f1306ebee87ba5bd6c336"
     }
   },
-  "totalCount": 600
+  "totalCount": 2820
 }

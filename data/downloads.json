@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-08-06T11:15:39.464675",
+  "last_update": "2026-08-12T08:49:26.087662",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6600,6 +6600,34 @@
     "http://www.caac.gov.cn/XXGK/XXGK/CZXX/202607/t20260723_231368.html": {
       "relative_path": "other/中国民用航空局2025年度部门决算.pdf",
       "updated_at": "2026-08-06T11:15:22.080968"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202608/t20260812_231480.html": {
+      "relative_path": "other/关于北京天羿机场设计咨询有限公司等1家工程设计民航行业乙级资质企业动态核查整改材料的公示.pdf",
+      "updated_at": "2026-08-12T08:49:15.607872"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202608/t20260812_231479.html": {
+      "relative_path": "other/关于北京泰豪智能工程有限公司等5家资质企业动态核查核定意见的公示.txt",
+      "updated_at": "2026-08-12T08:49:20.655754"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202608/t20260812_231478.html": {
+      "relative_path": "other/关于云南建投第四建设有限公司等1家企业民航专业工程资质动态核查整改材料的公示.pdf",
+      "updated_at": "2026-08-12T08:49:20.655817"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202608/t20260812_231477.html": {
+      "relative_path": "other/关于追加中建筑港集团有限公司等2家企业进行资质核查的通知.txt",
+      "updated_at": "2026-08-12T08:49:26.087523"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202608/t20260812_231482.html": {
+      "relative_path": "other/国际航线审批结果公开（C2026007）.pdf",
+      "updated_at": "2026-08-12T08:49:26.087585"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202607/t20260724_231378.html": {
+      "relative_path": "other/民航局2026年夏秋航季季中颁发、注销国内航线经营许可信息通告.pdf",
+      "updated_at": "2026-08-12T08:49:26.087623"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202607/t20260724_231377.html": {
+      "relative_path": "other/关于2026年上半年颁发、注销港澳台航线经营许可信息通告.pdf",
+      "updated_at": "2026-08-12T08:49:26.087659"
     }
   }
 }

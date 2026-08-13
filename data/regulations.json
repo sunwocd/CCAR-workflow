@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-08-12T08:49:38.081788",
+  "last_check": "2026-08-13T08:54:02.228270",
   "documents": {
     "9": [
       {
@@ -13,7 +13,7 @@
         "publish_date": "2026-08-12",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202608/P020260812351542538368.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "关于北京泰豪智能工程有限公司等5家资质企业动态核查核定意见的公示",
@@ -39,7 +39,7 @@
         "publish_date": "2026-08-12",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202608/P020260812347726076291.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "关于追加中建筑港集团有限公司等2家企业进行资质核查的通知",
@@ -65,7 +65,7 @@
         "publish_date": "2026-08-12",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202608/P020260812527874786253.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "民航局2026年夏秋航季季中颁发、注销国内航线经营许可信息通告",
@@ -78,7 +78,7 @@
         "publish_date": "2026-07-24",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202607/P020260724551024762258.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "关于2026年上半年颁发、注销港澳台航线经营许可信息通告",
@@ -91,7 +91,7 @@
         "publish_date": "2026-07-24",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202607/P020260724550672490364.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "中国民用航空局2025年度部门决算",

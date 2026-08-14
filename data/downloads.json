@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-08-12T08:49:26.087662",
+  "last_update": "2026-08-14T08:47:19.704499",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6628,6 +6628,30 @@
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202607/t20260724_231377.html": {
       "relative_path": "other/关于2026年上半年颁发、注销港澳台航线经营许可信息通告.pdf",
       "updated_at": "2026-08-12T08:49:26.087659"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/CZXX/202608/t20260814_231509.html": {
+      "relative_path": "other/中国民航空中警察总队2025年部门决算公开.pdf",
+      "updated_at": "2026-08-14T08:45:40.216180"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/CZXX/202608/t20260814_231512.html": {
+      "relative_path": "other/中国民用航空局基建维修中心2025年度部门决算公开.pdf",
+      "updated_at": "2026-08-14T08:45:56.930557"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/CZXX/202608/t20260814_231511.html": {
+      "relative_path": "other/中国民用航空局机关服务局2025年度部门决算.pdf",
+      "updated_at": "2026-08-14T08:46:18.083522"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/CZXX/202608/t20260814_231510.html": {
+      "relative_path": "other/中国民用航空局机关服务局本级2025年度部门决算.pdf",
+      "updated_at": "2026-08-14T08:46:39.798564"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/CZXX/202608/t20260814_231506.html": {
+      "relative_path": "other/中国民用航空局离退休干部局2025年度部门决算公开.pdf",
+      "updated_at": "2026-08-14T08:47:02.593559"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/CZXX/202608/t20260814_231500.html": {
+      "relative_path": "other/中国民用航空局本级2025年度部门决算公开.pdf",
+      "updated_at": "2026-08-14T08:47:19.704489"
     }
   }
 }

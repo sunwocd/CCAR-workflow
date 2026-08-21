@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-08-20T08:05:38.144554",
+  "last_check": "2026-08-21T08:06:11.047278",
   "documents": {
     "9": [
       {
@@ -4881,6 +4881,19 @@
       }
     ],
     "11": [
+      {
+        "title": "中国民航2026年7月份主要生产指标统计",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/TJSJ/202608/t20260821_231551.html",
+        "category": "政策解读",
+        "category_id": "11",
+        "doc_number": "",
+        "office_unit": "发展计划司",
+        "sign_date": "2026-08-21",
+        "publish_date": "2026-08-21",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TJSJ/202608/P020260821408095459831.pdf",
+        "has_pdf": true
+      },
       {
         "title": "中国民航2026年6月份主要生产指标统计",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/TJSJ/202607/t20260721_231347.html",
@@ -13482,6 +13495,32 @@
       }
     ],
     "15": [
+      {
+        "title": "空中交通无线电通话用语",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202608/t20260821_231553.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 4014-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-08-21",
+        "publish_date": "2026-08-21",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202608/P020260821554932514198.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "机载气象雷达设备",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/JSBZGD/202608/t20260821_231552.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "CTSO-C63f",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-08-21",
+        "publish_date": "2026-08-21",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/JSBZGD/202608/P020260821551915916750.pdf",
+        "has_pdf": true
+      },
       {
         "title": "航空抗燃磷酸酯液压油性能测试方法  第2部分：耐腐蚀性能  流量控制阀测试法",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231345.html",
@@ -28329,6 +28368,28 @@
     }
   ],
   "standards": [
+    {
+      "title": "空中交通无线电通话用语",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202608/t20260821_231553.html",
+      "validity": "有效",
+      "doc_number": "MH/T 4014-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-08-21",
+      "publish_date": "2026-08-21",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202608/P020260821554932514198.pdf"
+    },
+    {
+      "title": "机载气象雷达设备",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/JSBZGD/202608/t20260821_231552.html",
+      "validity": "有效",
+      "doc_number": "CTSO-C63f",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-08-21",
+      "publish_date": "2026-08-21",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/JSBZGD/202608/P020260821551915916750.pdf"
+    },
     {
       "title": "航空抗燃磷酸酯液压油性能测试方法  第2部分：耐腐蚀性能  流量控制阀测试法",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202607/t20260721_231345.html",

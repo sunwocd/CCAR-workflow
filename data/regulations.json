@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-08-21T08:06:11.047278",
+  "last_check": "2026-08-22T07:54:21.617776",
   "documents": {
     "9": [
       {
@@ -4892,7 +4892,7 @@
         "publish_date": "2026-08-21",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TJSJ/202608/P020260821408095459831.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "中国民航2026年6月份主要生产指标统计",
@@ -13506,7 +13506,7 @@
         "publish_date": "2026-08-21",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202608/P020260821554932514198.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "机载气象雷达设备",
@@ -13519,7 +13519,7 @@
         "publish_date": "2026-08-21",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/JSBZGD/202608/P020260821551915916750.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "航空抗燃磷酸酯液压油性能测试方法  第2部分：耐腐蚀性能  流量控制阀测试法",

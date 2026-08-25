@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-08-21T08:05:57.421318",
+  "last_update": "2026-08-25T08:08:31.344287",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6664,6 +6664,10 @@
     "http://www.caac.gov.cn/XXGK/XXGK/BZGF/JSBZGD/202608/t20260821_231552.html": {
       "relative_path": "specification/CTSO-C63f机载气象雷达设备.pdf",
       "updated_at": "2026-08-21T08:05:57.421301"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202608/t20260825_231600.html": {
+      "relative_path": "regulation/基于飞行视角的运输机场运行保障能力反馈工作机制实施办法.pdf",
+      "updated_at": "2026-08-25T08:08:31.344272"
     }
   }
 }

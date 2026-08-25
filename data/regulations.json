@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-08-24T08:13:05.876547",
+  "last_check": "2026-08-25T08:08:39.498089",
   "documents": {
     "9": [
       {
@@ -8135,6 +8135,19 @@
       }
     ],
     "13": [
+      {
+        "title": "基于飞行视角的运输机场运行保障能力反馈工作机制实施办法",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202608/t20260825_231600.html",
+        "category": "民航规章",
+        "category_id": "13",
+        "doc_number": "",
+        "office_unit": "机场司",
+        "sign_date": "",
+        "publish_date": "2026-08-25",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202608/P020260825511208130342.pdf",
+        "has_pdf": true
+      },
       {
         "title": "通用航空经营管理规定",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/t20260717_231321.html",
@@ -23832,6 +23845,17 @@
     "27": []
   },
   "regulations": [
+    {
+      "title": "基于飞行视角的运输机场运行保障能力反馈工作机制实施办法",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202608/t20260825_231600.html",
+      "validity": "有效",
+      "doc_number": "",
+      "office_unit": "机场司",
+      "doc_type": "regulation",
+      "sign_date": "",
+      "publish_date": "2026-08-25",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202608/P020260825511208130342.pdf"
+    },
     {
       "title": "通用航空经营管理规定",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202607/t20260717_231321.html",

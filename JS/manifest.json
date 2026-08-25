@@ -1,15 +1,15 @@
 {
   "version": 1,
   "source": "CAAC",
-  "lastUpdated": "2026-08-24T08:13:06Z",
+  "lastUpdated": "2026-08-25T08:08:39Z",
   "basePath": "data/v1",
   "files": {
     "regulation": {
       "label": "民航规章",
       "filename": "regulation.json",
       "path": "data/v1/regulation.json",
-      "count": 310,
-      "sha256": "6c668b4b8364c3bfae3ce777bc271f865a01babc002d3ca67a8cb575f2fb479a"
+      "count": 311,
+      "sha256": "7f2191ab1ebe67866dcac6a971d142ffa10dfdc445d6744fe46ceeb0d6870fe0"
     },
     "normative": {
       "label": "规范性文件",
@@ -26,5 +26,5 @@
       "sha256": "50778b8a9934188b8cd5fffbbd76239f7ce7fdfcf5af5236378c6b43da2c42f3"
     }
   },
-  "totalCount": 2822
+  "totalCount": 2823
 }

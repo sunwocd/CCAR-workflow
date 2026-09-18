@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "CAAC",
-  "lastUpdated": "2026-09-17T12:44:55Z",
+  "lastUpdated": "2026-09-18T12:23:56Z",
   "basePath": "data/v1",
   "files": {
     "regulation": {
@@ -22,9 +22,9 @@
       "label": "标准规范",
       "filename": "specification.json",
       "path": "data/v1/specification.json",
-      "count": 1155,
-      "sha256": "c1093d9da61e69d719c7003e81a5cb78af3d0da64f52a8a592c2851f8c88c150"
+      "count": 1156,
+      "sha256": "8089cdba87ce3670ed5b7e6496bd96c0524da24927f7ccceaf531db74785b01d"
     }
   },
-  "totalCount": 2834
+  "totalCount": 2835
 }

@@ -1,5 +1,16 @@
 var data = [
   {
+    "title": "民航专业工程建设项目 《建设工程质量管理条例》第六十四条行政处罚裁量基准",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202609/t20260923_231775.html",
+    "doc_type": "规范性文件",
+    "validity": "有效",
+    "sign_date": "2026年09月21日",
+    "publish_date": "2026年09月21日",
+    "doc_number": "",
+    "office_unit": "机场司",
+    "file_number": ""
+  },
+  {
     "title": "民航局关于印发 《民航专业工程建设项目远程异地评标工作细则》的通知",
     "url": "http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202609/t20260921_231761.html",
     "doc_type": "规范性文件",

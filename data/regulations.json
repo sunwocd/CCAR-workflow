@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-09-29T14:13:10.746041",
+  "last_check": "2026-09-30T14:00:12.459481",
   "documents": {
     "9": [
       {
@@ -13897,6 +13897,45 @@
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/JSBZGD/202608/P020260821551915916750.pdf",
         "has_pdf": false
+      },
+      {
+        "title": "小型、中型民用无人驾驶航空器操控员训练要求",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/t20260930_231804.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 1021-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-08-04",
+        "publish_date": "2026-08-04",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/P020260930499998840147.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "民用无人驾驶航空器人类生物样本运输服务指南",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/t20260930_231803.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 1088-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-08-04",
+        "publish_date": "2026-08-04",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/P020260930499346503239.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "民用无人驾驶航空器货物运输包装要求  人类生物样本",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/t20260930_231802.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 1087-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-08-04",
+        "publish_date": "2026-08-04",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/P020260930496481192407.pdf",
+        "has_pdf": true
       },
       {
         "title": "民用无人驾驶航空器货物运输包装要求 人类生物样本",
@@ -29338,6 +29377,39 @@
       "sign_date": "2026-08-21",
       "publish_date": "2026-08-21",
       "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/JSBZGD/202608/P020260821551915916750.pdf"
+    },
+    {
+      "title": "小型、中型民用无人驾驶航空器操控员训练要求",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/t20260930_231804.html",
+      "validity": "有效",
+      "doc_number": "MH/T 1021-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-08-04",
+      "publish_date": "2026-08-04",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/P020260930499998840147.pdf"
+    },
+    {
+      "title": "民用无人驾驶航空器人类生物样本运输服务指南",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/t20260930_231803.html",
+      "validity": "有效",
+      "doc_number": "MH/T 1088-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-08-04",
+      "publish_date": "2026-08-04",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/P020260930499346503239.pdf"
+    },
+    {
+      "title": "民用无人驾驶航空器货物运输包装要求  人类生物样本",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/t20260930_231802.html",
+      "validity": "有效",
+      "doc_number": "MH/T 1087-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-08-04",
+      "publish_date": "2026-08-04",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/P020260930496481192407.pdf"
     },
     {
       "title": "民用无人驾驶航空器货物运输包装要求 人类生物样本",

@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-09-30T14:00:12.459481",
+  "last_check": "2026-10-01T14:41:21.669705",
   "documents": {
     "9": [
       {
@@ -13909,7 +13909,7 @@
         "publish_date": "2026-08-04",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/P020260930499998840147.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "民用无人驾驶航空器人类生物样本运输服务指南",
@@ -13922,7 +13922,7 @@
         "publish_date": "2026-08-04",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/P020260930499346503239.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "民用无人驾驶航空器货物运输包装要求  人类生物样本",
@@ -13935,7 +13935,7 @@
         "publish_date": "2026-08-04",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/P020260930496481192407.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "民用无人驾驶航空器货物运输包装要求 人类生物样本",

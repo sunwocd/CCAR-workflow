@@ -43,3 +43,6 @@ scripts/reports/
 机场司/
 日志/
 
+
+# Local backups
+*.localbak

@@ -123,5 +123,97 @@ class StoragePdfUrlPreservationTests(unittest.TestCase):
             self.assertEqual("https://flighttoolbox.hudawang.cn/a.pdf", parsed[0]["pdf_url"])
 
 
+def make_spec_doc(url: str, doc_number: str, title: str, publish_date: str) -> Document:
+    return Document(
+        title=title,
+        url=url,
+        category="标准规范",
+        category_id="15",
+        doc_number=doc_number,
+        office_unit="航空器适航审定司",
+        sign_date=publish_date,
+        publish_date=publish_date,
+    )
+
+
+class DetectChangesRepostTests(unittest.TestCase):
+    """CAAC re-publishes documents under new URLs; re-posts must not be new."""
+
+    KNOWN_URL = "http://www.caac.gov.cn/a/t20260916_1.html"
+    KNOWN_TITLE = "小型、中型民用无人驾驶航空器操控员训练要求"
+
+    def _storage(self, tmp: str) -> Storage:
+        storage = Storage(str(Path(tmp) / "regulations.json"))
+        storage.save(StorageState(
+            last_check="2026-09-16T00:00:00",
+            documents={
+                "15": [
+                    make_spec_doc(
+                        self.KNOWN_URL, "MH/T 2021-2026",
+                        self.KNOWN_TITLE, "2026-08-04",
+                    ).to_dict(),
+                ],
+            },
+        ))
+        return storage
+
+    def test_same_doc_number_new_url_is_reposted(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            storage = self._storage(tmp)
+            repost = make_spec_doc(
+                "http://www.caac.gov.cn/a/t20260930_2.html",
+                "MH/T 2021-2026", self.KNOWN_TITLE, "2026-08-04",
+            )
+            changes = storage.detect_changes({"15": [repost]})
+            self.assertEqual(0, changes.new_count)
+            self.assertEqual(1, changes.reposted_count)
+
+    def test_typo_doc_number_same_title_and_date_is_reposted(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            storage = self._storage(tmp)
+            repost = make_spec_doc(
+                "http://www.caac.gov.cn/a/t20260930_2.html",
+                "MH/T 1021-2026", self.KNOWN_TITLE, "2026-08-04",
+            )
+            changes = storage.detect_changes({"15": [repost]})
+            self.assertEqual(0, changes.new_count)
+            self.assertEqual(1, changes.reposted_count)
+
+    def test_same_title_different_date_is_new(self):
+        """A revised standard keeps its title but gets a new date — still new."""
+        with tempfile.TemporaryDirectory() as tmp:
+            storage = self._storage(tmp)
+            revision = make_spec_doc(
+                "http://www.caac.gov.cn/a/t20271001_3.html",
+                "MH/T 2021-2027", self.KNOWN_TITLE, "2027-08-04",
+            )
+            changes = storage.detect_changes({"15": [revision]})
+            self.assertEqual(1, changes.new_count)
+            self.assertEqual(0, changes.reposted_count)
+
+    def test_title_whitespace_variation_still_reposted(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            storage = self._storage(tmp)
+            repost = make_spec_doc(
+                "http://www.caac.gov.cn/a/t20260930_2.html",
+                "MH/T 1087-2026",
+                "小型、中型民用无人驾驶航空器操控员训练要求 ",
+                "2026-08-04",
+            )
+            changes = storage.detect_changes({"15": [repost]})
+            self.assertEqual(1, changes.reposted_count)
+
+    def test_unrelated_new_url_is_new(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            storage = self._storage(tmp)
+            novel = make_spec_doc(
+                "http://www.caac.gov.cn/a/t20260930_9.html",
+                "MH/T 5093-2026", "民航相干多普勒测风激光雷达建设规范", "2026-09-01",
+            )
+            changes = storage.detect_changes({"15": [novel]})
+            self.assertEqual(1, changes.new_count)
+            self.assertEqual(0, changes.reposted_count)
+
+
 if __name__ == "__main__":
     unittest.main()

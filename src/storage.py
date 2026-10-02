@@ -174,7 +174,8 @@ class ChangeResult:
     """Change detection result"""
     new_documents: dict = field(default_factory=dict)
     updated_documents: dict = field(default_factory=dict)
-    
+    reposted_documents: dict = field(default_factory=dict)
+
     @property
     def has_changes(self) -> bool:
         return self.new_count > 0 or self.updated_count > 0
@@ -195,6 +196,10 @@ class ChangeResult:
     def updated_count(self) -> int:
         return sum(len(docs) for docs in self.updated_documents.values())
     
+    @property
+    def reposted_count(self) -> int:
+        return sum(len(docs) for docs in self.reposted_documents.values())
+
     @property
     def total_count(self) -> int:
         return self.new_count + self.updated_count
@@ -288,6 +293,33 @@ def _doc_field_value(doc_data: Any, field_name: str) -> str:
 def _doc_signature(doc_data: Any) -> tuple[str, ...]:
     """Build a comparable signature for change detection"""
     return tuple(_doc_field_value(doc_data, name) for name in TRACKED_CHANGE_FIELDS)
+
+
+def _is_repost(doc: Any, known_docs: list) -> bool:
+    """True if a new-URL doc is a CAAC re-post of an already-known document.
+
+    CAAC sometimes re-publishes the same document under a new page URL, and
+    the re-posted copy may carry a different (or typo'd) doc_number — e.g.
+    MH/T 2021-2026 re-posted as MH/T 1021-2026. Match by identical
+    doc_number, or by identical title plus a shared date, so re-posts are
+    suppressed instead of notified again. A revised standard shares neither
+    its doc_number nor its publish_date with the superseded one, so it still
+    surfaces as new.
+    """
+    doc_number = _compact(_doc_field_value(doc, "doc_number"))
+    doc_title = _compact(_doc_field_value(doc, "title"))
+    publish_date = _doc_field_value(doc, "publish_date")
+    sign_date = _doc_field_value(doc, "sign_date")
+
+    for known in known_docs:
+        if doc_number and doc_number == _compact(_doc_field_value(known, "doc_number")):
+            return True
+        if doc_title and doc_title == _compact(_doc_field_value(known, "title")):
+            if publish_date and publish_date == _doc_field_value(known, "publish_date"):
+                return True
+            if sign_date and sign_date == _doc_field_value(known, "sign_date"):
+                return True
+    return False
 
 
 def _format_js_date(date_str: str) -> str:
@@ -506,6 +538,7 @@ class Storage:
         
         new_documents = {}
         updated_documents = {}
+        reposted_documents = {}
 
         for cat_id, docs in current_documents.items():
             known_by_url = {}
@@ -516,11 +549,16 @@ class Storage:
 
             new_docs = []
             changed_docs = []
+            reposted_docs = []
+            known_docs = state.documents.get(cat_id, [])
 
             for doc in docs:
                 known_doc = known_by_url.get(doc.url)
                 if known_doc is None:
-                    new_docs.append(doc)
+                    if _is_repost(doc, known_docs):
+                        reposted_docs.append(doc)
+                    else:
+                        new_docs.append(doc)
                 elif _doc_signature(known_doc) != _doc_signature(doc):
                     changed_docs.append(doc)
 
@@ -533,10 +571,19 @@ class Storage:
                 updated_documents[cat_id] = changed_docs
                 cat_name = CATEGORIES.get(cat_id, cat_id)
                 logger.info(f"Updated in {cat_name}: {len(changed_docs)} documents")
+
+            if reposted_docs:
+                reposted_documents[cat_id] = reposted_docs
+                cat_name = CATEGORIES.get(cat_id, cat_id)
+                logger.info(
+                    f"Reposted in {cat_name}: {len(reposted_docs)} documents "
+                    f"(same doc under new URL, ignored)"
+                )
         
         result = ChangeResult(
             new_documents=new_documents,
             updated_documents=updated_documents,
+            reposted_documents=reposted_documents,
         )
         
         if result.has_changes:

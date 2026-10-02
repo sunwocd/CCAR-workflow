@@ -331,7 +331,25 @@ def main() -> int:
                 stored_docs = storage.load().documents
                 known_total = sum(len(stored_docs.get(cat_id, [])) for cat_id in all_documents)
                 changes = storage.detect_changes(all_documents)
-                
+
+                # Drop CAAC re-posts (same document re-published under a new
+                # URL) so they never reach state, JS export, or notifications.
+                reposted_urls = {
+                    doc.url
+                    for docs in changes.reposted_documents.values()
+                    for doc in docs
+                    if doc.url
+                }
+                if reposted_urls:
+                    all_documents = {
+                        cat_id: [d for d in docs if d.url not in reposted_urls]
+                        for cat_id, docs in all_documents.items()
+                    }
+                    logger.info(
+                        f"Suppressed {changes.reposted_count} reposted "
+                        f"documents (re-published under new URLs)"
+                    )
+
                 if not changes.has_changes:
                     logger.info("No new or updated documents detected")
                     if args.notify == 1 and not args.no_notify:

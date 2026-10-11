@@ -67,6 +67,43 @@ def _flatten_documents(documents_by_category: dict[str, list[Document]]) -> list
     return result
 
 
+def _parse_category_filter(raw: str | None) -> set[str]:
+    """Parse a comma-separated category ID list into a set (empty = no filter)"""
+    if not raw:
+        return set()
+    return {item.strip() for item in raw.split(",") if item.strip()}
+
+
+def _filter_documents_by_category(
+    documents_by_category: dict[str, list[Document]],
+    category_ids: set[str],
+) -> dict[str, list[Document]]:
+    """Keep only the selected categories; an empty set means "keep everything"."""
+    if not category_ids:
+        return documents_by_category
+    return {
+        cat_id: docs
+        for cat_id, docs in documents_by_category.items()
+        if cat_id in category_ids
+    }
+
+
+def _select_notify_attachments(
+    downloaded_files: list[str],
+    downloaded_files_by_category: dict[str, list[str]],
+    category_ids: set[str],
+) -> list[str]:
+    """Pick email attachments; with a filter only the notified categories count."""
+    if not category_ids:
+        return downloaded_files
+    return [
+        path
+        for cat_id, paths in downloaded_files_by_category.items()
+        if cat_id in category_ids
+        for path in paths
+    ]
+
+
 def _load_txt_repair_documents(storage: Storage) -> list[Document]:
     """Load 13/14/15 documents whose download index entry is a .txt fallback."""
     download_index = storage.load_download_index()
@@ -137,6 +174,17 @@ def parse_args() -> argparse.Namespace:
         "--list-categories",
         action="store_true",
         help="List all available category IDs and exit",
+    )
+    parser.add_argument(
+        "--notify-categories",
+        type=str,
+        default=os.getenv("NOTIFY_CATEGORIES"),
+        metavar="IDS",
+        help=(
+            "Comma-separated category IDs to include in notifications "
+            "(default: every crawled category). Crawl scope, state file and file "
+            "sync are NOT affected — only the notification content/attachments."
+        ),
     )
     parser.add_argument(
         "--download-dir",
@@ -240,6 +288,17 @@ def main() -> int:
         if invalid_ids:
             logger.error(f"Invalid category IDs: {invalid_ids}. Use --list-categories to see available IDs.")
             return 1
+
+    # Parse the notification filter. This only trims what gets emailed; every
+    # crawled category is still stored, downloaded and exported as before.
+    notify_category_ids = _parse_category_filter(args.notify_categories)
+    invalid_notify_ids = sorted(c for c in notify_category_ids if c not in CATEGORIES)
+    if invalid_notify_ids:
+        logger.error(
+            f"Invalid --notify-categories IDs: {invalid_notify_ids}. "
+            "Use --list-categories to see available IDs."
+        )
+        return 1
     
     logger.info("=" * 50)
     logger.info("CAAC Document Update Monitor - Starting")
@@ -251,6 +310,11 @@ def main() -> int:
         logger.info(f"Categories: {', '.join(CATEGORIES[c] for c in category_ids)}")
     else:
         logger.info(f"Categories: All ({len(CATEGORIES)} categories)")
+    if notify_category_ids:
+        notify_names = ", ".join(
+            CATEGORIES.get(c, f"未知分类({c})") for c in sorted(notify_category_ids)
+        )
+        logger.info(f"Notify only: {notify_names} (all categories are still crawled)")
     if args.download_dir != "downloads":
         logger.info(f"Download dir: {args.download_dir}")
     if args.cn_dirs:
@@ -397,6 +461,7 @@ def main() -> int:
 
             # 3. Download/rename files (optional)
             downloaded_files: list[str] = []
+            downloaded_files_by_category: dict[str, list[str]] = {}
             downloaded_pdf_urls: set[str] = set()
             if args.dry_run:
                 logger.info("Step 3/7: Dry-run, skipping file download")
@@ -500,6 +565,9 @@ def main() -> int:
                             synced_count += 1
                             if saved_path.lower().endswith(".pdf"):
                                 downloaded_files.append(saved_path)
+                                downloaded_files_by_category.setdefault(
+                                    doc.category_id, []
+                                ).append(saved_path)
                                 downloaded_pdf_urls.add(doc.url)
                             if old_was_txt:
                                 if saved_path.lower().endswith(".pdf"):
@@ -580,28 +648,46 @@ def main() -> int:
                 logger.info(f"JSON data upload complete: {json_uploaded} files")
 
             # 6. Send notification
+            # --notify-categories trims the digest only; crawling, state and R2
+            # exports above already ran for every category.
+            notify_target_documents = _filter_documents_by_category(
+                target_documents, notify_category_ids
+            )
             if args.dry_run:
                 logger.info("Step 6/7: Dry-run, skipping notifications")
             elif not args.no_notify:
-                notify_total = sum(len(docs) for docs in target_documents.values())
-                if args.notify == 0 and notify_total == 0:
+                notify_total = sum(len(docs) for docs in notify_target_documents.values())
+                if notify_total == 0 and notify_category_ids:
+                    # Filtered digest: stay quiet rather than emailing a
+                    # "0 条 / 暂无更新" digest for changes the filter excludes.
+                    logger.info(
+                        "Step 6/7: Skipping notifications "
+                        "(no new documents in the notified categories)"
+                    )
+                elif args.notify == 0 and notify_total == 0:
                     logger.info("Step 6/7: Skipping notifications (no new documents)")
                 else:
                     logger.info("Step 6/7: Sending notifications...")
 
                     # Group by category name for notification
                     docs_by_category = {}
-                    for cat_id, docs in target_documents.items():
+                    for cat_id, docs in notify_target_documents.items():
                         cat_name = CATEGORIES.get(cat_id, f"未知分类({cat_id})")
                         docs_by_category[cat_name] = docs
 
                     title, text_content, html_content = notifier.format_update_message(docs_by_category)
 
+                    notify_attachments = _select_notify_attachments(
+                        downloaded_files,
+                        downloaded_files_by_category,
+                        notify_category_ids,
+                    )
+
                     results = notifier.send_all(
                         title,
                         text_content,
                         html_content,
-                        attachments=downloaded_files[:10] if downloaded_files else None,
+                        attachments=notify_attachments[:10] if notify_attachments else None,
                     )
 
                     if results:
@@ -619,7 +705,7 @@ def main() -> int:
                 logger.info("Step 7/7: Updating state file...")
                 storage.update_state(all_documents)
             
-            total_target = sum(len(docs) for docs in target_documents.values())
+            total_target = sum(len(docs) for docs in notify_target_documents.values())
             logger.info("=" * 50)
             logger.info("CAAC Document Update Monitor - Complete" + (" (DRY RUN)" if args.dry_run else ""))
             logger.info(f"Notification documents: {total_target}")

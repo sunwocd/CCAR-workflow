@@ -66,7 +66,8 @@ Merge a downloaded CI artifact into local `downloads/`.
 
 ## Configuration & Secrets
 
-- Local runs read environment variables such as `EMAIL_USER`, `EMAIL_PASS`, `EMAIL_TO`, `EMAIL_SENDER`, `PUSHPLUS_TOKEN`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `DAYS`, and `NOTIFY`.
+- Local runs read environment variables such as `EMAIL_USER`, `EMAIL_PASS`, `EMAIL_TO`, `EMAIL_SENDER`, `PUSHPLUS_TOKEN`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `DAYS`, `NOTIFY`, and `NOTIFY_CATEGORIES`.
+- `NOTIFY_CATEGORIES` (or `--notify-categories`) only trims notification content and attachments to the given category IDs; crawling, the state file, R2 uploads and JS/JSON exports always cover every category. The scheduled workflow defaults it to `13,14,15` (民航规章/规范性文件/标准规范).
 - Use GitHub Actions secrets for CI; never commit credentials or tokens.
 
 ## Crawler Operational Notes

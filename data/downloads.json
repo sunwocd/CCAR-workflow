@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-10-10T13:59:19.811899",
+  "last_update": "2026-10-14T13:03:38.239758",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6864,6 +6864,10 @@
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202610/t20261010_231834.html": {
       "relative_path": "other/飞行程序设计单位备案信息公布表（2026年9月30日）.pdf",
       "updated_at": "2026-10-10T13:59:19.811895"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202610/t20261014_231843.html": {
+      "relative_path": "other/关于中电系统建设工程有限公司等1家企业民航专业工程资质动态核查追加材料的公示.pdf",
+      "updated_at": "2026-10-14T13:03:38.239753"
     }
   }
 }

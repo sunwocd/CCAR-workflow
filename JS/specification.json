@@ -1,5 +1,65 @@
 [
   {
+    "title": "民用无人驾驶航空器综合管理平台与民用无人驾驶航空器航行服务提供方系统数据接口要求",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231865.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年10月13日",
+    "doc_number": "MH/T 4066-2026",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%204066-2026%E6%B0%91%E7%94%A8%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E8%88%AA%E7%A9%BA%E5%99%A8%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E4%B8%8E%E6%B0%91%E7%94%A8%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E8%88%AA%E7%A9%BA%E5%99%A8%E8%88%AA%E8%A1%8C%E6%9C%8D%E5%8A%A1%E6%8F%90%E4%BE%9B%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%95%B0%E6%8D%AE%E6%8E%A5%E5%8F%A3%E8%A6%81%E6%B1%82.pdf"
+  },
+  {
+    "title": "民用航空产业分类",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231864.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年09月22日",
+    "doc_number": "",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E4%BA%A7%E4%B8%9A%E5%88%86%E7%B1%BB.pdf"
+  },
+  {
+    "title": "民航首次乘机旅客服务要求",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231863.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年09月22日",
+    "doc_number": "MH/T 1090-2026",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%201090-2026%E6%B0%91%E8%88%AA%E9%A6%96%E6%AC%A1%E4%B9%98%E6%9C%BA%E6%97%85%E5%AE%A2%E6%9C%8D%E5%8A%A1%E8%A6%81%E6%B1%82.pdf"
+  },
+  {
+    "title": "航空油料材料相容性试验方法 第3部分：航空涡轮发动机润滑油与非金属材料",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231862.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年09月17日",
+    "doc_number": "MH/T 6143.3-2026",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%206143.3-2026%E8%88%AA%E7%A9%BA%E6%B2%B9%E6%96%99%E6%9D%90%E6%96%99%E7%9B%B8%E5%AE%B9%E6%80%A7%E8%AF%95%E9%AA%8C%E6%96%B9%E6%B3%95%20%E7%AC%AC3%E9%83%A8%E5%88%86%EF%BC%9A%E8%88%AA%E7%A9%BA%E6%B6%A1%E8%BD%AE%E5%8F%91%E5%8A%A8%E6%9C%BA%E6%B6%A6%E6%BB%91%E6%B2%B9%E4%B8%8E%E9%9D%9E%E9%87%91%E5%B1%9E%E6%9D%90%E6%96%99.pdf"
+  },
+  {
+    "title": "航空油料材料相容性试验方法  第2部分：航空抗燃磷酸酯液压油与非金属材料",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231860.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年09月17日",
+    "doc_number": "MH/T 6143.2-2026",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%206143.2-2026%E8%88%AA%E7%A9%BA%E6%B2%B9%E6%96%99%E6%9D%90%E6%96%99%E7%9B%B8%E5%AE%B9%E6%80%A7%E8%AF%95%E9%AA%8C%E6%96%B9%E6%B3%95%20%20%E7%AC%AC2%E9%83%A8%E5%88%86%EF%BC%9A%E8%88%AA%E7%A9%BA%E6%8A%97%E7%87%83%E7%A3%B7%E9%85%B8%E9%85%AF%E6%B6%B2%E5%8E%8B%E6%B2%B9%E4%B8%8E%E9%9D%9E%E9%87%91%E5%B1%9E%E6%9D%90%E6%96%99.pdf"
+  },
+  {
+    "title": "航空油料材料相容性试验方法  第1部分：航空喷气燃料与非金属材料",
+    "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231859.html",
+    "doc_type": "标准规范",
+    "validity": "有效",
+    "publish_date": "2026年09月17日",
+    "doc_number": "MH/T 6143.1-2026",
+    "office_unit": "航空器适航审定司",
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/MH_T%206143.1-2026%E8%88%AA%E7%A9%BA%E6%B2%B9%E6%96%99%E6%9D%90%E6%96%99%E7%9B%B8%E5%AE%B9%E6%80%A7%E8%AF%95%E9%AA%8C%E6%96%B9%E6%B3%95%20%20%E7%AC%AC1%E9%83%A8%E5%88%86%EF%BC%9A%E8%88%AA%E7%A9%BA%E5%96%B7%E6%B0%94%E7%87%83%E6%96%99%E4%B8%8E%E9%9D%9E%E9%87%91%E5%B1%9E%E6%9D%90%E6%96%99.pdf"
+  },
+  {
     "title": "民用机场水泥混凝土面层施工技术规范",
     "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/t20260918_231744.html",
     "doc_type": "标准规范",

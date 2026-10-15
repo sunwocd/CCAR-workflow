@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-10-14T13:01:11.215617",
+  "last_check": "2026-10-15T12:50:00.370775",
   "documents": {
     "9": [
       {
@@ -13,7 +13,7 @@
         "publish_date": "2026-10-14",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202610/P020261014348825230070.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "飞行程序设计单位备案信息公布表（2026年9月30日）",
@@ -13976,6 +13976,84 @@
       }
     ],
     "15": [
+      {
+        "title": "民用无人驾驶航空器综合管理平台与民用无人驾驶航空器航行服务提供方系统数据接口要求",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231865.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 4066-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-10-13",
+        "publish_date": "2026-10-13",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015626610262439.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "民用航空产业分类",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231864.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-09-22",
+        "publish_date": "2026-09-22",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015625910595786.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "民航首次乘机旅客服务要求",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231863.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 1090-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-09-22",
+        "publish_date": "2026-09-22",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015625376158151.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "航空油料材料相容性试验方法 第3部分：航空涡轮发动机润滑油与非金属材料",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231862.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 6143.3-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-09-17",
+        "publish_date": "2026-09-17",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015624605652869.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "航空油料材料相容性试验方法  第2部分：航空抗燃磷酸酯液压油与非金属材料",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231860.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 6143.2-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-09-17",
+        "publish_date": "2026-09-17",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015615449744572.pdf",
+        "has_pdf": true
+      },
+      {
+        "title": "航空油料材料相容性试验方法  第1部分：航空喷气燃料与非金属材料",
+        "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231859.html",
+        "category": "标准规范",
+        "category_id": "15",
+        "doc_number": "MH/T 6143.1-2026",
+        "office_unit": "航空器适航审定司",
+        "sign_date": "2026-09-17",
+        "publish_date": "2026-09-17",
+        "validity": "有效",
+        "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015612788366452.pdf",
+        "has_pdf": true
+      },
       {
         "title": "民用机场水泥混凝土面层施工技术规范",
         "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/t20260918_231744.html",
@@ -29523,6 +29601,72 @@
     }
   ],
   "standards": [
+    {
+      "title": "民用无人驾驶航空器综合管理平台与民用无人驾驶航空器航行服务提供方系统数据接口要求",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231865.html",
+      "validity": "有效",
+      "doc_number": "MH/T 4066-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-10-13",
+      "publish_date": "2026-10-13",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015626610262439.pdf"
+    },
+    {
+      "title": "民用航空产业分类",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231864.html",
+      "validity": "有效",
+      "doc_number": "",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-09-22",
+      "publish_date": "2026-09-22",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015625910595786.pdf"
+    },
+    {
+      "title": "民航首次乘机旅客服务要求",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231863.html",
+      "validity": "有效",
+      "doc_number": "MH/T 1090-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-09-22",
+      "publish_date": "2026-09-22",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015625376158151.pdf"
+    },
+    {
+      "title": "航空油料材料相容性试验方法 第3部分：航空涡轮发动机润滑油与非金属材料",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231862.html",
+      "validity": "有效",
+      "doc_number": "MH/T 6143.3-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-09-17",
+      "publish_date": "2026-09-17",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015624605652869.pdf"
+    },
+    {
+      "title": "航空油料材料相容性试验方法  第2部分：航空抗燃磷酸酯液压油与非金属材料",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231860.html",
+      "validity": "有效",
+      "doc_number": "MH/T 6143.2-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-09-17",
+      "publish_date": "2026-09-17",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015615449744572.pdf"
+    },
+    {
+      "title": "航空油料材料相容性试验方法  第1部分：航空喷气燃料与非金属材料",
+      "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231859.html",
+      "validity": "有效",
+      "doc_number": "MH/T 6143.1-2026",
+      "office_unit": "航空器适航审定司",
+      "doc_type": "standard",
+      "sign_date": "2026-09-17",
+      "publish_date": "2026-09-17",
+      "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015612788366452.pdf"
+    },
     {
       "title": "民用机场水泥混凝土面层施工技术规范",
       "url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/t20260918_231744.html",

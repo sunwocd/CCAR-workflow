@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-10-14T13:01:06.912414",
+  "last_update": "2026-10-15T12:49:43.279043",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6868,6 +6868,30 @@
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202610/t20261014_231843.html": {
       "relative_path": "other/关于中电系统建设工程有限公司等1家企业民航专业工程资质动态核查追加材料的公示.pdf",
       "updated_at": "2026-10-14T13:01:06.912411"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231865.html": {
+      "relative_path": "specification/MH_T 4066-2026民用无人驾驶航空器综合管理平台与民用无人驾驶航空器航行服务提供方系统数据接口要求.pdf",
+      "updated_at": "2026-10-15T12:47:57.846647"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231864.html": {
+      "relative_path": "specification/民用航空产业分类.pdf",
+      "updated_at": "2026-10-15T12:48:17.719330"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231863.html": {
+      "relative_path": "specification/MH_T 1090-2026民航首次乘机旅客服务要求.pdf",
+      "updated_at": "2026-10-15T12:48:36.808358"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231862.html": {
+      "relative_path": "specification/MH_T 6143.3-2026航空油料材料相容性试验方法 第3部分：航空涡轮发动机润滑油与非金属材料.pdf",
+      "updated_at": "2026-10-15T12:49:01.287339"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231860.html": {
+      "relative_path": "specification/MH_T 6143.2-2026航空油料材料相容性试验方法  第2部分：航空抗燃磷酸酯液压油与非金属材料.pdf",
+      "updated_at": "2026-10-15T12:49:21.315486"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231859.html": {
+      "relative_path": "specification/MH_T 6143.1-2026航空油料材料相容性试验方法  第1部分：航空喷气燃料与非金属材料.pdf",
+      "updated_at": "2026-10-15T12:49:43.279024"
     }
   }
 }

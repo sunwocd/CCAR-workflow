@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-10-15T12:50:00.370775",
+  "last_check": "2026-10-16T12:37:03.593557",
   "documents": {
     "9": [
       {
@@ -13987,7 +13987,7 @@
         "publish_date": "2026-10-13",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015626610262439.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "民用航空产业分类",
@@ -14000,7 +14000,7 @@
         "publish_date": "2026-09-22",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015625910595786.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "民航首次乘机旅客服务要求",
@@ -14013,7 +14013,7 @@
         "publish_date": "2026-09-22",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015625376158151.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "航空油料材料相容性试验方法 第3部分：航空涡轮发动机润滑油与非金属材料",
@@ -14026,7 +14026,7 @@
         "publish_date": "2026-09-17",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015624605652869.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "航空油料材料相容性试验方法  第2部分：航空抗燃磷酸酯液压油与非金属材料",
@@ -14039,7 +14039,7 @@
         "publish_date": "2026-09-17",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015615449744572.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "航空油料材料相容性试验方法  第1部分：航空喷气燃料与非金属材料",
@@ -14052,7 +14052,7 @@
         "publish_date": "2026-09-17",
         "validity": "有效",
         "pdf_url": "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015612788366452.pdf",
-        "has_pdf": true
+        "has_pdf": false
       },
       {
         "title": "民用机场水泥混凝土面层施工技术规范",

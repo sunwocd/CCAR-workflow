@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-10-15T12:49:43.279043",
+  "last_update": "2026-10-19T14:51:52.502761",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6892,6 +6892,14 @@
     "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261015_231859.html": {
       "relative_path": "specification/MH_T 6143.1-2026航空油料材料相容性试验方法  第1部分：航空喷气燃料与非金属材料.pdf",
       "updated_at": "2026-10-15T12:49:43.279024"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261019_231884.html": {
+      "relative_path": "other/中国民用航空局关于发布 《民用机场飞行区技术标准》第五修订案的公告.pdf",
+      "updated_at": "2026-10-19T14:51:52.502755"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TJSJ/202610/t20261019_231883.html": {
+      "relative_path": "other/中国民航2026年9月份主要生产指标统计.pdf",
+      "updated_at": "2026-10-19T14:51:52.502654"
     }
   }
 }

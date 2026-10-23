@@ -228,20 +228,81 @@ class SoGovSearch:
 
         return hits
 
+    def fetch_keyword_wide(self, keyword: str, cutoff: str, max_pages: int = 3) -> list[SearchHit]:
+        """不带时间过滤的补充抓取，本地按 docDate 卡 cutoff。
+
+        为什么需要这一趟：`timeOption=1&days=N` 过滤用的不是返回里的 docDate。
+        实测「国际航线审批结果公开（C2026008）」docDate=2026-10-09（在窗口内），
+        但 days=30 查不到；去掉时间过滤后第 1 页就能找到。说明平台用的是另一个
+        日期字段（成文日期之类），部分文档因此被窗口漏掉。补一趟宽查询兜住。
+        """
+        hits: list[SearchHit] = []
+        stale_pages = 0
+
+        for page in range(1, max_pages + 1):
+            try:
+                data = self._query(keyword, page, days=0)
+            except Exception as exc:  # noqa: BLE001
+                logger.warning(f"[so-gov] wide kw={keyword} page={page} failed: {exc}")
+                break
+
+            docs = data.get("resultDocs") or []
+            if not docs:
+                break
+
+            fresh = 0
+            for item in docs:
+                raw = item.get("data") or {}
+                url = (raw.get("url") or "").strip()
+                if not url:
+                    continue
+                doc_date = (raw.get("docDate") or "").strip()
+                if not _valid_date(doc_date):
+                    continue
+                if doc_date < cutoff:
+                    continue
+                fresh += 1
+                hits.append(
+                    SearchHit(
+                        title=(raw.get("titleO") or "").strip(),
+                        url=url,
+                        doc_date=doc_date,
+                        site_name=((raw.get("siteLabel") or {}).get("value") or "").strip(),
+                        file_type=(raw.get("fileType") or "").strip(),
+                    )
+                )
+
+            # 连续两页都没有窗口内的文档，说明相关度排序已经跑到旧文档，停
+            stale_pages = 0 if fresh else stale_pages + 1
+            if stale_pages >= 2:
+                break
+            if len(docs) < PAGE_SIZE:
+                break
+
+        return hits
+
     def fetch_recent(self, days: int, keywords: Optional[Iterable[str]] = None) -> list[SearchHit]:
         """多关键词并集，按 URL 去重。"""
         kws = list(keywords or self.keywords)
         merged: dict[str, SearchHit] = {}
 
+        from datetime import date, timedelta
+
+        cutoff = (date.today() - timedelta(days=days)).strftime("%Y-%m-%d")
+
         for idx, kw in enumerate(kws, 1):
             got = self.fetch_keyword(kw, days=days)
+            narrow = len(got)
+            # 补充一趟不带时间过滤的宽查询，兜住被平台日期字段漏掉的文档
+            got += self.fetch_keyword_wide(kw, cutoff=cutoff)
             new = 0
             for hit in got:
                 if hit.url not in merged:
                     merged[hit.url] = hit
                     new += 1
             logger.info(
-                f"[so-gov] {idx}/{len(kws)} kw={kw}: hits={len(got)} new={new} total={len(merged)}"
+                f"[so-gov] {idx}/{len(kws)} kw={kw}: narrow={narrow} "
+                f"with_wide={len(got)} new={new} total={len(merged)}"
             )
 
         logger.info(

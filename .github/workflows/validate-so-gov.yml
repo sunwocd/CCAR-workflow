@@ -18,6 +18,9 @@ on:
 env:
   VALIDATE_DAYS: ${{ github.event.inputs.days || '3' }}
   RECALL_DAYS: ${{ github.event.inputs.recall_days || '30' }}
+  # CI 只为验证正确性，不追求全量召回：限制页数避免跑太久
+  SO_GOV_MAX_PAGES: '3'
+  SO_GOV_WIDE_PAGES: '2'
 
 jobs:
   validate:

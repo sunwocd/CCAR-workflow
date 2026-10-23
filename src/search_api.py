@@ -19,6 +19,7 @@ CAAC 统一搜索（so-gov）客户端
 
 from __future__ import annotations
 
+import os
 import time
 from dataclasses import dataclass
 from typing import Iterable, Optional
@@ -33,6 +34,13 @@ REFERER = "http://www.caac.gov.cn/so/s?tab=all&siteCode=bm70000001"
 
 PAGE_SIZE = 20
 MAX_PAGE = 10  # 站点 tabs 配置写死，超出会回到第 1 页
+
+
+def _env_int(name: str, default: int) -> int:
+    try:
+        return int(os.getenv(name, "") or default)
+    except ValueError:
+        return default
 
 # 栏目代码 → 分类 ID（URL 里的 /XXGK/XXGK/<CODE>/）
 COLUMN_CODE_TO_CATEGORY = {
@@ -105,8 +113,8 @@ class SoGovSearch:
         self,
         keywords: Optional[Iterable[str]] = None,
         timeout: float = 25.0,
-        min_delay: float = 2.0,
-        max_delay: float = 4.0,
+        min_delay: float = 1.2,
+        max_delay: float = 2.0,
     ) -> None:
         self.keywords = list(keywords or DEFAULT_KEYWORDS)
         self.min_delay = min_delay
@@ -181,7 +189,8 @@ class SoGovSearch:
 
     # ---- 对外接口 -------------------------------------------------------
 
-    def fetch_keyword(self, keyword: str, days: int, max_pages: int = MAX_PAGE) -> list[SearchHit]:
+    def fetch_keyword(self, keyword: str, days: int, max_pages: int = 0) -> list[SearchHit]:
+        max_pages = max_pages or _env_int("SO_GOV_MAX_PAGES", MAX_PAGE)
         """按关键词翻页抓取，遇到空页/重复页即停。"""
         hits: list[SearchHit] = []
         seen_first: set[str] = set()
@@ -228,7 +237,8 @@ class SoGovSearch:
 
         return hits
 
-    def fetch_keyword_wide(self, keyword: str, cutoff: str, max_pages: int = 3) -> list[SearchHit]:
+    def fetch_keyword_wide(self, keyword: str, cutoff: str, max_pages: int = 0) -> list[SearchHit]:
+        max_pages = max_pages or _env_int("SO_GOV_WIDE_PAGES", 2)
         """不带时间过滤的补充抓取，本地按 docDate 卡 cutoff。
 
         为什么需要这一趟：`timeOption=1&days=N` 过滤用的不是返回里的 docDate。

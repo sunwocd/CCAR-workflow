@@ -20,6 +20,7 @@ CAAC 统一搜索（so-gov）客户端
 from __future__ import annotations
 
 import os
+import re
 import time
 from dataclasses import dataclass
 from typing import Iterable, Optional
@@ -99,6 +100,34 @@ def classify_url(url: str) -> str:
         code = tail.split("/", 1)[0].upper()
         return COLUMN_CODE_TO_CATEGORY.get(code, UNCLASSIFIED)
     return UNCLASSIFIED
+
+
+_URL_DATE_RE = re.compile(r"/(\d{4})(\d{2})/(?:t(\d{4})(\d{2})(\d{2})_|P0\d+(\d{4})(\d{2})(\d{2}))")
+
+
+def date_from_url(url: str) -> str:
+    """从民航局 URL 里取发布日期。
+
+    两种形态：
+      /202610/t20261009_231819.html   -> 2026-10-09
+      /202610/P020261023378688959993  -> 2026-10-23（P 后是 yyyymmddHHMMSS...）
+
+    必须优先用它，而不是 API 返回的 docDate：实测「国际航线审批结果公开
+    （C2026008）」API 的 docDate=2026-09-16（成文日期），而网站实际发文
+    日期是 2026-10-09，URL 里写的是 t20261009_231819。用 docDate 卡时间
+    窗口会把这类文档整批漏掉。
+    """
+    if not url:
+        return ""
+    m = re.search(r"/t(\d{4})(\d{2})(\d{2})_", url)
+    if m:
+        y, mo, d = m.groups()
+        return f"{y}-{mo}-{d}"
+    m = re.search(r"/P0(\d{4})(\d{2})(\d{2})", url)
+    if m:
+        y, mo, d = m.groups()
+        return f"{y}-{mo}-{d}"
+    return ""
 
 
 def _valid_date(value: str) -> bool:
@@ -219,7 +248,8 @@ class SoGovSearch:
                 url = (raw.get("url") or "").strip()
                 if not url:
                     continue
-                doc_date = (raw.get("docDate") or "").strip()
+                api_date = (raw.get("docDate") or "").strip()
+                doc_date = date_from_url(url) or api_date
                 if not _valid_date(doc_date):
                     continue
                 hits.append(
@@ -266,7 +296,8 @@ class SoGovSearch:
                 url = (raw.get("url") or "").strip()
                 if not url:
                     continue
-                doc_date = (raw.get("docDate") or "").strip()
+                api_date = (raw.get("docDate") or "").strip()
+                doc_date = date_from_url(url) or api_date
                 if not _valid_date(doc_date):
                     continue
                 if doc_date < cutoff:

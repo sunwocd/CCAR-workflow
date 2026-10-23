@@ -1,0 +1,76 @@
+name: Validate so-gov search migration
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: 'Time window in days'
+        required: false
+        default: '3'
+
+jobs:
+  validate:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          version: "latest"
+
+      - name: Set up Python
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Runner egress IP
+        run: curl -s --max-time 15 https://ipinfo.io/json | head -12 || true
+
+      - name: Unit check - classify_url
+        run: |
+          uv run python - <<'PY'
+          from src.search_api import classify_url, UNCLASSIFIED
+          cases = [
+              ("http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202604/t20260410_230516.html", "13"),
+              ("http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202609/t20260921_231759.html", "14"),
+              ("http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015625910595786.pdf", "15"),
+              ("http://www.caac.gov.cn/XXGK/XXGK/TZTG/202601/t20260101_1.html", "9"),
+              ("http://www.caac.gov.cn/local/XNGLJ/XN_XXGK/XN_AQGL/202610/t20261023_231932.html", UNCLASSIFIED),
+          ]
+          bad = 0
+          for url, want in cases:
+              got = classify_url(url)
+              ok = "OK " if got == want else "FAIL"
+              if got != want:
+                  bad += 1
+              print(f"  {ok} {got:>3} (want {want:>3}) {url[:80]}")
+          print("unit check", "PASSED" if bad == 0 else f"FAILED ({bad})")
+          raise SystemExit(1 if bad else 0)
+          PY
+
+      - name: Live smoke test - search API
+        run: |
+          uv run python - <<'PY'
+          from src.search_api import SoGovSearch, classify_url
+          import collections
+          s = SoGovSearch(keywords=["民航", "航空"])
+          try:
+              hits = s.fetch_recent(days=int("${{ github.event.inputs.days }}"))
+          finally:
+              s.close()
+          print(f"unique hits = {len(hits)}")
+          c = collections.Counter(classify_url(h.url) for h in hits)
+          print("by category:", dict(c))
+          for h in hits[:10]:
+              print(f"  {h.doc_date} [{classify_url(h.url):>2}] {h.title[:50]} | {h.url[:70]}")
+          if not hits:
+              raise SystemExit("FAILED: no hits returned")
+          PY
+
+      - name: Dry-run full pipeline
+        env:
+          SO_GOV_DAYS: ${{ github.event.inputs.days }}
+        run: |
+          uv run python -m src.main --days ${{ github.event.inputs.days }} --no-notify --dry-run 2>&1 | tail -60

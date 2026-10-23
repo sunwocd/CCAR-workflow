@@ -20,6 +20,8 @@ from bs4 import BeautifulSoup
 from loguru import logger
 from patchright.sync_api import sync_playwright
 
+from .search_api import SoGovSearch, classify_url, UNCLASSIFIED
+
 # CAAC website configuration
 BASE_URL = "https://www.caac.gov.cn"
 WAS5_SEARCH_URL = "https://www.caac.gov.cn/was5/web/search"
@@ -335,109 +337,116 @@ class CaacCrawler:
         logger.debug(f"Random delay {delay:.1f} seconds")
         time.sleep(delay)
 
-    def _build_search_url(self, category_id: str, perpage: int, orderby: str) -> str:
-        """Build WAS5 search URL for a category"""
-        channel_id = SPECIAL_SEARCH_CHANNELS.get(category_id, SEARCH_CHANNEL)
-        params = [
-            "page=1",
-            f"channelid={channel_id}",
-            f"perpage={perpage}",
-            f"orderby={orderby}",
-        ]
-        if category_id != "13":
-            params.append(f"fl={category_id}")
-        return f"{WAS5_SEARCH_URL}?{'&'.join(params)}"
+    # ------------------------------------------------------------------
+    # 取数层：so-gov 统一检索（was5 已于 2026-10 停止响应）
+    # ------------------------------------------------------------------
 
-    def fetch_category(self, category_id: str, perpage: int = 50) -> list[Document]:
-        """Fetch documents from a specific category
-
-        Uses a dual-query strategy:
-        1. Primary query sorted by -fabuDate (editorial publication date)
-        2. Supplementary query sorted by -DOCRELTIME (CMS upload time)
-
-        This catches documents that CAAC adds retroactively with old publication
-        dates, which would otherwise be buried beyond the perpage limit.
-
-        Args:
-            category_id: Category ID (fl parameter)
-            perpage: Number of results per page
-
-        Returns:
-            List of documents (merged and deduplicated by URL)
-        """
+    def _hit_to_document(self, hit, category_id: str) -> Document:
+        """把检索结果转换成 Document。"""
         category_name = CATEGORIES.get(category_id, f"未知分类({category_id})")
-        logger.info(f"Fetching category: {category_name} (ID: {category_id})")
+        url = hit.url or ""
+        is_pdf = url.lower().split("?")[0].endswith(".pdf") or hit.file_type == "pdf"
+        return Document(
+            title=hit.title or "",
+            url=url,
+            category=category_name,
+            category_id=category_id,
+            doc_number="",
+            office_unit="",
+            sign_date="",
+            publish_date=hit.doc_date or "",
+            validity="",
+            pdf_url=url if is_pdf else "",
+            has_pdf=is_pdf,
+        )
 
-        # Primary query: sorted by editorial publication date
-        primary_url = self._build_search_url(category_id, perpage, "-fabuDate")
-        documents = []
+    def fetch_category(self, category_id: str, perpage: int = 50, days: Optional[int] = None) -> list[Document]:
+        """抓取单个分类（内部委托给 fetch_all_categories）。"""
+        return self.fetch_all_categories([category_id], perpage=perpage, days=days).get(category_id, [])
 
-        try:
-            html_content = self._fetch_with_browser(primary_url)
-            if html_content:
-                documents = self._parse_list_page(html_content, category_id, category_name)
-                logger.info(f"Category {category_name} (primary): {len(documents)} documents")
-        except Exception as e:
-            logger.error(f"Failed to fetch category {category_name} (primary): {e}")
+    def fetch_all_categories(
+        self,
+        category_ids: list[str] = None,
+        perpage: int = 50,
+        days: Optional[int] = None,
+    ) -> dict[str, list[Document]]:
+        """用 so-gov 统一检索拉取近 N 天文档，再按 URL 路径分流到各分类。
 
-        # Supplementary query: sorted by CMS upload time (DOCRELTIME)
-        # Catches retroactively added documents with old fabuDate
-        suppl_perpage = min(50, perpage)
-        suppl_url = self._build_search_url(category_id, suppl_perpage, "-DOCRELTIME")
+        说明：新检索 API 不支持按栏目过滤（channelid/fl/column 全部无效），
+        只能"多关键词 + 时间窗口"取回一批，再按 URL 里的 /XXGK/XXGK/<栏目代码>/
+        自行归类。因此：
+          * 时间窗口默认 7 天，可用环境变量 SO_GOV_DAYS 覆盖；
+          * 单关键词最多 10 页 × 20 条 = 200 条（站点 maxPage 限制），
+            靠多关键词并集提升召回。
 
-        try:
-            self._random_delay(0.5, 1.5)
-            html_content = self._fetch_with_browser(suppl_url)
-            if html_content:
-                suppl_docs = self._parse_list_page(html_content, category_id, category_name)
-                logger.info(f"Category {category_name} (DOCRELTIME): {len(suppl_docs)} documents")
-
-                if not suppl_docs:
-                    logger.warning(
-                        f"Category {category_name}: DOCRELTIME query returned no rows "
-                        f"(CAAC sort may be disabled); relying on the primary query"
-                    )
-
-                # Merge: deduplicate by URL, primary results take precedence
-                seen_urls = {doc.url for doc in documents}
-                new_from_suppl = [doc for doc in suppl_docs if doc.url not in seen_urls]
-                if new_from_suppl:
-                    logger.info(
-                        f"Category {category_name}: {len(new_from_suppl)} extra documents "
-                        f"found via DOCRELTIME (possibly retroactively added)"
-                    )
-                    documents.extend(new_from_suppl)
-        except Exception as e:
-            logger.warning(f"Supplementary DOCRELTIME query failed for {category_name} (non-fatal): {e}")
-
-        logger.info(f"Category {category_name}: {len(documents)} documents total")
-        return documents
-
-    def fetch_all_categories(self, category_ids: list[str] = None, perpage: int = 50) -> dict[str, list[Document]]:
-        """Fetch documents from all or specified categories
-        
         Args:
-            category_ids: List of category IDs to fetch. If None, fetch all.
-            perpage: Number of results per page
-        
+            category_ids: 需要返回的分类 ID 列表；None = 全部已定义分类
+            perpage: 兼容旧签名，新 API 固定每页 20，此参数不再生效
+            days: 时间窗口天数；None 时读 SO_GOV_DAYS，再不行默认 7
+
         Returns:
-            Dictionary mapping category_id to list of documents
+            {category_id: [Document, ...]}
         """
         if category_ids is None:
             category_ids = list(CATEGORIES.keys())
-        
-        results = {}
-        total_docs = 0
-        
-        for i, cat_id in enumerate(category_ids):
-            if i > 0:
-                self._random_delay()
-            
-            docs = self.fetch_category(cat_id, perpage)
-            results[cat_id] = docs
-            total_docs += len(docs)
-        
-        logger.info(f"Total: {total_docs} documents from {len(category_ids)} categories")
+        wanted = set(category_ids)
+
+        if days is None:
+            try:
+                days = int(os.getenv("SO_GOV_DAYS", "7") or "7")
+            except ValueError:
+                days = 7
+        if days <= 0:
+            days = 7
+
+        logger.info(f"[so-gov] Fetching last {days} day(s) via unified search...")
+
+        searcher = SoGovSearch()
+        try:
+            hits = searcher.fetch_recent(days=days)
+        finally:
+            searcher.close()
+
+        results: dict[str, list[Document]] = {cid: [] for cid in category_ids}
+        counters: dict[str, int] = {}
+        skipped_unknown = 0
+        skipped_other = 0
+
+        for hit in hits:
+            cid = classify_url(hit.url)
+            if cid == UNCLASSIFIED or cid not in CATEGORIES:
+                skipped_unknown += 1
+                if UNCLASSIFIED in wanted:
+                    results.setdefault(UNCLASSIFIED, []).append(
+                        self._hit_to_document(hit, UNCLASSIFIED)
+                    )
+                continue
+            if cid not in wanted:
+                skipped_other += 1
+                continue
+            results[cid].append(self._hit_to_document(hit, cid))
+            counters[cid] = counters.get(cid, 0) + 1
+
+        for cid, docs in sorted(results.items(), key=lambda kv: int(kv[0]) if kv[0].isdigit() else 999):
+            if docs:
+                logger.info(
+                    f"Category {CATEGORIES.get(cid, cid)} (ID: {cid}): {len(docs)} documents"
+                )
+
+        total = sum(len(v) for v in results.values())
+        logger.info(
+            f"Total: {total} documents from {len([k for k, v in results.items() if v])} "
+            f"categories (hits={len(hits)}, unmapped_url={skipped_unknown}, "
+            f"other_category={skipped_other})"
+        )
+
+        if total == 0:
+            logger.error(
+                "No documents matched any monitored category. "
+                "Either the search API is blocked, or no updates in the window. "
+                "Check the [so-gov] log lines above."
+            )
+
         return results
 
     def _parse_list_page(self, html_content: str, category_id: str, category_name: str) -> list[Document]:
@@ -568,6 +577,16 @@ class CaacCrawler:
         logger.info(f"Checking attachment: [{document.category}] {document.doc_number} {document.title}")
 
         try:
+            # 检索结果本身就是 .pdf 直链时，跳过详情页直接下载
+            if document.url and document.url.lower().split("?")[0].endswith(".pdf"):
+                ext = self._guess_file_extension(document.url, preferred_ext)
+                direct_path = f"{save_base_path}{ext}"
+                if self._download_binary_file(document.url, direct_path):
+                    document.pdf_url = document.url
+                    document.has_pdf = True
+                    return direct_path
+                logger.warning(f"Direct PDF download failed: {document.url}")
+
             self._random_delay(0.5, 1.5)
             html_content = self._fetch_with_browser(document.url)
 

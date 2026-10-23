@@ -11,6 +11,9 @@ on:
     branches:
       - fix/so-gov-search
 
+env:
+  VALIDATE_DAYS: ${{ github.event.inputs.days || '3' }}
+
 jobs:
   validate:
     runs-on: ubuntu-22.04
@@ -54,26 +57,48 @@ jobs:
           PY
 
       - name: Live smoke test - search API
+        env:
+          DAYS: ${{ env.VALIDATE_DAYS }}
         run: |
           uv run python - <<'PY'
-          from src.search_api import SoGovSearch, classify_url
-          import collections
-          s = SoGovSearch(keywords=["民航", "航空"])
+          import os, sys, traceback, collections
+          days = int(os.environ.get("DAYS", "3"))
+          print(f"days = {days}")
+          from src.search_api import SoGovSearch, classify_url, SEARCH_API
           try:
-              hits = s.fetch_recent(days=int("${{ github.event.inputs.days }}"))
-          finally:
-              s.close()
+              s = SoGovSearch(keywords=["民航", "航空"])
+              try:
+                  hits = s.fetch_recent(days=days)
+              finally:
+                  s.close()
+          except Exception:
+              traceback.print_exc()
+              # 直接打一次裸请求，把服务端 body 打出来
+              import httpx
+              from urllib.parse import urlencode
+              r = httpx.post(SEARCH_API, content=urlencode({
+                  "siteCode": "bm70000001", "tab": "all", "qt": "民航",
+                  "page": "1", "pageSize": "5",
+              }), headers={
+                  "Referer": "http://www.caac.gov.cn/so/s?tab=all&siteCode=bm70000001",
+                  "User-Agent": "Mozilla/5.0 Chrome/120.0",
+              }, timeout=30)
+              print("RAW status:", r.status_code)
+              print("RAW body[:800]:", r.text[:800])
+              sys.exit(1)
+
           print(f"unique hits = {len(hits)}")
           c = collections.Counter(classify_url(h.url) for h in hits)
           print("by category:", dict(c))
           for h in hits[:10]:
               print(f"  {h.doc_date} [{classify_url(h.url):>2}] {h.title[:50]} | {h.url[:70]}")
           if not hits:
-              raise SystemExit("FAILED: no hits returned")
+              print("WARNING: 0 hits — check API response above")
+              sys.exit(1)
           PY
 
       - name: Dry-run full pipeline
         env:
-          SO_GOV_DAYS: ${{ github.event.inputs.days }}
+          SO_GOV_DAYS: ${{ env.VALIDATE_DAYS }}
         run: |
-          uv run python -m src.main --days ${{ github.event.inputs.days }} --no-notify --dry-run 2>&1 | tail -60
+          uv run python -m src.main --days ${{ env.VALIDATE_DAYS }} --no-notify --dry-run 2>&1 | tail -60

@@ -1,0 +1,223 @@
+name: Validate so-gov search migration
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: 'Time window in days'
+        required: false
+        default: '3'
+      recall_days:
+        description: 'Recall test window (days)'
+        required: false
+        default: '30'
+  push:
+    branches:
+      - fix/so-gov-search
+
+env:
+  VALIDATE_DAYS: ${{ github.event.inputs.days || '3' }}
+  RECALL_DAYS: ${{ github.event.inputs.recall_days || '30' }}
+  # CI 只为验证正确性，不追求全量召回：限制页数避免跑太久
+  SO_GOV_MAX_PAGES: '3'
+  SO_GOV_WIDE_PAGES: '2'
+
+jobs:
+  validate:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          version: "latest"
+
+      - name: Set up Python
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Runner egress IP
+        run: curl -s --max-time 15 https://ipinfo.io/json | head -12 || true
+
+      - name: Unit check - classify_url
+        run: |
+          uv run python - <<'PY'
+          from src.search_api import classify_url, UNCLASSIFIED
+          cases = [
+              ("http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202604/t20260410_230516.html", "13"),
+              ("http://www.caac.gov.cn/XXGK/XXGK/GFXWJ/202609/t20260921_231759.html", "14"),
+              ("http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/P020261015625910595786.pdf", "15"),
+              ("http://www.caac.gov.cn/XXGK/XXGK/TZTG/202601/t20260101_1.html", "9"),
+              ("http://www.caac.gov.cn/local/XNGLJ/XN_XXGK/XN_AQGL/202610/t20261023_231932.html", UNCLASSIFIED),
+          ]
+          bad = 0
+          for url, want in cases:
+              got = classify_url(url)
+              ok = "OK " if got == want else "FAIL"
+              if got != want:
+                  bad += 1
+              print(f"  {ok} {got:>3} (want {want:>3}) {url[:80]}")
+          print("unit check", "PASSED" if bad == 0 else f"FAILED ({bad})")
+          raise SystemExit(1 if bad else 0)
+          PY
+
+      - name: Live smoke test - search API
+        env:
+          DAYS: ${{ env.VALIDATE_DAYS }}
+        run: |
+          uv run python - <<'PY'
+          import os, sys, traceback, collections
+          days = int(os.environ.get("DAYS", "3"))
+          print(f"days = {days}")
+          from src.search_api import SoGovSearch, classify_url, SEARCH_API
+          try:
+              s = SoGovSearch(keywords=["民航", "航空"])
+              try:
+                  hits = s.fetch_recent(days=days)
+              finally:
+                  s.close()
+          except Exception:
+              traceback.print_exc()
+              import httpx
+              from urllib.parse import urlencode
+              r = httpx.post(SEARCH_API, data={
+                  "siteCode": "bm70000001", "tab": "all", "qt": "民航",
+                  "page": "1", "pageSize": "5",
+              }, headers={
+                  "Referer": "http://www.caac.gov.cn/so/s?tab=all&siteCode=bm70000001",
+                  "User-Agent": "Mozilla/5.0 Chrome/120.0",
+              }, timeout=30)
+              print("RAW status:", r.status_code)
+              print("RAW body[:800]:", r.text[:800])
+              sys.exit(1)
+
+          print(f"unique hits = {len(hits)}")
+          c = collections.Counter(classify_url(h.url) for h in hits)
+          print("by category:", dict(c))
+          for h in hits[:10]:
+              print(f"  {h.doc_date} [{classify_url(h.url):>2}] {h.title[:50]} | {h.url[:70]}")
+          if not hits:
+              print("WARNING: 0 hits — check API response above")
+              sys.exit(1)
+          PY
+
+      - name: Recall test against known state
+        env:
+          DAYS: ${{ env.RECALL_DAYS }}
+        run: |
+          uv run python - <<'PY'
+          """用 data/regulations.json 里已知的近期文档，反查新检索能找回多少 —— 量化召回率。"""
+          import os, re, sys, json, collections
+          from datetime import datetime, timedelta
+
+          days = int(os.environ.get("DAYS", "30"))
+          cutoff = (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%d")
+
+          state = json.load(open("data/regulations.json", encoding="utf-8"))
+          docs_by_cat = state.get("documents") or {}
+
+          def norm(s):
+              s = (s or "").strip().lower()
+              s = re.sub(r"[\s\u3000《》〈〉“”\"'（）()\[\]【】、，,。.：:；;\-—_/\\|]+", "", s)
+              return s
+
+          known = []
+          for cid, rows in docs_by_cat.items():
+              for row in rows:
+                  pub = (row.get("publish_date") or "").strip()
+                  if pub and pub >= cutoff:
+                      known.append({
+                          "cat": cid,
+                          "title": row.get("title") or "",
+                          "doc_number": row.get("doc_number") or "",
+                          "date": pub,
+                          "url": row.get("url") or "",
+                      })
+          print(f"known docs published in last {days} days: {len(known)}")
+          if not known:
+              print("no recent known docs to test against")
+              raise SystemExit(0)
+
+          from src.search_api import SoGovSearch
+          s = SoGovSearch()
+          try:
+              hits = s.fetch_recent(days=days)
+          finally:
+              s.close()
+
+          hit_titles = {norm(h.title) for h in hits}
+          hit_urls = {h.url for h in hits}
+
+          found, missing = [], []
+          for k in known:
+              nt = norm(k["title"])
+              hit = nt in hit_titles or k["url"] in hit_urls
+              (found if hit else missing).append(k)
+
+          rate = 100.0 * len(found) / len(known)
+          print(f"\nRECALL: {len(found)}/{len(known)} = {rate:.1f}%")
+          by_cat = collections.Counter(k["cat"] for k in known)
+          miss_cat = collections.Counter(k["cat"] for k in missing)
+          print("known by category:", dict(by_cat))
+          print("missing by category:", dict(miss_cat))
+
+          print(f"\n--- missing ({len(missing)}), first 25 ---")
+          for k in missing[:25]:
+              print(f"  [{k['cat']:>2}] {k['date']} {k['doc_number'][:16]:16} {k['title'][:56]}")
+
+          # 只看 13/14/15 三个通知分类的召回
+          core = [k for k in known if k["cat"] in ("13", "14", "15")]
+          core_found = [k for k in core if norm(k["title"]) in hit_titles or k["url"] in hit_urls]
+          if core:
+              print(f"\nCORE(13/14/15) RECALL: {len(core_found)}/{len(core)} = {100.0*len(core_found)/len(core):.1f}%")
+          PY
+
+      - name: Probe the two missing documents
+        run: |
+          uv run python - <<'PY'
+          """针对召回漏项做定点探测：确认是检索平台没收录，还是我们的归类/去重丢了。"""
+          import httpx, json
+          from urllib.parse import urlencode
+          from src.search_api import SEARCH_API, SITE_CODE, REFERER, classify_url
+
+          TARGET = "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202610/t20261009_231819.html"
+          TARGET_TITLE = "国际航线审批结果公开"
+
+          def q(qt, days=None, tab="all"):
+              payload = {"siteCode": SITE_CODE, "tab": tab, "qt": qt, "page": "1", "pageSize": "20"}
+              if days:
+                  payload["timeOption"] = "1"
+                  payload["days"] = str(days)
+              r = httpx.post(SEARCH_API, data=payload, headers={
+                  "Referer": REFERER, "Content-Type": "application/x-www-form-urlencoded",
+                  "User-Agent": "Mozilla/5.0 Chrome/120.0"}, timeout=30)
+              return r.json()
+
+          for kw in ("国际航线", "航线审批", "审批结果", "国际航线审批结果公开"):
+              d = q(kw, days=30)
+              docs = d.get("resultDocs") or []
+              urls = [((x.get("data") or {}).get("url") or "") for x in docs]
+              hit = TARGET in urls
+              print(f"qt={kw:16} hits={d.get('totalHits')} returned={len(docs)} target_found={hit}")
+              if not hit:
+                  for x in docs[:3]:
+                      dd = x.get("data") or {}
+                      print(f"      sample: {dd.get('docDate')} {str(dd.get('titleO'))[:44]}")
+
+          # 不带时间窗口，看是否被索引
+          d = q("国际航线", days=None)
+          urls = [((x.get("data") or {}).get("url") or "") for x in (d.get("resultDocs") or [])]
+          print(f"\nno time window: hits={d.get('totalHits')} target_found={TARGET in urls}")
+
+          # 检查归类
+          print(f"\nclassify_url(TARGET) = {classify_url(TARGET)}  (expected 9)")
+          PY
+
+      - name: Dry-run full pipeline
+        env:
+          SO_GOV_DAYS: ${{ env.VALIDATE_DAYS }}
+        run: |
+          uv run python -m src.main --days ${{ env.VALIDATE_DAYS }} --no-notify --dry-run 2>&1 | tail -40

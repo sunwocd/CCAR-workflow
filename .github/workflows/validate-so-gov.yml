@@ -7,12 +7,17 @@ on:
         description: 'Time window in days'
         required: false
         default: '3'
+      recall_days:
+        description: 'Recall test window (days)'
+        required: false
+        default: '30'
   push:
     branches:
       - fix/so-gov-search
 
 env:
   VALIDATE_DAYS: ${{ github.event.inputs.days || '3' }}
+  RECALL_DAYS: ${{ github.event.inputs.recall_days || '30' }}
 
 jobs:
   validate:
@@ -73,13 +78,12 @@ jobs:
                   s.close()
           except Exception:
               traceback.print_exc()
-              # 直接打一次裸请求，把服务端 body 打出来
               import httpx
               from urllib.parse import urlencode
-              r = httpx.post(SEARCH_API, content=urlencode({
+              r = httpx.post(SEARCH_API, data={
                   "siteCode": "bm70000001", "tab": "all", "qt": "民航",
                   "page": "1", "pageSize": "5",
-              }), headers={
+              }, headers={
                   "Referer": "http://www.caac.gov.cn/so/s?tab=all&siteCode=bm70000001",
                   "User-Agent": "Mozilla/5.0 Chrome/120.0",
               }, timeout=30)
@@ -97,8 +101,79 @@ jobs:
               sys.exit(1)
           PY
 
+      - name: Recall test against known state
+        env:
+          DAYS: ${{ env.RECALL_DAYS }}
+        run: |
+          uv run python - <<'PY'
+          """用 data/regulations.json 里已知的近期文档，反查新检索能找回多少 —— 量化召回率。"""
+          import os, re, sys, json, collections
+          from datetime import datetime, timedelta
+
+          days = int(os.environ.get("DAYS", "30"))
+          cutoff = (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%d")
+
+          state = json.load(open("data/regulations.json", encoding="utf-8"))
+          docs_by_cat = state.get("documents") or {}
+
+          def norm(s):
+              s = (s or "").strip().lower()
+              s = re.sub(r"[\s\u3000《》〈〉“”\"'（）()\[\]【】、，,。.：:；;\-—_/\\|]+", "", s)
+              return s
+
+          known = []
+          for cid, rows in docs_by_cat.items():
+              for row in rows:
+                  pub = (row.get("publish_date") or "").strip()
+                  if pub and pub >= cutoff:
+                      known.append({
+                          "cat": cid,
+                          "title": row.get("title") or "",
+                          "doc_number": row.get("doc_number") or "",
+                          "date": pub,
+                          "url": row.get("url") or "",
+                      })
+          print(f"known docs published in last {days} days: {len(known)}")
+          if not known:
+              print("no recent known docs to test against")
+              raise SystemExit(0)
+
+          from src.search_api import SoGovSearch
+          s = SoGovSearch()
+          try:
+              hits = s.fetch_recent(days=days)
+          finally:
+              s.close()
+
+          hit_titles = {norm(h.title) for h in hits}
+          hit_urls = {h.url for h in hits}
+
+          found, missing = [], []
+          for k in known:
+              nt = norm(k["title"])
+              hit = nt in hit_titles or k["url"] in hit_urls
+              (found if hit else missing).append(k)
+
+          rate = 100.0 * len(found) / len(known)
+          print(f"\nRECALL: {len(found)}/{len(known)} = {rate:.1f}%")
+          by_cat = collections.Counter(k["cat"] for k in known)
+          miss_cat = collections.Counter(k["cat"] for k in missing)
+          print("known by category:", dict(by_cat))
+          print("missing by category:", dict(miss_cat))
+
+          print(f"\n--- missing ({len(missing)}), first 25 ---")
+          for k in missing[:25]:
+              print(f"  [{k['cat']:>2}] {k['date']} {k['doc_number'][:16]:16} {k['title'][:56]}")
+
+          # 只看 13/14/15 三个通知分类的召回
+          core = [k for k in known if k["cat"] in ("13", "14", "15")]
+          core_found = [k for k in core if norm(k["title"]) in hit_titles or k["url"] in hit_urls]
+          if core:
+              print(f"\nCORE(13/14/15) RECALL: {len(core_found)}/{len(core)} = {100.0*len(core_found)/len(core):.1f}%")
+          PY
+
       - name: Dry-run full pipeline
         env:
           SO_GOV_DAYS: ${{ env.VALIDATE_DAYS }}
         run: |
-          uv run python -m src.main --days ${{ env.VALIDATE_DAYS }} --no-notify --dry-run 2>&1 | tail -60
+          uv run python -m src.main --days ${{ env.VALIDATE_DAYS }} --no-notify --dry-run 2>&1 | tail -40

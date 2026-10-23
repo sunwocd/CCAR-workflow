@@ -152,7 +152,14 @@ class SoGovSearch:
             payload["timeOption"] = "1"
             payload["days"] = str(days)
 
-        resp = self._client.post(SEARCH_API, content=urlencode(payload))
+        # 必须用 form 编码并显式声明 Content-Type：httpx 的 content= 不会自动加
+        # application/x-www-form-urlencoded，服务端会把 siteCode 读成 null 并报
+        # "不存在的站点[null]"。用 data= 让它按表单编码发送。
+        resp = self._client.post(
+            SEARCH_API,
+            data=payload,
+            headers={"Content-Type": "application/x-www-form-urlencoded"},
+        )
         self._last_request = time.time()
         self.request_count += 1
 

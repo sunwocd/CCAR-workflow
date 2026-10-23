@@ -172,6 +172,47 @@ jobs:
               print(f"\nCORE(13/14/15) RECALL: {len(core_found)}/{len(core)} = {100.0*len(core_found)/len(core):.1f}%")
           PY
 
+      - name: Probe the two missing documents
+        run: |
+          uv run python - <<'PY'
+          """针对召回漏项做定点探测：确认是检索平台没收录，还是我们的归类/去重丢了。"""
+          import httpx, json
+          from urllib.parse import urlencode
+          from src.search_api import SEARCH_API, SITE_CODE, REFERER, classify_url
+
+          TARGET = "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202610/t20261009_231819.html"
+          TARGET_TITLE = "国际航线审批结果公开"
+
+          def q(qt, days=None, tab="all"):
+              payload = {"siteCode": SITE_CODE, "tab": tab, "qt": qt, "page": "1", "pageSize": "20"}
+              if days:
+                  payload["timeOption"] = "1"
+                  payload["days"] = str(days)
+              r = httpx.post(SEARCH_API, data=payload, headers={
+                  "Referer": REFERER, "Content-Type": "application/x-www-form-urlencoded",
+                  "User-Agent": "Mozilla/5.0 Chrome/120.0"}, timeout=30)
+              return r.json()
+
+          for kw in ("国际航线", "航线审批", "审批结果", "国际航线审批结果公开"):
+              d = q(kw, days=30)
+              docs = d.get("resultDocs") or []
+              urls = [((x.get("data") or {}).get("url") or "") for x in docs]
+              hit = TARGET in urls
+              print(f"qt={kw:16} hits={d.get('totalHits')} returned={len(docs)} target_found={hit}")
+              if not hit:
+                  for x in docs[:3]:
+                      dd = x.get("data") or {}
+                      print(f"      sample: {dd.get('docDate')} {str(dd.get('titleO'))[:44]}")
+
+          # 不带时间窗口，看是否被索引
+          d = q("国际航线", days=None)
+          urls = [((x.get("data") or {}).get("url") or "") for x in (d.get("resultDocs") or [])]
+          print(f"\nno time window: hits={d.get('totalHits')} target_found={TARGET in urls}")
+
+          # 检查归类
+          print(f"\nclassify_url(TARGET) = {classify_url(TARGET)}  (expected 9)")
+          PY
+
       - name: Dry-run full pipeline
         env:
           SO_GOV_DAYS: ${{ env.VALIDATE_DAYS }}

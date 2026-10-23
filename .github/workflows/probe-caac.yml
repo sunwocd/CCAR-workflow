@@ -1,0 +1,49 @@
+name: probe-caac-reachability
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Probe CAAC endpoints from GitHub runner
+        run: |
+          set +e
+          echo "=== runner egress IP / region ==="
+          curl -s --max-time 15 https://ipinfo.io/json | head -20 || true
+
+          echo
+          echo "=== 1) www.caac.gov.cn static page ==="
+          curl -s -o /dev/null -w "code=%{http_code} time=%{time_total}s size=%{size_download}\n" \
+            --max-time 25 "https://www.caac.gov.cn/XXGK/XXGK/GFXWJ/" \
+            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0" || echo "curl exit=$?"
+
+          echo
+          echo "=== 2) legacy was5 search (expected: hang / no bytes) ==="
+          curl -s -o /dev/null -w "code=%{http_code} time=%{time_total}s size=%{size_download}\n" \
+            --max-time 20 "https://www.caac.gov.cn/was5/web/search?page=1&channelid=260383&perpage=20&orderby=-DOCRELTIME&fl=9" \
+            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0" || echo "curl exit=$?"
+
+          echo
+          echo "=== 3) NEW api.so-gov.cn unified search ==="
+          curl -s -o /tmp/probe.json -w "code=%{http_code} time=%{time_total}s size=%{size_download}\n" \
+            --max-time 25 -X POST "https://api.so-gov.cn/query/s" \
+            -H "Referer: http://www.caac.gov.cn/so/s?tab=all&siteCode=bm70000001" \
+            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0" \
+            -d "siteCode=bm70000001&tab=all&qt=%E6%B0%91%E8%88%AA&page=1&pageSize=3" || echo "curl exit=$?"
+          echo "--- body head ---"
+          head -c 600 /tmp/probe.json || true
+          echo
+          echo "--- totalHits / resultDocs count ---"
+          python3 -c "
+import json
+try:
+    d=json.load(open('/tmp/probe.json'))
+    print('ok=',d.get('ok'),'totalHits=',d.get('totalHits'),'docs=',len(d.get('resultDocs') or []))
+    for x in (d.get('resultDocs') or [])[:3]:
+        dd=x.get('data') or {}
+        print('  -',(dd.get('docDate') or ''),(dd.get('titleO') or '')[:40],'|',(dd.get('url') or '')[:70])
+except Exception as e:
+    print('PARSE FAIL:',e)
+" || true

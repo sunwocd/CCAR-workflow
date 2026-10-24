@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "CAAC",
-  "lastUpdated": "2026-10-23T21:37:30Z",
+  "lastUpdated": "2026-10-24T12:13:35Z",
   "basePath": "data/v1",
   "files": {
     "regulation": {
@@ -23,7 +23,7 @@
       "filename": "specification.json",
       "path": "data/v1/specification.json",
       "count": 1165,
-      "sha256": "6909972acf1e33a2ac3088892e2a9c185db6018f85191702d0fb5046e0892c5a"
+      "sha256": "5f73e5e639031e1864a0a5cbc5267c642ceee32b4835b91b36da404183557d2c"
     }
   },
   "totalCount": 2850

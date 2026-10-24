@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-10-23T21:37:17.789537",
+  "last_update": "2026-10-24T12:13:21.774918",
   "records": {
     "http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202512/t20251217_229434.html": {
       "relative_path": "regulation/解读丨《正常类旋翼航空器适航规定》.txt",
@@ -6894,24 +6894,24 @@
       "updated_at": "2026-10-15T12:49:43.279024"
     },
     "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202610/t20261019_231884.html": {
-      "relative_path": "other/中国民用航空局关于发布 《民用机场飞行区技术标准》第五修订案的公告.pdf",
-      "updated_at": "2026-10-19T14:51:52.502755"
+      "relative_path": "specification/中国民用航空局关于发布 《民用机场飞行区技术标准》第五修订案的公告.pdf",
+      "updated_at": "2026-10-24T12:12:10.120048"
     },
     "http://www.caac.gov.cn/XXGK/XXGK/TJSJ/202610/t20261019_231883.html": {
       "relative_path": "other/中国民航2026年9月份主要生产指标统计.pdf",
-      "updated_at": "2026-10-19T14:51:52.502654"
+      "updated_at": "2026-10-24T12:10:47.295817"
     },
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202610/P020261023378688959993.pdf": {
       "relative_path": "other/民航局2026_27年冬春航季换季颁发、注销国内航线经营许可信息通告.pdf.pdf",
-      "updated_at": "2026-10-23T21:36:42.189966"
+      "updated_at": "2026-10-24T12:10:10.773510"
     },
     "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202610/t20261023_231927.html": {
       "relative_path": "other/中国民用航空局2026_27年冬春航季换季国内航线经营许可新增情况表.pdf",
-      "updated_at": "2026-10-23T21:36:55.568553"
+      "updated_at": "2026-10-24T12:10:26.044073"
     },
     "http://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/202609/P020261023381833058404.pdf": {
       "relative_path": "specification/民航相干多普勒测风激光雷达建设规范.pdf.pdf",
-      "updated_at": "2026-10-23T21:37:02.948602"
+      "updated_at": "2026-10-24T12:11:09.181456"
     },
     "http://www.caac.gov.cn/XXGK/XXGK/SBGX/XYBFDQ/SJALB/SHXD/202610/U020261021332176407413.pdf": {
       "relative_path": "other/沙特民航总局和中国民用航空局关于适航审定合作的工作安排.pdf",
@@ -6919,7 +6919,11 @@
     },
     "http://www.caac.gov.cn/XXGK/XXGK/SBGX/FZDQ/LWD/SHXD/202610/P020261021332717962741.pdf": {
       "relative_path": "other/中国民用航空局和卢旺达民用航空局关于适航审定合作的谅解备忘录.pdf",
-      "updated_at": "2026-10-23T21:37:17.789522"
+      "updated_at": "2026-10-24T12:13:21.774896"
+    },
+    "http://www.caac.gov.cn/XXGK/XXGK/TJSJ/202610/P020261019507186229399.pdf": {
+      "relative_path": "other/中国民航2026年9月份主要生产指标统计.pdf.pdf",
+      "updated_at": "2026-10-24T12:10:29.295960"
     }
   }
 }

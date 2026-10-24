@@ -26,7 +26,7 @@ var data = [
     "publish_date": "2026年10月19日",
     "doc_number": "",
     "office_unit": "",
-    "pdf_url": "https://flighttoolbox.hudawang.cn/other/%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%B1%80%E5%85%B3%E4%BA%8E%E5%8F%91%E5%B8%83%20%E3%80%8A%E6%B0%91%E7%94%A8%E6%9C%BA%E5%9C%BA%E9%A3%9E%E8%A1%8C%E5%8C%BA%E6%8A%80%E6%9C%AF%E6%A0%87%E5%87%86%E3%80%8B%E7%AC%AC%E4%BA%94%E4%BF%AE%E8%AE%A2%E6%A1%88%E7%9A%84%E5%85%AC%E5%91%8A.pdf"
+    "pdf_url": "https://flighttoolbox.hudawang.cn/specification/%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%B1%80%E5%85%B3%E4%BA%8E%E5%8F%91%E5%B8%83%20%E3%80%8A%E6%B0%91%E7%94%A8%E6%9C%BA%E5%9C%BA%E9%A3%9E%E8%A1%8C%E5%8C%BA%E6%8A%80%E6%9C%AF%E6%A0%87%E5%87%86%E3%80%8B%E7%AC%AC%E4%BA%94%E4%BF%AE%E8%AE%A2%E6%A1%88%E7%9A%84%E5%85%AC%E5%91%8A.pdf"
   },
   {
     "title": "民用无人驾驶航空器综合管理平台与民用无人驾驶航空器航行服务提供方系统数据接口要求",
